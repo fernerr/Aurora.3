@@ -89,6 +89,13 @@
 	name = "\improper Abandoned Ship"
 	icon_state = "yellow"
 
+/area/derelict/liidra
+	name = "\improper Liidra Ship"
+	icon_state = "yellow"
+
+/area/derelict/psv_marmot
+	name = "\improper PSV Marmot"
+
 /area/solar/derelict_starboard
 	name = "\improper Derelict Starboard Solar Array"
 	icon_state = "panelsS"
