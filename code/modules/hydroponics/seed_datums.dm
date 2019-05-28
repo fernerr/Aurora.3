@@ -426,6 +426,14 @@
 	set_trait(TRAIT_PRODUCT_COLOUR,"#31004A")
 	set_trait(TRAIT_PLANT_COLOUR,"#31004A")
 
+/datum/seed/koisspore/black/map
+	name = "blackkois_map"
+
+/datum/seed/koisspore/black/map/setup_traits()
+	..()
+	set_trait(TRAIT_REQUIRES_NUTRIENTS, 0)
+	set_trait(TRAIT_REQUIRES_WATER, 0)
+
 /datum/seed/mushroom/mold
 	name = "mold"
 	seed_name = "brown mold"

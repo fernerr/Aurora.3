@@ -73,6 +73,11 @@
 /obj/machinery/light/colored/blue
 	brightness_color = LIGHT_COLOR_BLUE
 
+/obj/machinery/light/colored/emergency
+	brightness_range = 5
+	brightness_power = 0.75
+	brightness_color = LIGHT_COLOR_RED
+
 /obj/machinery/light/spot
 	name = "spotlight"
 	fitting = "large tube"

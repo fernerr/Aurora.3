@@ -60,6 +60,16 @@
 	pixel_y = rand(-5,5)
 	check_health()
 
+/obj/machinery/portable_atmospherics/hydroponics/soil/invisible/mapped_black_kois
+	name = "black kois"
+	icon_state = "mushroom6"
+
+/obj/machinery/portable_atmospherics/hydroponics/soil/invisible/mapped_black_kois/New(var/newloc,var/datum/seed/newseed)
+	newseed = SSplants.seeds["blackkois_map"]
+	icon_state = "blank"
+	pixel_x = rand(-5,5)
+	.=..()
+
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible/remove_dead()
 	..()
 	qdel(src)

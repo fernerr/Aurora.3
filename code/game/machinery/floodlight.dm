@@ -19,6 +19,9 @@
 	cell.maxcharge = 1000
 	cell.charge = 1000 // 41minutes @ 200W
 
+	if(on)
+		set_light(brightness_on, 1)
+
 /obj/machinery/floodlight/update_icon()
 	cut_overlays()
 	icon_state = "flood[open ? "o" : ""][open && cell ? "b" : ""]0[on]"
