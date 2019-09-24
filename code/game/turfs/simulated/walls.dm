@@ -18,6 +18,7 @@
 	var/material/reinf_material
 	var/last_state
 	var/construction_stage
+	var/use_standard_smoothing
 
 	var/tmp/list/image/reinforcement_images
 	var/tmp/image/damage_image
