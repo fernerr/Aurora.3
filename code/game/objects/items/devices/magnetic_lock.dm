@@ -41,6 +41,10 @@
 	req_access = null
 	req_one_access = list(access_engine_equip, access_atmospherics)
 
+/obj/item/device/magnetic_lock/security/legion
+	name = "legion magnetic door lock"
+	req_access = (access_legion)
+
 /obj/item/device/magnetic_lock/Initialize()
 	. = ..()
 
@@ -67,6 +71,10 @@
 
 		status = STATUS_ACTIVE
 		attach(newtarget)
+
+/obj/item/device/magnetic_lock/security/legion/Initialize()
+	..()
+	desc = "A large, ID locked device used for completely locking down airlocks. This one carries the insignia of the Tau Ceti Foreign Legion."
 
 /obj/item/device/magnetic_lock/examine(mob/user)
 	..(user)
@@ -470,7 +478,7 @@
 			ui = new(user, src, "misc-maglock", 300, 100, "Maglock", list())
 		else
 			ui = new(user, src, "misc-maglock-config", 300, 100, "Maglock configuration", list("passcode" = passcode))
-	
+
 	ui.open()
 
 /obj/item/device/magnetic_lock/keypad/attack_hand(var/mob/user)

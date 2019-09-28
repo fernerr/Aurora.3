@@ -582,6 +582,26 @@
 /obj/structure/sign/flag/zenghu/right
 	icon_state = "zenghu_r"
 
+/obj/structure/sign/flag/biesel
+	name = "Republic of Biesel flag"
+	desc = "The colours and symbols of the Republic of Biesel."
+	icon_state = "biesel"
+
+/obj/structure/sign/flag/biesel/left
+	icon_state = "biesel_l"
+
+/obj/structure/sign/flag/biesel/right
+	icon_state = "biesel_r"
+
+/obj/item/weapon/flag/biesel
+	name = "Republic of Biesel flag"
+	desc = "The flag representing the Republic of Biesel."
+	flag_path = "biesel"
+
+/obj/item/weapon/flag/biesel/l
+	name = "Large Republic of Biesel flag"
+	flag_size = 1
+
 /obj/item/weapon/flag
 	name = "boxed flag"
 	desc = "A flag neatly folded into a wooden container."
