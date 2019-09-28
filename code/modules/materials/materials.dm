@@ -185,7 +185,6 @@ var/list/name_to_material
 			wall_icon = 'icons/turf/smooth/vaurca_wall.dmi'
 			skip_blend = TRUE
 		if ("shuttle")
-			wall_icon = 'icons/turf/smooth/shuttle_wall.dmi'
 			skip_blend = TRUE
 		else
 			world.log <<  "materials: [src] has unknown icon_base [icon_base]."
