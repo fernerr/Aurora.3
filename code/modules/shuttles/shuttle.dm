@@ -29,6 +29,7 @@
 	var/list/center = list()
 	var/length = 0
 	var/width = 0
+	var/shuttle_roof_type
 
 /datum/shuttle/proc/init_shuttle()
 	return
@@ -47,18 +48,18 @@
 			max_x = max(T.x, max_x)
 			max_y = max(T.y, max_y)
 			ship_size += 1
-			if(istype(T, /turf/simulated/wall/shuttle) && exterior_wall(T))
+			T.roof_type = shuttle_roof_type
+			if(istype(T, /turf/simulated) && exterior_wall(T))
 				exterior_walls_and_engines += list(list(T.x, T.y, T.z))
 				if(integrity_check(T))
 					walls_count += 1
 		else if(istype(A, /obj/structure/shuttle/engine/propulsion))
 			engines_count += 1
 			var/obj/structure/shuttle/engine/propulsion/P = A
-			var/turf/simulated/shuttle/e_turf = get_turf(P)
-			e_turf.name = "engine mount"
+			var/turf/simulated/e_turf = get_turf(P)
 			e_turf.dir = P.dir
 			e_turf.update_icon()
-			e_turf.add_overlay("engine_mount")
+
 	center = list((max_x + min_x) / 2, (max_y + min_y) / 2)
 	length = max_x - min_x
 	width = max_y - min_y
@@ -68,7 +69,7 @@
 		var/turf/n_T = get_step(T, v)
 		if(!n_T)
 			continue
-		if(!istype(n_T, /turf/simulated/wall/shuttle))
+		if(!istype(n_T, /turf/simulated))
 			return TRUE
 	return FALSE
 
@@ -222,6 +223,7 @@
 /datum/shuttle/proc/move_shuttle_contents_to(area/A, area/B)
 	var/list/source_turfs = A.build_ordered_turf_list()
 	var/list/target_turfs = B.build_ordered_turf_list()
+	var/list/roof_turfs = list()
 
 	message_admins(source_turfs.len)
 	ASSERT(source_turfs.len == target_turfs.len)
@@ -242,6 +244,11 @@
 		var/turf/TT = ST.copy_turf(target_turfs[i])
 		if(!TT)
 			TT = target_turfs[i]
+
+		var/turf/above = GetAbove(TT)
+		if(above && (above.type != TT.roof_type))
+			above.ChangeTurf(TT.roof_type)
+			roof_turfs += above
 
 		for(var/thing in ST)
 			var/atom/movable/AM = thing
@@ -308,6 +315,7 @@
 		var/message = ""
 		if(ratio == 100)
 			announce(span("danger", "Flight computer states: \"Warning: shuttle's propulsion system is entirely destroyed! Unable to launch!\""))
+			message_admins("if crash chance && engines checked")
 			return FALSE
 
 		if(area_current.z == 1 || area_current.z == 2)
@@ -327,6 +335,7 @@
 	else if(crash_chance)
 		if(ratio == 100)
 			announce(span("danger", "Flight computer states: \"Warning: shuttle's propulsion system is entirely destroyed! Unable to launch!\""))
+			message_admins("if crash chance")
 			return FALSE
 		if(crash_chance > 10 && prob(crash_chance))
 			undock()

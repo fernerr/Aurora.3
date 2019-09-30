@@ -33,7 +33,7 @@ var/datum/controller/subsystem/processing/shuttle/shuttle_controller
 	settings = list(
 					1, 10, locate(/area/shuttle/escape/centcom), locate(/area/shuttle/escape/station), locate(/area/shuttle/escape/transit), NORTH, SHUTTLE_TRANSIT_DURATION_RETURN,
 					locate(/area/shuttle/escape/centcom),	/area/shuttle/escape/crashed, "escape_shuttle",
-					"escape_dock", "centcom_dock"
+					"escape_dock", "centcom_dock", /turf/simulated/shuttle_roof
 	)
 	shuttle.init_shuttle(settings)
 
@@ -49,7 +49,7 @@ var/datum/controller/subsystem/processing/shuttle/shuttle_controller
 	settings = list(
 					1, 10, locate(/area/supply/dock), locate(/area/supply/station), null , NORTH, 0,
 					locate(/area/supply/dock),	/area/shuttle/escape/crashed, "supply_shuttle",
-					"cargo_bay", null
+					"cargo_bay", null, /turf/simulated/shuttle_roof
 	)
 	shuttle.init_shuttle(settings)
 	shuttles["Supply"] = shuttle
@@ -61,7 +61,7 @@ var/datum/controller/subsystem/processing/shuttle/shuttle_controller
 	settings = list(
 					1, 5, locate(/area/shuttle/arrival/centcom), locate(/area/shuttle/arrival/station), locate(/area/shuttle/arrival/transit),
 					EAST, 60, locate(/area/shuttle/arrival/centcom), null, "arrival_shuttle",
-					"arrival_dock", "centcom_setup"
+					"arrival_dock", "centcom_setup", /turf/simulated/shuttle_roof
 	)
 	shuttle.init_shuttle(settings)
 	shuttles["Arrival"] = shuttle

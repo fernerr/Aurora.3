@@ -10,10 +10,10 @@
 
 /datum/shuttle/ferry/escape_pod/init_shuttle(var/list/settings)
 	..()
-	destinations[1] = settings[13]
-	destinations[2] = settings[14]
-	destinations[3] = settings[15]
-	destinations[4] = settings[16]
+	destinations[1] = settings[14]
+	destinations[2] = settings[15]
+	destinations[3] = settings[16]
+	destinations[4] = settings[17]
 
 /datum/shuttle/ferry/escape_pod/init_docking_controllers()
 	..()

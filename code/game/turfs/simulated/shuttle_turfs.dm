@@ -12,7 +12,8 @@
 		/obj/structure/window/shuttle,
 		/obj/machinery/door/airlock,
 		/obj/machinery/door/unpowered/shuttle,
-		/obj/structure/shuttle/engine/propulsion
+		/obj/structure/shuttle/engine/propulsion,
+		/turf/simulated/floor/shuttle/engine_mount
 	)
 /turf/simulated/wall/shuttle/Initialize(mapload)
 	. = ..(mapload,"shuttle")
@@ -87,23 +88,11 @@
 
 //--Floors--//
 
-/decl/flooring/shuttle
-	name = "shuttle floor"
-	desc = "Typical shuttle flooring."
-	icon = 'icons/turf/shuttle.dmi'
-	icon_base = "floor"
-	flags = TURF_ACID_IMMUNE
-	apply_thermal_conductivity = 0.025
-	apply_heat_capacity = 325000
-	can_paint = 1
-
-/decl/flooring/shuttle/yellow
-	icon_base = "floor2"
-
 /turf/simulated/floor/shuttle
 	name = "shuttle floor"
 	icon = 'icons/turf/shuttle.dmi'
 	icon_state = "floor"
+	roof_flags = ROOF_CLEANUP
 	initial_flooring = /decl/flooring/shuttle
 	footstep_sound = "concretestep"
 
@@ -127,6 +116,52 @@
 	icon_state = "floor7"
 	initial_flooring = /decl/flooring/shuttle/black
 
+/turf/simulated/floor/shuttle/tan
+	icon_state = "floor8"
+	initial_flooring = /decl/flooring/shuttle/tan
+
+/turf/simulated/floor/shuttle/dark_blue
+	icon_state = "floor9"
+	initial_flooring = /decl/flooring/shuttle/dark_blue
+
+/turf/simulated/floor/shuttle/engine_mount
+	name = "engine mount"
+	icon_state = "vfloor"
+	initial_flooring = /decl/flooring/shuttle/engine_mount
+
+//--Roofs--//
+
+/turf/simulated/shuttle_roof
+	name = "shuttle roof"
+	icon = 'icons/turf/smooth/roof_white.dmi'
+	icon_state = "roof_white"
+	smooth = SMOOTH_DIAGONAL|SMOOTH_TRUE
+	smooth_underlays = TRUE
+	oxygen = 0
+	nitrogen = 0
+	roof_type = null
+	canSmoothWith = list(
+			/turf/simulated/shuttle_roof
+	)
+
+/turf/simulated/shuttle_roof/dark
+	icon = 'icons/turf/smooth/roof_dark.dmi'
+	icon_state = "roof_dark"
+	canSmoothWith = list(
+			/turf/simulated/shuttle_roof/dark
+	)
 
 
+/turf/simulated/shuttle_roof/legion
+	name = "dropship roof"
+	icon = 'icons/turf/smooth/roof_legion.dmi'
+	icon_state = "roof_legion"
+	canSmoothWith = list(
+			/turf/simulated/shuttle_roof/legion
+	)
 
+
+/turf/simulated/shuttle_roof/ex_act(severity)
+	if(severity == 1)
+		src.ChangeTurf(baseturf)
+	return

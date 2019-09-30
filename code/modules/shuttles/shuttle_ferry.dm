@@ -31,6 +31,7 @@
 	docking_controller_tag = settings[10]
 	dock_target_station = settings[11]
 	dock_target_offsite = settings[12]
+	shuttle_roof_type = settings[13]
 
 	scan_shuttle()
 

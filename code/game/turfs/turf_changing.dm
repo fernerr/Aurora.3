@@ -142,6 +142,11 @@
 	other.icon = icon
 	other.icon_state = icon_state
 	other.underlays = underlays.Copy()
+	other.name = name
+	other.layer = layer
+	other.decals = decals
+	other.roof_flags = roof_flags
+	other.roof_type = roof_type
 
 	if (our_overlays)
 		other.our_overlays = our_overlays
@@ -164,9 +169,4 @@
 
 	SSair.mark_for_update(other)
 
-	other.name = name
-	other.layer = layer
-	other.roof_flags = roof_flags
-	other.roof_type = roof_type
-	other.baseturf = baseturf
 	other.update_icon()

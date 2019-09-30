@@ -42,7 +42,7 @@
 		pod = new/datum/shuttle/ferry/escape_pod()
 		settings = list(
 					1, 10, locate(areas_p[x][1]), locate(areas_p[x][5]), locate(areas_p[x][3]), NORTH, SHUTTLE_TRANSIT_DURATION_RETURN + rand(-30, 60),
-					locate(areas_p[x][1]),	null, "escape_pod_[x]", "escape_pod_[x]_berth", null,
+					locate(areas_p[x][1]),	null, "escape_pod_[x]", "escape_pod_[x]_berth", null, /turf/simulated/shuttle_roof,
 					areas_p[x][2], areas_p[x][5], areas_p[x][4], areas_p[x][6]
 		)
 		pod.init_shuttle(settings)
@@ -64,7 +64,7 @@
 	settings = list(
 					1, 10, locate(/area/shuttle/transport1/centcom), locate(/area/shuttle/transport1/station), null, EAST, 0,
 					locate(/area/shuttle/transport1/centcom),	/area/shuttle/transport1/crashed, "centcom_shuttle",
-					"centcom_shuttle_dock_airlock", "centcom_shuttle_bay"
+					"centcom_shuttle_dock_airlock", "centcom_shuttle_bay", /turf/simulated/shuttle_roof
 	)
 	shuttle.init_shuttle(settings)
 	shuttles["Centcom"] = shuttle
@@ -74,7 +74,7 @@
 	settings = list(
 					1, 10, locate(/area/shuttle/administration/centcom), locate(/area/shuttle/administration/station), null, NORTH, 0,
 					locate(/area/shuttle/administration/centcom),	/area/shuttle/administration/crashed, "admin_shuttle",
-					"admin_shuttle_dock_airlock", "admin_shuttle_bay"
+					"admin_shuttle_dock_airlock", "admin_shuttle_bay", /turf/simulated/shuttle_roof/dark
 	)
 	shuttle.init_shuttle(settings)
 	shuttles["Administration"] = shuttle
@@ -86,7 +86,7 @@
 	settings = list(
 					1, 10, locate(/area/merchant_ship/start), locate(/area/merchant_ship/docked), null, EAST, 0,
 					locate(/area/merchant_ship/start),	/area/merchant_ship/crashed, "merchant_shuttle",
-					"merchant_shuttle_dock", "merchant_station"
+					"merchant_shuttle_dock", "merchant_station", /turf/simulated/shuttle_roof
 	)
 	shuttle.init_shuttle(settings)
 	shuttles["Merchant"] = shuttle
@@ -97,7 +97,7 @@
 	settings = list(
 					0, 10, locate(/area/shuttle/specops/station), locate(/area/shuttle/specops/centcom), null, WEST, 0,
 					locate(/area/shuttle/specops/station),	/area/shuttle/specops/crashed, "specops_shuttle_port",
-					"specops_shuttle_port", "specops_shuttle_fore"
+					"specops_shuttle_port", "specops_shuttle_fore", /turf/simulated/shuttle_roof/dark
 	)
 	ERT.init_shuttle(settings)
 	shuttles["Special Operations"] = ERT
@@ -160,7 +160,7 @@
 	settings = list(
 					1, 10, locate(/area/shuttle/legion/centcom), locate(/area/shuttle/legion/docked),
 					locate(/area/shuttle/legion/transit), EAST, 75, locate(/area/shuttle/legion/centcom),
-					/area/shuttle/legion/crashed, "legion_shuttle", "legion_shuttle_dock", "legion_hangar"
+					/area/shuttle/legion/crashed, "legion_shuttle", "legion_shuttle_dock", "legion_hangar", /turf/simulated/shuttle_roof/legion
 	)
 	shuttle.init_shuttle(settings)
 	shuttles["Tau Ceti Foreign Legion"] = shuttle
@@ -172,7 +172,7 @@
 	settings = list(
 					1, 10, locate(/area/shuttle/research/station), locate(/area/shuttle/research/away),
 					null, EAST, 0, locate(/area/shuttle/research/station),
-					/area/shuttle/research/crashed, "science_shuttle", "science_bridge", null
+					/area/shuttle/research/crashed, "science_shuttle", "science_bridge", null, /turf/simulated/shuttle_roof
 	)
 	shuttle.init_shuttle(settings)
 	shuttles["Research"] = shuttle
