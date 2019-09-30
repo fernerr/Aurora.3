@@ -11,9 +11,9 @@
 	anchored = 1
 	atmos_canpass = CANPASS_NEVER
 
-	CanPass(atom/movable/mover, turf/target, height, air_group)
-		if(!height || air_group) return 0
-		else return ..()
+/obj/structure/shuttle/window/CanPass(atom/movable/mover, turf/target, height, air_group)
+	if(!height || air_group) return 0
+	else return ..()
 
 /obj/structure/shuttle/engine
 	name = "engine"
@@ -33,6 +33,36 @@
 	name = "propulsion"
 	icon_state = "propulsion"
 	opacity = 1
+	var/health = 500
+
+/obj/structure/shuttle/engine/propulsion/bullet_act(var/obj/item/projectile/Proj)
+	var/damage = Proj.get_structure_damage()
+	if(!damage)
+		return
+
+	health -= damage
+
+	add_overlay("sparks")
+	if(health <= 0)
+		qdel(src)
+
+/obj/structure/shuttle/engine/propulsion/ex_act(severity)
+	switch(severity)
+		if(1.0)
+			health = 0
+			return
+		if(2.0)
+			health -= 250
+		if(3.0)
+			health -= 100
+	add_overlay("sparks")
+	if(health <= 0)
+		qdel(src)
+
+/obj/structure/shuttle/engine/propulsion/proc/update_damage()
+	if(health <= 0)
+		qdel(src)
+	return
 
 /obj/structure/shuttle/engine/propulsion/burst
 	name = "burst"
@@ -48,3 +78,21 @@
 /obj/structure/shuttle/engine/router
 	name = "router"
 	icon_state = "router"
+
+/obj/structure/shuttle/engine/big
+	name = "big engine"
+	icon_state = "nozzle"
+
+/obj/structure/shuttle/engine/propulsion/examine(var/mob/M)
+	..()
+	var/ratio = health / initial(health)
+	if(ratio < 1)
+		to_chat(M, span("warning", "\The [src] is slightly damaged!"))
+	else if(ratio <= 0.75)
+		to_chat(M, span("warning", "\The [src] is moderatily damaged!"))
+	else if(ratio <= 0.5)
+		to_chat(M, span("warning", "\The [src] is severely damaged!"))
+	else if(ratio <= 0.25)
+		to_chat(M, span("warning", "\The [src] is about to break!"))
+	else
+		to_chat(M, "\The [src] is in perfect condition.")

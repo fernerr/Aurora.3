@@ -1,6 +1,7 @@
 /datum/map/exodus/setup_shuttles()
 	var/datum/shuttle/ferry/shuttle
 	var/list/shuttles = shuttle_controller.shuttles
+	var/list/settings = list()
 
 	shuttle = new/datum/shuttle/ferry/escape_pod()
 	shuttle.location = 0
@@ -178,7 +179,7 @@
 		"Mining Asteroid" = locate(/area/syndicate_station/mining),
 		"Arrivals dock" = locate(/area/syndicate_station/arrivals_dock)
 		)
-	
+
 	MS.docking_controller_tag = "merc_shuttle"
 	MS.destination_dock_targets = list(
 		"Mercenary Base" = "merc_base",
@@ -196,13 +197,15 @@
 	// Tau Ceti Foreign Legion
 
 	shuttle = new()
-	shuttle.location = 1
-	shuttle.warmup_time = 10
-	shuttle.area_offsite = locate(/area/shuttle/legion/centcom)
-	shuttle.area_station = locate(/area/shuttle/legion/station)
+	settings = list(
+					1, 10, locate(/area/shuttle/legion/centcom), locate(/area/shuttle/legion/docked),
+					locate(/area/shuttle/legion/transit), EAST, 75, locate(/area/shuttle/legion/centcom),
+					/area/shuttle/legion/crashed, "legion_shuttle", "legion_shuttle_dock", "legion_hangar"
+	)
+	shuttle.init_shuttle(settings)
 	shuttles["Tau Ceti Foreign Legion"] = shuttle
 	START_PROCESSING(shuttle_controller, shuttle)
-	
+
 	// Merchant Shuttle
 
 	shuttle = new()

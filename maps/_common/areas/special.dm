@@ -169,6 +169,9 @@
 	icon_state = "shuttle"
 	centcomm_area = 1
 
+/area/syndicate_station/crashed
+	name = "\improper Crashed Mercenary Shuttle"
+
 /area/wizard_station
 	name = "\improper Wizard's Den"
 	icon_state = "yellow"
@@ -202,7 +205,7 @@
 	base_turf = /turf/unsimulated/floor/asteroid/ash
 
 /area/skipjack_station/above
-	name = "\improper Above the Station"
+	name = "\improper Telecomms Roof"
 	icon_state = "northwest"
 
 /area/skipjack_station/under
@@ -213,6 +216,13 @@
 	name = "\improper Caverns"
 	icon_state = "southeast"
 	base_turf = /turf/unsimulated/floor/asteroid/ash
+
+/area/skipjack_station/above2
+	name = "\improper Pool Roof"
+	icon_state = "northeast"
+
+/area/skipjack_station/crashed
+	name = "\improper Crashed Skipjack"
 
 //DJSTATION
 
@@ -259,6 +269,11 @@
 	icon_state = "southwest"
 	station_area = 1
 	base_turf = /turf/unsimulated/floor/asteroid/ash
+
+/area/merchant_ship/crashed
+	name = "\improper Crashed Merchant Ship"
+	flags = SPAWN_ROOF
+
 
 /area/beach
 	name = "Keelin's private beach"

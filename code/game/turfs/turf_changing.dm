@@ -66,7 +66,7 @@
 	if (lighting_overlay && lighting_overlay.loc != src)
 		// This is a hack, but I can't figure out why the fuck they're not on the correct turf in the first place.
 		lighting_overlay.forceMove(src, harderforce = TRUE)
-		
+
 	affecting_lights = old_affecting_lights
 	corners = old_corners
 
@@ -164,4 +164,9 @@
 
 	SSair.mark_for_update(other)
 
+	other.name = name
+	other.layer = layer
+	other.roof_flags = roof_flags
+	other.roof_type = roof_type
+	other.baseturf = baseturf
 	other.update_icon()
