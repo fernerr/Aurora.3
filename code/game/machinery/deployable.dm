@@ -141,6 +141,9 @@ for reference:
 	else
 		return 0
 
+/obj/structure/barricade/steel/New(var/newloc)
+	.=..(newloc,"steel")
+
 //Actual Deployable machinery stuff
 /obj/machinery/deployable
 	name = "deployable"

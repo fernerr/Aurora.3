@@ -125,6 +125,53 @@
 	mob_name_pick_message = "Pick a callsign or last-name."
 
 
+/datum/ghostspawner/human/admin/blacksite_enforcer
+	short_name = "blacksite_enf"
+	name = "Blacksite Enforcer"
+	desc = "Debrief returning field operatives. Maintain order and protect the base from hostile elements."
+
+	enabled = FALSE
+	spawnpoints = list("Blacksite_Enforcer")
+	req_perms = null
+	req_perms_edit = R_CCIAA
+	max_count = 3
+
+	//Vars related to human mobs
+	outfit = /datum/outfit/admin/blacksite
+	possible_species = list("Human")
+	possible_genders = list(MALE,FEMALE)
+	allow_appearance_change = APPEARANCE_PLASTICSURGERY
+
+	assigned_role = "Blacksite Enforcer"
+	special_role = "Blacksite Enforcer"
+	respawn_flag = null
+
+	mob_name = null
+	mob_name_prefix = "Enf. "
+	mob_name_pick_message = "Pick a callsign or last-name."
+
+/datum/ghostspawner/human/admin/blacksite_lieutenant
+	short_name = "blacksite_lt"
+	name = "Blacksite Lieutenant"
+	desc = "Command your enforcers. Debrief returning field operatives. Maintain order and protect the base from hostile elements."
+
+	landmark_name = "Blacksite_LT"
+	req_perms = R_CCIAA
+
+	//Vars related to human mobs
+	outfit = /datum/outfit/admin/blacksite/lieutenant
+	possible_species = list("Human")
+	possible_genders = list(MALE,FEMALE)
+	allow_appearance_change = APPEARANCE_PLASTICSURGERY
+
+	assigned_role = "Blacksite Lieutenant"
+	special_role = "Blacksite Lieutenant"
+	respawn_flag = null
+
+	mob_name = null
+	mob_name_prefix = "Lt. "
+	mob_name_pick_message = "Pick a callsign or last-name."
+
 
 /client/proc/despawn()
 	set name = "Despawn"

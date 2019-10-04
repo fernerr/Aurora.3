@@ -719,6 +719,17 @@
 	armor = list(melee = 10, bullet = 5, laser = 5,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.7
 
+/obj/item/clothing/under/enforcer
+	name = "enforcer jumpsuit"
+	desc = "A gunmetal colored jumpsuit fabricated out of some kind of interwoven synthetic fibres of unknown origin. It’s light, form-fitting and yet surprisingly sturdy."
+	icon_state = "enforcer"
+	worn_state = "enforcer"
+	armor = list(melee = 20, bullet = 10, laser = 10,energy = 10, bomb = 10, bio = 0, rad = 10)
+	siemens_coefficient = 0.7
+	has_sensor = 0
+	canremove = 0
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
 /obj/item/clothing/under/rank/dispatch
 	name = "dispatcher's uniform"
 	desc = "A dress shirt and khakis with a security patch sewn on."
@@ -744,7 +755,7 @@
 	icon_state = "lance_dress_f"
 	item_state = "lance_dress_f"
 	worn_state = "lance_dress_f"
-	
+
 
 /obj/item/clothing/under/dress/lance_dress/male
 	name = "lance dress uniform"

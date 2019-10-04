@@ -91,7 +91,7 @@
 							/obj/item/weapon/reagent_containers/glass/bottle/dexalin_plus = 1,
 							/obj/item/weapon/reagent_containers/glass/bottle/epinephrine = 1,
 							/obj/item/weapon/reagent_containers/glass/bottle/spaceacillin = 1,
-							
+
 						)
 	accessory_contents = list(/obj/item/weapon/gun/energy/pulse/pistol = 1)
 	var/id_access = "Lance Medic"
@@ -462,6 +462,55 @@
 	)
 
 	id_access = "Death Commando"
+
+/datum/outfit/admin/blacksite
+	name = "Blacksite Enforcer"
+
+	uniform = /obj/item/clothing/under/enforcer
+	suit = /obj/item/clothing/suit/armor/enforcer
+	shoes = /obj/item/clothing/shoes/swat
+	gloves = /obj/item/clothing/gloves/swat/tactical
+	l_ear = /obj/item/device/radio/headset/syndicate
+	glasses = /obj/item/clothing/glasses/sunglasses/aviator
+	mask = /obj/item/clothing/mask/gas/tactical
+	head = /obj/item/clothing/head/helmet/enforcer
+	id = /obj/item/weapon/card/id/syndicate
+	back = null
+	r_pocket = /obj/item/weapon/shield/energy
+	suit_store = /obj/item/weapon/gun/energy/rifle/laser/xray
+	belt = /obj/item/weapon/storage/belt/ninja
+
+	belt_contents = list(
+		/obj/item/weapon/grenade/flashbang = 1,
+		/obj/item/weapon/handcuffs/ziptie = 1,
+		/obj/item/weapon/reagent_containers/spray/pepper = 1,
+		/obj/item/weapon/melee/telebaton = 1,
+		/obj/item/weapon/melee/energy/sword = 1,
+		/obj/item/ammo_magazine/c45x = 2
+	)
+	var/id_access = "Syndicate Agent"
+	id_icon = "centcom"
+
+/datum/outfit/admin/blacksite/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+
+	if(H && H.w_uniform)
+
+		var/obj/item/clothing/accessory/holster/hip/holster = new(H)
+		var/obj/item/weapon/gun/projectile/automatic/x9/weapon = new(H)
+		holster.contents += weapon
+		holster.holstered = weapon
+		var/obj/item/clothing/under/rank/U = H.w_uniform
+		U.attach_accessory(null, holster)
+
+/datum/outfit/admin/blacksite/get_id_access()
+	return get_syndicate_access(id_access)
+
+/datum/outfit/admin/blacksite/lieutenant
+	name = "Blacksite Lieutenant"
+
+	mask = null
+	head = /obj/item/clothing/head/beret/enforcer
+	suit_store = null
 
 
 /datum/outfit/admin/pirate

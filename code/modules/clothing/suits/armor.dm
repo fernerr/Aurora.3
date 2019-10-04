@@ -304,6 +304,19 @@
 		else
 			to_chat(usr, "<span class='warning'>There's no gun in the holster to draw.</span>")
 
+/obj/item/clothing/suit/armor/enforcer
+	name = "enforcer armor"
+	desc = "A set of advanced combat armor of unknown make and capability. It appears to synergise and mesh with any clothing beneath it."
+	icon_state = "enforcer"
+	item_state = "enforcer"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 40, bomb = 40, bio = 0, rad = 20)
+	siemens_coefficient = 0.1
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	item_flags = STOPPRESSUREDAMAGE | THICKMATERIAL
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 //Non-hardsuit ERT armor.
 /obj/item/clothing/suit/armor/vest/ert

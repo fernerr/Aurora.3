@@ -133,6 +133,11 @@
 	desc = "A white beret adorned with the crest of an ERT detachment. Worn by commanders of Nanotrasen response teams."
 	icon_state = "centcomcaptain"
 
+/obj/item/clothing/head/beret/enforcer
+	name = "lieutenant beret"
+	desc = "A gunmetal colored beret belonging to an officer."
+	icon_state = "enforcer_beret"
+
 //Medical
 /obj/item/clothing/head/surgery
 	name = "surgical cap"
