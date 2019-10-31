@@ -178,10 +178,13 @@
 	name = "enforcer helmet"
 	desc = "A highly advanced combat helmet of unknown make and capability."
 	icon_state = "enforcer"
+	body_parts_covered = HEAD|FACE|EYES
 	flags_inv = HIDEEARS|BLOCKHAIR
 	armor = list(melee = 70, bullet = 80, laser = 60,energy = 35, bomb = 40, bio = 10, rad = 50)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	brightness_on = 3
+	light_overlay = "helmet_light_dual"
 
 /obj/item/clothing/head/helmet/augment
 	name = "augment array"
