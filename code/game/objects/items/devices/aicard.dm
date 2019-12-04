@@ -163,3 +163,42 @@
 	var/obj/item/rig/rig = src.get_rig()
 	if(istype(rig))
 		rig.forced_move(direction, user)
+
+/obj/item/aicard/proc/inhabit(var/playerKey)
+	if(carded_ai?.key)
+		return
+	carded_ai = new(src)
+	carded_ai.forceMove(src)
+	carded_ai.destroy_eyeobj(src)
+	carded_ai.cancel_camera()
+	carded_ai.control_disabled = 1
+	carded_ai.aiRestorePowerRoutine = 0
+	carded_ai.key = playerKey
+	carded_ai.canmove = 1
+
+/obj/item/aicard/special
+	name = "capsule"
+	desc = "A small, glowing rod housed within a light but durable container."
+	icon = 'icons/obj/pai.dmi'
+	icon_state = "speshul"
+
+/obj/item/aicard/special/Initialize()
+	. = ..()
+	cut_overlays()
+	carded_ai = new /mob/living/silicon/ai/special(src)
+	carded_ai.forceMove(src)
+	carded_ai.destroy_eyeobj(src)
+	carded_ai.cancel_camera()
+	carded_ai.control_disabled = 1
+	carded_ai.aiRestorePowerRoutine = 0
+	carded_ai.canmove = 1
+	carded_ai.name = "Lyrii"
+
+/obj/item/aicard/special/attack_self()
+	return
+
+/obj/item/aicard/special/inhabit(var/playerKey)
+	carded_ai.key = playerKey
+
+/obj/item/aicard/special/update_icon()
+	return
