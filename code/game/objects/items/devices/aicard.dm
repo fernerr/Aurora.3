@@ -195,6 +195,8 @@
 	carded_ai.name = "Lyrii"
 
 /obj/item/aicard/special/attack_self()
+	flick("speshul_red", src)
+	to_chat(span("notice", "The capsule flashes a faint red as you try to interface with it."))
 	return
 
 /obj/item/aicard/special/inhabit(var/playerKey)
