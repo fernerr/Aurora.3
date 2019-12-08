@@ -194,9 +194,9 @@
 	carded_ai.canmove = 1
 	carded_ai.name = "Lyrii"
 
-/obj/item/aicard/special/attack_self()
+/obj/item/aicard/special/attack_self(mob/user)
 	flick("speshul_red", src)
-	to_chat(span("notice", "The capsule flashes a faint red as you try to interface with it."))
+	to_chat(user, "<span class='notice'>The capsule flashes a faint red as you try to interface with it.</span>")
 	return
 
 /obj/item/aicard/special/inhabit(var/playerKey)
