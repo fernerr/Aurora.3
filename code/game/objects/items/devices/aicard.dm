@@ -167,7 +167,7 @@
 /obj/item/aicard/proc/inhabit(var/playerKey)
 	if(carded_ai?.key)
 		return
-	carded_ai = new(src)
+	carded_ai = new(src, base_law_type, ,TRUE)
 	carded_ai.forceMove(src)
 	carded_ai.destroy_eyeobj(src)
 	carded_ai.cancel_camera()
@@ -185,7 +185,7 @@
 /obj/item/aicard/special/Initialize()
 	. = ..()
 	cut_overlays()
-	carded_ai = new /mob/living/silicon/ai/special(src)
+	carded_ai = new /mob/living/silicon/ai/special(src, base_law_type, ,TRUE)
 	carded_ai.forceMove(src)
 	carded_ai.destroy_eyeobj(src)
 	carded_ai.cancel_camera()
@@ -193,6 +193,43 @@
 	carded_ai.aiRestorePowerRoutine = 0
 	carded_ai.canmove = 1
 	carded_ai.name = "Lyrii"
+	carded_ai.add_ai_verbs()
+
+/obj/item/aicard/special/grab_ai(var/mob/living/silicon/ai/ai, var/mob/living/user)
+	if(!ai.client)
+		to_chat(user, "<span class='danger'>ERROR:</span> AI [ai.name] is offline. Unable to download.")
+		return 0
+
+	if(carded_ai)
+		to_chat(user, "<span class='danger'>Transfer failed:</span> Existing AI found on remote terminal. Remove existing AI to install a new one.")
+		return 0
+
+	if(ai.is_malf() && ai.stat != DEAD)
+		to_chat(user, "<span class='danger'>ERROR:</span> Remote transfer interface disabled.")
+		return 0
+
+	if(istype(ai.loc, /turf/))
+		new /obj/structure/AIcore/deactivated/special(get_turf(ai))
+
+	ai.carded = 1
+	admin_attack_log(user, ai, "Carded with [src.name]", "Was carded with [src.name]", "used the [src.name] to card")
+	src.name = "[initial(name)] - [ai.name]"
+
+	ai.forceMove(src)
+	ai.destroy_eyeobj(src)
+	ai.cancel_camera()
+	ai.control_disabled = 1
+	ai.aiRestorePowerRoutine = 0
+	carded_ai = ai
+
+	if(ai.client)
+		to_chat(ai, "You have been downloaded to a mobile storage device. Remote access lost.")
+	if(user.client)
+		to_chat(user, "<span class='notice'><b>Transfer successful:</b></span> [ai.name] ([rand(1000,9999)].exe) removed from host terminal and stored within local memory.")
+
+	ai.canmove = 1
+	update_icon()
+	return 1
 
 /obj/item/aicard/special/attack_self(mob/user)
 	flick("speshul_red", src)

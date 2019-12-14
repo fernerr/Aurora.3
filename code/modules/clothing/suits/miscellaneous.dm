@@ -674,3 +674,13 @@
 		src.item_state = "caution"
 		usr.show_message("You turn the wet floor sign off.")
 	update_clothing_icon()
+
+/obj/item/clothing/suit/starchanter
+	name = "starchanter robes"
+	desc = "A set of robes, signifying the wearer as a starchanter."
+	icon = 'icons/obj/skrell_items.dmi'
+	icon_state = "starchanter_robes"
+	item_state = "starchanter_robes"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	flags_inv = HIDEJUMPSUIT
+	contained_sprite = TRUE

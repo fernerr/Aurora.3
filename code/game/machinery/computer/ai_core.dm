@@ -202,6 +202,7 @@
 	transfer.forceMove(get_turf(src))
 	transfer.create_eyeobj()
 	transfer.cancel_camera()
+	transfer.add_ai_verbs()
 	if(user)
 		to_chat(user, "<span class='notice'>Transfer successful:</span> [transfer.name] ([rand(1000,9999)].exe) downloaded to host terminal. Local copy wiped.")
 	to_chat(transfer, "You have been uploaded to a stationary terminal. Remote device connection restored.")
@@ -281,7 +282,7 @@
 		empty_playable_ai_cores += D
 		to_chat(src, "\The [id] is now <font color=\"#008000\">available</font> for latejoining AIs.")
 
-/obj/structure/AIcore/special
+/obj/structure/AIcore/deactivated/special
 	density = TRUE
 	anchored = TRUE
 	name = "Advanced Intelligence Housing"
@@ -289,11 +290,15 @@
 	icon = 'icons/mob/bigAI.dmi'
 	icon_state = "ai_core"
 
-/obj/structure/AIcore/special/inhabit(var/playerKey)
+/obj/structure/AIcore/deactivated/special/Initialize()
+	. = ..()
+	empty_playable_ai_cores -= src
+
+/obj/structure/AIcore/deactivated/special/inhabit(var/playerKey)
 	if(locate(/mob/living/silicon/ai) in src)
 		return
 
-	var/mob/living/silicon/ai/special/AI = new(loc, base_law_type,,1)
+	var/mob/living/silicon/ai/special/AI = new(loc, base_law_type, ,1)
 	AI.invisibility = 0
 	AI.key = playerKey //assign player ckey to AI
 

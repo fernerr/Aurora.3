@@ -852,10 +852,10 @@ var/list/ai_verbs_special = list(
 	var/obj/effect/overlay/hardlight/hologram //holds our hologram
 	var/materialized = FALSE // Are we currently materialized?
 
-mob/living/silicon/ai/special/SetName()
+/mob/living/silicon/ai/special/SetName()
 	..("Lyrii")
 
-mob/living/silicon/ai/special/add_ai_verbs()
+/mob/living/silicon/ai/special/add_ai_verbs()
 	src.verbs |= ai_verbs_special
 	src.verbs |= silicon_subsystems
 
