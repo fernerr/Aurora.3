@@ -1345,6 +1345,7 @@
 #include "code\modules\clothing\spacesuits\rig\suits\ert.dm"
 #include "code\modules\clothing\spacesuits\rig\suits\light.dm"
 #include "code\modules\clothing\spacesuits\rig\suits\merc.dm"
+#include "code\modules\clothing\spacesuits\rig\suits\skrell.dm"
 #include "code\modules\clothing\spacesuits\rig\suits\station.dm"
 #include "code\modules\clothing\spacesuits\rig\suits\terminator.dm"
 #include "code\modules\clothing\spacesuits\void\alien.dm"

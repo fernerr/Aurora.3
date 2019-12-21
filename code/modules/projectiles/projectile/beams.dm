@@ -32,7 +32,7 @@
 	icon_state = "hegemony"
 	damage = 30
 	armor_penetration = 5
- 
+
 	muzzle_type = /obj/effect/projectile/muzzle/hegemony
 	tracer_type = /obj/effect/projectile/tracer/hegemony
 	impact_type = /obj/effect/projectile/impact/hegemony
@@ -414,7 +414,7 @@
 	nodamage = 1
 	taser_effect = 1
 	agony = 50
-	damage_type = HALLOSS
+	damage_type = PAIN
 
 	muzzle_type = /obj/effect/projectile/muzzle/disabler
 	tracer_type = /obj/effect/projectile/tracer/disabler
