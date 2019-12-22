@@ -492,10 +492,6 @@
 		if(isliving(v))
 			var/mob/living/L = v
 			assess_and_assign(L, targets, secondarytargets)
-		else if(istype(v, /obj/mecha))
-			var/obj/mecha/M = v
-			if(M.occupant)
-				secondarytargets += M
 
 	if(!tryToShootAt(targets))
 		if(!tryToShootAt(secondarytargets) && !resetting) // if no valid targets, go for secondary targets
@@ -581,6 +577,11 @@
 
 	if(L.lying)		//if the perp is lying down, it's still a target but a less-important target
 		return lethal ? TURRET_SECONDARY_TARGET : TURRET_NOT_TARGET
+
+	if(ismech(L))
+		var/mob/living/heavy_vehicle/M = L
+		if(!M.pilots?.len)
+			return TURRET_NOT_TARGET
 
 	return TURRET_PRIORITY_TARGET	//if the perp has passed all previous tests, congrats, it is now a "shoot-me!" nominee
 
