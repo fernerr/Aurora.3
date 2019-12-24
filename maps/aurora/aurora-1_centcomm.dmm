@@ -5184,18 +5184,6 @@
 /obj/structure/lattice,
 /turf/template_noop,
 /area/template_noop)
-"ana" = (
-/obj/machinery/embedded_controller/radio/simple_docking_controller{
-	frequency = 1331;
-	id_tag = "merc_base";
-	pixel_x = -25;
-	pixel_y = -5
-	},
-/turf/unsimulated/floor{
-	icon_state = "bar";
-	dir = 2
-	},
-/area/syndicate_mothership)
 "anb" = (
 /obj/structure/table/rack,
 /obj/item/clothing/accessory/storage/pouches/black,
@@ -5302,49 +5290,9 @@
 	},
 /turf/simulated/floor/shuttle/dark_red,
 /area/syndicate_station/start)
-"anm" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8;
-	frequency = 1331;
-	id_tag = "merc_shuttle_pump"
-	},
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 1331;
-	id_tag = "merc_shuttle";
-	pixel_x = -8;
-	pixel_y = 25;
-	req_access = list(150)
-	},
-/turf/simulated/floor/shuttle/dark_red,
-/area/syndicate_station/start)
 "ann" = (
-/obj/machinery/door/airlock/external{
-	density = 1;
-	frequency = 1331;
-	id_tag = "merc_shuttle_outer";
-	name = "Ship External Access";
-	req_access = list(150)
-	},
-/obj/machinery/door/blast/regular{
-	density = 0;
-	dir = 1;
-	icon_state = "pdoor0";
-	id = "smindicate";
-	name = "Outer Airlock";
-	opacity = 0
-	},
 /turf/simulated/floor/plating,
 /area/syndicate_station/start)
-"ano" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1331;
-	id_tag = "merc_base_hatch";
-	req_access = list(150)
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/syndicate_mothership)
 "anp" = (
 /obj/machinery/door/airlock/vault{
 	name = "Armory";
@@ -5508,16 +5456,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/syndicate_station/start)
-"anI" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1331;
-	id_tag = "merc_shuttle_inner";
-	name = "Ship External Access";
-	req_access = list(0)
-	},
-/obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/floor/shuttle/dark_red,
 /area/syndicate_station/start)
 "anJ" = (
 /obj/structure/window/reinforced{
@@ -21939,6 +21877,29 @@
 	name = "plating"
 	},
 /area/centcom/distress_prep)
+"byE" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/table/stone/marble,
+/obj/item/reagent_containers/food/condiment/flour{
+	layer = 2.99;
+	pixel_x = -10;
+	pixel_y = 20
+	},
+/obj/item/reagent_containers/food/condiment/flour{
+	layer = 2.99;
+	pixel_x = 6;
+	pixel_y = 20
+	},
+/obj/item/reagent_containers/food/condiment/flour{
+	pixel_x = -4;
+	pixel_y = 17
+	},
+/obj/item/storage/box/gloves{
+	pixel_x = -8;
+	pixel_y = 3
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "bBd" = (
 /turf/unsimulated/floor{
 	icon_state = "wood"
@@ -21979,6 +21940,22 @@
 "bEh" = (
 /turf/space/transit/east/shuttlespace_ew1,
 /area/shuttle/distress/transit)
+"bJF" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
+"bKH" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1331;
+	id_tag = "skrell_shuttle";
+	name = "docking controller";
+	pixel_x = -5;
+	pixel_y = 27;
+	req_one_access = list(101);
+	tag_door = "skrell_shuttle_hatch"
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "bKL" = (
 /obj/item/stack/material/marble{
 	amount = 30
@@ -22030,6 +22007,9 @@
 	icon_state = "floor"
 	},
 /area/centcom/ferry)
+"bPZ" = (
+/turf/simulated/wall/shuttle,
+/area/shuttle/skrell_event/centcom)
 "bSI" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
@@ -22111,6 +22091,22 @@
 	icon_state = "wood"
 	},
 /area/centcom/legion/hangar5)
+"cfM" = (
+/obj/structure/table/stone/marble,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
+"cfU" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/flora/pottedplant{
+	icon_state = "plant-28"
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "chf" = (
 /obj/machinery/porta_turret/legion,
 /obj/effect/floor_decal/industrial/warning/corner{
@@ -22170,6 +22166,12 @@
 	icon_state = "engine"
 	},
 /area/centcom/legion/hangar5)
+"clI" = (
+/obj/structure/shuttle/engine/propulsion{
+	icon_state = "propulsion_l"
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "coC" = (
 /obj/structure/sign/greencross{
 	name = "Emergency Room"
@@ -22321,6 +22323,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/merchant_station/warehouse)
+"cxT" = (
+/obj/structure/window/reinforced,
+/obj/structure/bed/chair/comfy/black{
+	icon_state = "comfychair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "cyN" = (
 /obj/effect/floor_decal/corner/blue/full{
 	icon_state = "corner_white_full";
@@ -22341,6 +22351,13 @@
 	icon_state = "floor3"
 	},
 /area/centcom/legion/hangar5)
+"cAl" = (
+/obj/structure/bed/chair/office/bridge/generic{
+	icon_state = "bridge_generic";
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "cCo" = (
 /obj/structure/lattice,
 /obj/structure/window/reinforced{
@@ -22603,6 +22620,18 @@
 	icon_state = "cafeteria"
 	},
 /area/centcom/legion)
+"dbU" = (
+/obj/machinery/vending/boozeomat,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
+"dcd" = (
+/obj/structure/table/wood,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "dcT" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -22702,6 +22731,16 @@
 	},
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/distress/centcom)
+"drc" = (
+/obj/structure/shuttle/engine/heater,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "drL" = (
 /turf/space/transit/east/shuttlespace_ew10,
 /area/shuttle/distress/transit)
@@ -22908,6 +22947,12 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
+"dQg" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "dQD" = (
 /obj/structure/grille,
 /obj/machinery/door/blast/shutters{
@@ -23095,6 +23140,28 @@
 	icon_state = "wood"
 	},
 /area/centcom/distress_prep)
+"egj" = (
+/obj/effect/decal/spraystill{
+	desc = "Looks to be a dropship of some kind.";
+	icon = 'icons/obj/decals.dmi';
+	icon_state = "blv_chariot2";
+	layer = 3.5;
+	name = "The BLV Chariot";
+	pixel_x = 0;
+	pixel_y = -4
+	},
+/turf/simulated/wall/shuttle,
+/area/shuttle/skrell_event/centcom)
+"egB" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom)
 "ehC" = (
 /turf/simulated/wall/shuttle/dark/corner/underlay{
 	icon_state = "wall3";
@@ -23129,6 +23196,25 @@
 	icon_state = "floor"
 	},
 /area/centcom/legion)
+"eoi" = (
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor/grass,
+/area/shuttle/skrell_event/centcom)
+"eoU" = (
+/obj/machinery/door/airlock/freezer,
+/obj/structure/plasticflaps/airtight,
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "epk" = (
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/industrial/warning,
@@ -23243,6 +23329,13 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
+"eOy" = (
+/obj/structure/bed/chair/office/bridge/generic{
+	icon_state = "bridge_generic";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "eOF" = (
 /obj/structure/window/basic{
 	dir = 8
@@ -23361,6 +23454,42 @@
 	icon_state = "floor"
 	},
 /area/centcom/holding)
+"eST" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/table/stone/marble,
+/obj/item/material/kitchen/rollingpin,
+/obj/item/material/knife,
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_x = -10;
+	pixel_y = 20
+	},
+/obj/item/reagent_containers/food/condiment/sugar{
+	pixel_x = -4;
+	pixel_y = 20
+	},
+/obj/item/reagent_containers/food/condiment/spacespice{
+	pixel_x = -16;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/food/condiment/saltshaker{
+	pixel_x = 1;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/food/condiment/peppermill{
+	pixel_x = 7;
+	pixel_y = 14
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
+"eTQ" = (
+/obj/structure/table/wood,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "eVj" = (
 /obj/structure/table/wood/gamblingtable,
 /obj/item/trash/plate,
@@ -23380,6 +23509,17 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
+"eYj" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1331;
+	icon_state = "door_locked";
+	id_tag = "skrell_shuttle_bay_door";
+	locked = 1
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom)
 "eZa" = (
 /obj/structure/window/reinforced/crescent,
 /obj/structure/window/reinforced/crescent{
@@ -23686,6 +23826,10 @@
 	icon_state = "steel_dirty"
 	},
 /area/centcom/legion/hangar5)
+"fyp" = (
+/obj/structure/table/stone/marble,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "fzQ" = (
 /obj/machinery/vending/snack{
 	density = 0;
@@ -23746,6 +23890,12 @@
 	icon_state = "cafeteria"
 	},
 /area/centcom/legion)
+"fHF" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "fIs" = (
 /obj/machinery/door/blast/regular/open{
 	id = "tcflcheckpointouter";
@@ -23755,6 +23905,12 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
+"fIV" = (
+/obj/structure/flora/pottedplant{
+	icon_state = "plant-28"
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "fKa" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -23973,12 +24129,26 @@
 /obj/structure/sign/poster,
 /turf/unsimulated/wall/riveted,
 /area/centcom/living)
+"gct" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/bed/chair/comfy/black,
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "gdM" = (
 /obj/structure/flora/pottedplant/random,
 /turf/unsimulated/floor{
 	icon_state = "wood_light"
 	},
 /area/centcom/legion/hangar5)
+"gex" = (
+/obj/machinery/door/window/eastleft,
+/turf/simulated/floor/reinforced,
+/area/shuttle/skrell_event/centcom)
 "gfl" = (
 /obj/structure/curtain/open/shower,
 /obj/effect/floor_decal/corner/paleblue/full{
@@ -23990,6 +24160,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
+"ghz" = (
+/obj/structure/window/reinforced,
+/obj/structure/bed/chair/comfy/black{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "gid" = (
 /turf/unsimulated/floor{
 	name = "plating"
@@ -24057,6 +24237,17 @@
 	icon_state = "floor-shuttle"
 	},
 /area/centcom/legion)
+"gkG" = (
+/obj/structure/table/rack,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom)
 "glx" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -24124,6 +24315,9 @@
 	name = "plating"
 	},
 /area/centcom/legion/hangar5)
+"goL" = (
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "gpl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -24310,6 +24504,12 @@
 	icon_state = "wood-broken2"
 	},
 /area/centcom/legion/hangar5)
+"gyi" = (
+/obj/structure/table/rack,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom)
 "gCn" = (
 /obj/machinery/vending/cola{
 	name = "Free Robust Softdrinks";
@@ -24363,6 +24563,12 @@
 	icon_state = "floor"
 	},
 /area/centcom/distress_prep)
+"gGT" = (
+/obj/machinery/acting/changer,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom)
 "gHP" = (
 /obj/effect/floor_decal/corner/blue{
 	icon_state = "corner_white";
@@ -24372,6 +24578,10 @@
 	icon_state = "floor"
 	},
 /area/centcom/distress_prep)
+"gIW" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "gLc" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
@@ -24451,6 +24661,12 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
+"gUN" = (
+/turf/simulated/floor/tiled/ramp/bottom{
+	icon_state = "rampbot";
+	dir = 8
+	},
+/area/shuttle/skrell_event/centcom)
 "gVd" = (
 /obj/machinery/cryopod,
 /obj/effect/floor_decal/corner/paleblue/diagonal{
@@ -24529,6 +24745,10 @@
 /obj/item/clothing/accessory/offworlder/bracer,
 /turf/simulated/floor/wood,
 /area/merchant_station)
+"hak" = (
+/obj/structure/table/steel,
+/turf/simulated/floor/reinforced,
+/area/shuttle/skrell_event/centcom)
 "haK" = (
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/start)
@@ -24643,6 +24863,12 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
+"hxO" = (
+/obj/machinery/vending/dinnerware{
+	products = list(/obj/item/tray = 24, /obj/item/material/kitchen/utensil/fork = 24, /obj/item/material/kitchen/utensil/knife = 24, /obj/item/material/kitchen/utensil/spoon = 24, /obj/item/material/knife = 2, /obj/item/material/hatchet/butch = 2, /obj/item/reagent_containers/food/drinks/drinkingglass = 24, /obj/item/clothing/suit/chef/classic = 2, /obj/item/material/kitchen/rollingpin = 2, /obj/item/reagent_containers/cooking_container/oven = 5, /obj/item/reagent_containers/cooking_container/fryer = 4, /obj/item/storage/toolbox/lunchbox/nt = 6, /obj/item/reagent_containers/glass/beaker/bowl = 4, /obj/item/reagent_containers/glass/rag = 8)
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "hyh" = (
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/merchant/start)
@@ -24861,6 +25087,13 @@
 /obj/item/folder/blue,
 /turf/simulated/floor/carpet,
 /area/merchant_station)
+"hOD" = (
+/obj/structure/bed/chair/office/bridge/generic{
+	icon_state = "bridge_generic";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "hOG" = (
 /obj/structure/sign/christmas/lights{
 	icon_state = "xmaslights";
@@ -24899,6 +25132,17 @@
 	dir = 8
 	},
 /area/centcom/living)
+"hRC" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/bed/chair/comfy/black{
+	icon_state = "comfychair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "hSe" = (
 /obj/item/reagent_containers/food/snacks/skrellsnacks{
 	pixel_x = -10;
@@ -25058,6 +25302,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/merchant_station/warehouse)
+"ibw" = (
+/obj/structure/shuttle/engine/propulsion{
+	icon_state = "propulsion_r"
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "ibx" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -25133,6 +25383,14 @@
 	icon_state = "asteroidplating"
 	},
 /area/template_noop)
+"iha" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/unsimulated/floor{
+	name = "plating"
+	},
+/area/centcom)
 "ihn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/cigbutt,
@@ -25248,6 +25506,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station/warehouse)
+"itS" = (
+/obj/machinery/door/unpowered/shuttle,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "iuk" = (
 /obj/machinery/door/airlock/glass_command{
 	name = "Prefect Office";
@@ -25455,6 +25717,15 @@
 /obj/structure/bed/roller,
 /turf/simulated/floor/tiled/white,
 /area/merchant_station)
+"iPI" = (
+/obj/structure/window/reinforced,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/obj/structure/table/reinforced,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "iQk" = (
 /obj/structure/closet{
 	icon_closed = "blue";
@@ -25689,6 +25960,13 @@
 	dir = 8
 	},
 /area/centcom/living)
+"jgh" = (
+/obj/structure/table/wood,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "jgo" = (
 /obj/machinery/suit_cycler/freelancer,
 /turf/unsimulated/floor{
@@ -25709,6 +25987,13 @@
 	icon_state = "floor"
 	},
 /area/centcom/holding)
+"jiD" = (
+/obj/structure/toilet{
+	icon_state = "toilet00";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "jiF" = (
 /obj/effect/wingrille_spawn/reinforced/crescent,
 /obj/machinery/door/blast/odin/shuttle/ert,
@@ -25741,6 +26026,13 @@
 	icon_state = "floor"
 	},
 /area/centcom/distress_prep)
+"jnL" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/table/wood,
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "jon" = (
 /obj/machinery/door/airlock/centcom{
 	icon = 'icons/obj/doors/Doorcomglass.dmi';
@@ -25785,6 +26077,17 @@
 /obj/structure/flora/pottedplant/random,
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/start)
+"jqH" = (
+/obj/structure/window/reinforced,
+/obj/structure/bed/chair/comfy/black{
+	icon_state = "comfychair_preview";
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "jrX" = (
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "legion weapon cabinet";
@@ -26095,6 +26398,13 @@
 "jXZ" = (
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
+"kcU" = (
+/obj/structure/closet/crate/secure/large/reinforced,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "kdI" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/floor{
@@ -26377,6 +26687,12 @@
 	icon_state = "floor"
 	},
 /area/centcom/checkpoint/fore)
+"kHn" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "kHB" = (
 /obj/item/modular_computer/console/preset/merchant,
 /turf/simulated/floor/tiled/dark,
@@ -26473,6 +26789,10 @@
 	icon_state = "floor"
 	},
 /area/centcom/checkpoint/fore)
+"kTs" = (
+/obj/structure/computerframe,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "kTO" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
@@ -26566,6 +26886,16 @@
 "ldQ" = (
 /turf/unsimulated/wall/darkshuttlewall,
 /area/centcom/legion/hangar5)
+"leh" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/bed/chair/comfy/black{
+	icon_state = "comfychair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "lgu" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/floor{
@@ -26655,6 +26985,16 @@
 /obj/item/hand_labeler,
 /turf/simulated/floor/tiled,
 /area/merchant_station/warehouse)
+"lti" = (
+/obj/structure/shuttle/engine/heater,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "lwP" = (
 /obj/structure/window/reinforced,
 /turf/unsimulated/floor{
@@ -26776,6 +27116,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/start)
+"lIN" = (
+/obj/structure/bed/chair/office/bridge/generic{
+	icon_state = "bridge_generic";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "lIO" = (
 /obj/machinery/light{
 	dir = 4;
@@ -27040,6 +27387,13 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
+"mov" = (
+/obj/structure/window/reinforced,
+/obj/structure/bed/chair/comfy/black{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "mpg" = (
 /obj/structure/sink{
 	pixel_y = 28
@@ -27076,6 +27430,9 @@
 	name = "Blast door"
 	},
 /area/centcom/distress_prep)
+"msp" = (
+/turf/simulated/wall/shuttle/cardinal,
+/area/shuttle/skrell_event/centcom)
 "mtP" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Hangar 5";
@@ -27319,6 +27676,12 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
+"mSA" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "mSN" = (
 /turf/simulated/wall/shuttle/dark/corner/underlay{
 	icon_state = "wall3";
@@ -27360,6 +27723,22 @@
 	},
 /turf/simulated/floor/shuttle,
 /area/shuttle/escape/centcom)
+"mXH" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
+"mYs" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "mZZ" = (
 /obj/structure/closet/secure_closet/merchant,
 /obj/structure/window/reinforced{
@@ -27384,6 +27763,10 @@
 	dir = 10
 	},
 /area/centcom/spawning)
+"nbq" = (
+/obj/structure/table/wood,
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "nco" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin{
@@ -27428,6 +27811,12 @@
 	dir = 1
 	},
 /area/centcom/legion)
+"ngB" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "nhp" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -27582,6 +27971,11 @@
 	icon_state = "floor3"
 	},
 /area/centcom/legion/hangar5)
+"noD" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/door/airlock/glass,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "npL" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/pill_bottle/kelotane{
@@ -28286,6 +28680,25 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/start)
+"ooJ" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/microwave{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/obj/structure/table/stone/marble,
+/obj/structure/closet/secure_closet/freezer/wall{
+	layer = 2.99;
+	pixel_x = -28;
+	pixel_y = 0
+	},
+/obj/machinery/microwave{
+	layer = 2.91;
+	pixel_x = 5;
+	pixel_y = 21
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "opd" = (
 /obj/machinery/atmospherics/unary/cryo_cell,
 /turf/unsimulated/floor{
@@ -28528,6 +28941,13 @@
 	icon_state = "dark"
 	},
 /area/centcom/living)
+"oKj" = (
+/obj/structure/table/wood,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "oLA" = (
 /obj/structure/sign/christmas/lights{
 	icon_state = "xmaslights";
@@ -28538,6 +28958,10 @@
 	dir = 1
 	},
 /area/centcom/holding)
+"oMe" = (
+/obj/machinery/door/unpowered/shuttle,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "oMF" = (
 /obj/structure/table/standard,
 /obj/machinery/vending/wallmed1{
@@ -28764,6 +29188,13 @@
 	icon_state = "floor"
 	},
 /area/centcom/distress_prep)
+"pbc" = (
+/obj/structure/bed/chair/comfy/black{
+	icon_state = "comfychair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "pcj" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/regular{
@@ -28898,6 +29329,20 @@
 	name = "plating"
 	},
 /area/centcom/legion)
+"prO" = (
+/obj/structure/table/wood,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
+"ptj" = (
+/obj/structure/table/standard,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 2
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom)
 "pvT" = (
 /obj/effect/floor_decal/industrial/warning/full,
 /obj/effect/decal/fake_object{
@@ -28908,6 +29353,17 @@
 	name = "plating"
 	},
 /area/centcom/legion)
+"pyY" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
+"pAn" = (
+/obj/structure/bed/chair/office/bridge/generic{
+	icon_state = "bridge_generic";
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "pBa" = (
 /obj/effect/floor_decal/corner/blue{
 	icon_state = "corner_white";
@@ -29004,6 +29460,20 @@
 	},
 /turf/simulated/floor/carpet,
 /area/merchant_station)
+"pKd" = (
+/obj/structure/table/reinforced,
+/obj/machinery/chemical_dispenser/coffeemaster/full{
+	pixel_x = 3;
+	pixel_y = 7
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
+"pKl" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "pKS" = (
 /obj/structure/grille,
 /obj/machinery/door/blast/regular/open{
@@ -29022,6 +29492,18 @@
 	icon_state = "wood"
 	},
 /area/centcom/distress_prep)
+"pNR" = (
+/obj/structure/table/reinforced,
+/obj/machinery/chemical_dispenser/bar_alc/full{
+	layer = 3.1;
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/obj/structure/sign/double/barsign{
+	pixel_y = 31
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "pOh" = (
 /obj/structure/closet/secure_closet/personal,
 /turf/unsimulated/floor{
@@ -29039,6 +29521,14 @@
 	icon_state = "carpetside"
 	},
 /area/centcom/living)
+"pQl" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "pQJ" = (
 /obj/structure/shuttle/engine/propulsion{
 	name = "spaceship engine";
@@ -29054,6 +29544,15 @@
 	name = "plating"
 	},
 /area/centcom/distress_prep)
+"pSy" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/bed/chair/comfy/black{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "pTm" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -29078,6 +29577,13 @@
 	icon_state = "tiles"
 	},
 /area/centcom/legion/hangar5)
+"pUT" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/bed/chair/comfy/black,
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "pVd" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/adv{
@@ -29340,6 +29846,9 @@
 "qyq" = (
 /turf/space/transit/east/shuttlespace_ew5,
 /area/shuttle/legion/transit)
+"qyH" = (
+/turf/simulated/floor/tiled/ramp/bottom,
+/area/shuttle/skrell_event/centcom)
 "qzV" = (
 /obj/machinery/door/airlock/glass_command{
 	name = "Cell 3";
@@ -29691,6 +30200,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station/warehouse)
+"rbD" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/bed/padded,
+/turf/simulated/floor/reinforced,
+/area/shuttle/skrell_event/centcom)
 "rbI" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -29753,6 +30269,10 @@
 	icon_state = "floor"
 	},
 /area/centcom/legion/hangar5)
+"rdg" = (
+/obj/structure/bed/padded,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "rdA" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	icon_state = "intact";
@@ -30105,6 +30625,19 @@
 	dir = 4
 	},
 /area/centcom/legion)
+"rOh" = (
+/obj/structure/sink{
+	dir = 4;
+	icon_state = "sink";
+	pixel_x = 12
+	},
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "rPy" = (
 /turf/simulated/wall/shuttle,
 /area/shuttle/merchant/start)
@@ -30289,6 +30822,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
+"sij" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/bed/chair/comfy/black,
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "siv" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -30348,6 +30891,12 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
+"skP" = (
+/obj/structure/table/standard,
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom)
 "slC" = (
 /obj/effect/wingrille_spawn/reinforced/crescent,
 /obj/structure/sign/securearea{
@@ -30391,6 +30940,9 @@
 	},
 /turf/simulated/floor/shuttle/black,
 /area/shuttle/legion/centcom)
+"smS" = (
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "smT" = (
 /obj/structure/bed/chair/shuttle{
 	icon_state = "shuttlechair";
@@ -30452,6 +31004,13 @@
 	icon_state = "floor3"
 	},
 /area/centcom/legion/hangar5)
+"ssw" = (
+/obj/structure/bed/chair/office/bridge/generic{
+	icon_state = "bridge_generic";
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "svM" = (
 /obj/effect/decal/fake_object{
 	density = 1;
@@ -30690,6 +31249,16 @@
 "sZi" = (
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_dininghall)
+"sZj" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/bed/chair/comfy/black{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "taH" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/unsimulated/floor{
@@ -30842,6 +31411,14 @@
 	},
 /turf/simulated/wall/shuttle/legion,
 /area/shuttle/legion/centcom)
+"tlB" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/appliance/cooker/oven{
+	pixel_y = 4
+	},
+/obj/structure/table/stone/marble,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "tmg" = (
 /obj/structure/window/reinforced/crescent{
 	icon_state = "rwindow";
@@ -30851,6 +31428,27 @@
 /obj/structure/flora/grass/green,
 /turf/simulated/floor/snow,
 /area/centcom/spawning)
+"tnl" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/table/stone/marble,
+/obj/machinery/reagentgrinder{
+	pixel_x = 10;
+	pixel_y = 17
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_x = -8;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/glass/beaker/bowl{
+	pixel_y = 3
+	},
+/obj/structure/sink/kitchen{
+	layer = 2.7;
+	pixel_x = -5;
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "tnJ" = (
 /obj/machinery/vending/snack{
 	name = "Free Chocolate Corp";
@@ -30941,6 +31539,9 @@
 	icon_state = "wood-broken5"
 	},
 /area/centcom/legion)
+"trQ" = (
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "tvs" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -30960,6 +31561,10 @@
 	icon_state = "floor"
 	},
 /area/centcom/checkpoint/fore)
+"tAW" = (
+/obj/machinery/door/unpowered/shuttle,
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "tDN" = (
 /obj/structure/punching_bag,
 /turf/unsimulated/floor{
@@ -31048,6 +31653,13 @@
 	icon_state = "wood-broken5"
 	},
 /area/centcom/legion/hangar5)
+"tMa" = (
+/obj/structure/shuttle/engine/heater,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "tOh" = (
 /obj/structure/table/rack,
 /obj/item/rig/retro/equipped,
@@ -31093,6 +31705,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/merchant_station/warehouse)
+"tQh" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/smartfridge/secure,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "tQq" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/energy/blaster/rifle{
@@ -31154,6 +31771,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
+"tUd" = (
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "tUf" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -31266,6 +31890,15 @@
 	},
 /turf/simulated/floor/holofloor/snow,
 /area/holodeck/source_dininghall)
+"uhg" = (
+/obj/machinery/door/window/westright,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "ujs" = (
 /obj/structure/sign/christmas/lights{
 	icon_state = "xmaslights";
@@ -31382,6 +32015,17 @@
 	},
 /turf/simulated/floor/holofloor/snow,
 /area/holodeck/source_picnicarea)
+"uwc" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 2
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
+"uxr" = (
+/obj/structure/computerframe,
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "uzX" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
@@ -31424,6 +32068,13 @@
 	icon_state = "floor"
 	},
 /area/centcom/checkpoint/fore)
+"uIP" = (
+/obj/structure/bed/chair/office/bridge/generic{
+	icon_state = "bridge_generic";
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "uKc" = (
 /obj/structure/shuttle/engine/router{
 	icon_state = "router";
@@ -31797,6 +32448,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station/warehouse)
+"vrR" = (
+/obj/structure/bed/chair/comfy/black{
+	icon_state = "chair_padding_over";
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "vsg" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/heavy_vehicle/premade/light/legion,
@@ -31804,6 +32462,19 @@
 	name = "plating"
 	},
 /area/centcom/legion/hangar5)
+"vwL" = (
+/obj/structure/toilet{
+	dir = 4;
+	pixel_y = 5
+	},
+/turf/simulated/floor/reinforced,
+/area/shuttle/skrell_event/centcom)
+"vwR" = (
+/obj/effect/wingrille_spawn/reinforced/crescent,
+/turf/unsimulated/floor{
+	name = "plating"
+	},
+/area/centcom)
 "vwU" = (
 /obj/structure/table/wood,
 /obj/item/material/ashtray/bronze,
@@ -31816,6 +32487,14 @@
 	icon_state = "carpet5-1"
 	},
 /area/centcom/legion/hangar5)
+"vxt" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/table/stone/marble,
+/obj/machinery/chem_master/condimaster/alt{
+	pixel_y = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "vyG" = (
 /obj/structure/bed/chair/comfy/beige{
 	dir = 8
@@ -31839,6 +32518,21 @@
 /obj/machinery/computer/shuttle_control/merchant,
 /turf/simulated/floor/wood,
 /area/merchant_station)
+"vBr" = (
+/obj/structure/window/shuttle,
+/obj/structure/grille,
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
+"vCb" = (
+/obj/structure/window/reinforced,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/obj/structure/table/reinforced,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "vCq" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -31943,6 +32637,10 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
+"vDD" = (
+/obj/structure/closet/secure_closet/personal,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "vEy" = (
 /obj/effect/floor_decal/spline/plain{
 	icon_state = "spline_plain";
@@ -31985,6 +32683,14 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
+"vGS" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 2
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "vHg" = (
 /turf/simulated/wall/shuttle/dark/corner/underlay{
 	dir = 5;
@@ -32015,6 +32721,13 @@
 	icon_state = "carpetside"
 	},
 /area/centcom/legion/hangar5)
+"vLP" = (
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
+"vLS" = (
+/obj/machinery/smartfridge/foodheater,
+/turf/simulated/wall/shuttle,
+/area/shuttle/skrell_event/centcom)
 "vML" = (
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "legion weapon cabinet";
@@ -32047,6 +32760,18 @@
 	icon_state = "floor3"
 	},
 /area/centcom/legion/hangar5)
+"vOE" = (
+/obj/effect/decal/spraystill{
+	desc = "A dropship of some kind.";
+	icon = 'icons/obj/decals.dmi';
+	icon_state = "blv_chariot1";
+	layer = 3.5;
+	name = "The BLV Chariot";
+	pixel_x = 0;
+	pixel_y = -4
+	},
+/turf/simulated/wall/shuttle,
+/area/shuttle/skrell_event/centcom)
 "vPK" = (
 /obj/vehicle/droppod/legion{
 	connected_blastdoor = "tcfl_droppod_4"
@@ -32055,6 +32780,11 @@
 	icon_state = "panelscorched"
 	},
 /area/centcom/legion/hangar5)
+"vQa" = (
+/obj/structure/window/reinforced,
+/obj/structure/table/wood,
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "vQA" = (
 /obj/effect/floor_decal/corner/blue{
 	icon_state = "corner_white";
@@ -32079,6 +32809,20 @@
 	icon_state = "cult"
 	},
 /area/centcom/legion)
+"vTQ" = (
+/obj/structure/table/rack,
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1331;
+	id_tag = "skrell_shuttle_bay";
+	name = "shuttle bay controller";
+	pixel_x = -24;
+	pixel_y = 0;
+	tag_door = "skrell_shuttle_bay_door"
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom)
 "vUd" = (
 /obj/structure/window/reinforced/crescent,
 /obj/structure/window/reinforced/crescent{
@@ -32194,6 +32938,19 @@
 	icon_state = "floor"
 	},
 /area/centcom/legion/hangar5)
+"wek" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
+"weC" = (
+/obj/machinery/door/airlock/silver,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "wfn" = (
 /turf/simulated/wall/shuttle/dark/corner/underlay{
 	dir = 6;
@@ -32202,6 +32959,13 @@
 	underlay_dir = 4
 	},
 /area/shuttle/distress/centcom)
+"wgo" = (
+/obj/structure/table/reinforced,
+/obj/machinery/chemical_dispenser/bar_soft/full{
+	pixel_y = 5
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "wgr" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -32291,6 +33055,17 @@
 	icon_state = "floor"
 	},
 /area/centcom/distress_prep)
+"wnK" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1331;
+	icon_state = "door_locked";
+	id_tag = "skrell_shuttle_hatch";
+	locked = 1;
+	name = "Shuttle Hatch";
+	req_access = list(13)
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "wpg" = (
 /turf/unsimulated/floor{
 	name = "plating";
@@ -32308,6 +33083,15 @@
 	dir = 1
 	},
 /area/centcom/living)
+"wrH" = (
+/obj/structure/table/stone/marble,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "wsm" = (
 /obj/structure/window/reinforced{
 	icon_state = "rwindow";
@@ -32333,6 +33117,13 @@
 	icon_state = "whitegreen"
 	},
 /area/centcom/legion)
+"wvE" = (
+/obj/machinery/computer/shuttle_control{
+	req_access = list(150);
+	shuttle_tag = "Skrell"
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "wxq" = (
 /obj/effect/decal/fake_object{
 	desc = "<i>In memoriam.</i> The picture shows a human posing with a gauss thumper trying their best to look tough. The background appears to be the Towers cargo bay.";
@@ -32392,6 +33183,10 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
+"wxP" = (
+/obj/machinery/door/window/southleft,
+/turf/simulated/floor/tiled/ramp/bottom,
+/area/shuttle/skrell_event/centcom)
 "wyr" = (
 /obj/structure/bed/chair/comfy/brown{
 	dir = 8
@@ -32448,6 +33243,12 @@
 	dir = 2
 	},
 /area/centcom/distress_prep)
+"wCp" = (
+/turf/simulated/floor/tiled/ramp/bottom{
+	icon_state = "rampbot";
+	dir = 4
+	},
+/area/shuttle/skrell_event/centcom)
 "wDU" = (
 /obj/structure/table/standard,
 /turf/unsimulated/floor{
@@ -32885,6 +33686,14 @@
 	icon_state = "floor"
 	},
 /area/centcom/legion)
+"xvw" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "xvz" = (
 /obj/structure/table/wood,
 /obj/item/clothing/accessory/holster/armpit,
@@ -32924,6 +33733,10 @@
 	icon_state = "steel_dirty"
 	},
 /area/centcom/legion/hangar5)
+"xwG" = (
+/obj/structure/sign/patients_only,
+/turf/simulated/wall/shuttle,
+/area/shuttle/skrell_event/centcom)
 "xwI" = (
 /obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/floor/plating,
@@ -32976,6 +33789,10 @@
 	},
 /turf/simulated/floor/shuttle,
 /area/shuttle/escape/centcom)
+"xyQ" = (
+/obj/structure/bed/chair/comfy/black,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "xAR" = (
 /obj/machinery/door/blast/odin{
 	density = 0;
@@ -33222,6 +34039,12 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
+"xRm" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/tan,
+/area/shuttle/skrell_event/centcom)
 "xTM" = (
 /obj/effect/floor_decal/corner/grey/diagonal,
 /obj/structure/table/steel,
@@ -55100,10 +55923,10 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+bPZ
+clI
 aaM
 aaM
 aaM
@@ -55341,27 +56164,27 @@ aaM
 aaM
 aaM
 aaM
+bPZ
+bPZ
+vBr
+vBr
+vBr
+bPZ
+vBr
+vBr
+vBr
+bPZ
+clI
 aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+bPZ
+bPZ
+bPZ
+clI
 aaM
 aaM
 aaM
@@ -55597,30 +56420,30 @@ aaM
 aaM
 aaM
 aaM
+bPZ
+bPZ
+bPZ
+trQ
+trQ
+trQ
+xvw
+trQ
+trQ
+trQ
+bPZ
+bPZ
+clI
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+msp
+bPZ
+bPZ
+bPZ
+bPZ
+bPZ
+bPZ
 aaM
 aaM
 aaM
@@ -55847,37 +56670,37 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+vBr
+vBr
+bPZ
+vBr
+vBr
+bPZ
+bPZ
+fIV
+trQ
+trQ
+trQ
+trQ
+trQ
+trQ
+trQ
+trQ
+bPZ
+bPZ
+vBr
+vBr
+bPZ
+bPZ
+prO
+prO
+bPZ
+hak
+vwL
+lti
+pyY
 aaM
 aaM
 aaM
@@ -56103,38 +56926,38 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+bPZ
+trQ
+trQ
+bPZ
+fIV
+xyQ
+eTQ
+vrR
+trQ
+trQ
+eoi
+leh
+oKj
+leh
+cfU
+trQ
+trQ
+trQ
+xvw
+trQ
+fIV
+bPZ
+trQ
+trQ
+trQ
+bPZ
+rbD
+gex
+tMa
+pyY
 aaM
 aaM
 aaM
@@ -56359,39 +57182,39 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+bPZ
+bPZ
+pQl
+trQ
+weC
+trQ
+trQ
+trQ
+trQ
+trQ
+trQ
+qyH
+vLP
+vLP
+vLP
+eoi
+wCp
+wCp
+eoi
+fIV
+trQ
+trQ
+bPZ
+trQ
+pbc
+pbc
+bPZ
+kcU
+ngB
+tMa
+pyY
 aaM
 aaM
 aaM
@@ -56615,40 +57438,40 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+msp
+trQ
+weC
+trQ
+trQ
+bPZ
+trQ
+fHF
+fHF
+trQ
+trQ
+trQ
+qyH
+vLP
+vLP
+vLP
+vLP
+vLP
+vLP
+vLP
+hRC
+trQ
+trQ
+itS
+trQ
+prO
+prO
+bPZ
+mYs
+smS
+tMa
+pyY
 aaM
 aaM
 aaM
@@ -56872,40 +57695,40 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+vBr
+kTs
+vCb
+gUN
+bPZ
+bPZ
+noD
+bPZ
+uhg
+cfM
+fyp
+mSA
+trQ
+sij
+pKl
+vLP
+eOy
+eOy
+eOy
+vLP
+vLP
+vLP
+vQa
+trQ
+trQ
+bPZ
+pQl
+dQg
+dQg
+bPZ
+hOD
+smS
+tMa
+pyY
 aaM
 aaM
 aaM
@@ -57129,40 +57952,40 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+vBr
+uIP
+trQ
+trQ
+bPZ
+byE
+gIW
+vLS
+trQ
+trQ
+fyp
+mSA
+trQ
+jnL
+vLP
+eOy
+nbq
+nbq
+nbq
+eOy
+vLP
+vLP
+mov
+trQ
+trQ
+bPZ
+trQ
+trQ
+fIV
+bPZ
+uxr
+smS
+drc
+pyY
 aaM
 aaM
 aaM
@@ -57385,41 +58208,41 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+msp
+trQ
+trQ
+bPZ
+msp
+eST
+gIW
+noD
+trQ
+trQ
+fyp
+mSA
+trQ
+pUT
+vLP
+nbq
+nbq
+vLP
+nbq
+nbq
+eOy
+vLP
+bJF
+fIV
+trQ
+bPZ
+bPZ
+bPZ
+bPZ
+bPZ
+bPZ
+eoU
+msp
+bPZ
 aaM
 aaM
 aaM
@@ -57642,40 +58465,40 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+vBr
+kTs
+trQ
+trQ
+bPZ
+ooJ
+gIW
+vGS
+vOE
+hxO
+trQ
+fyp
+mSA
+trQ
+eoi
+nbq
+nbq
+vLP
+vLP
+vLP
+nbq
+nbq
+ssw
+vLP
+jqH
+trQ
+trQ
+oMe
+rOh
+jiD
+bPZ
+goL
+goL
+bPZ
 aaM
 aaM
 aaM
@@ -57899,40 +58722,40 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+vBr
+wvE
+cAl
+uwc
+bPZ
+tlB
+gIW
+gIW
+egj
+pKd
+trQ
+fyp
+mSA
+trQ
+wxP
+vLP
+vLP
+vLP
+vLP
+vLP
+vLP
+nbq
+ssw
+vLP
+vQa
+trQ
+trQ
+bPZ
+bPZ
+bPZ
+bPZ
+mXH
+goL
+eoU
 aaM
 aaM
 aaM
@@ -58156,40 +58979,40 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+vBr
+kTs
+trQ
+trQ
+bPZ
+tQh
+gIW
+vGS
+bPZ
+wgo
+trQ
+fyp
+mSA
+trQ
+eoi
+nbq
+nbq
+vLP
+vLP
+vLP
+nbq
+nbq
+ssw
+vLP
+ghz
+trQ
+trQ
+oMe
+rOh
+jiD
+bPZ
+goL
+goL
+bPZ
 aaM
 aaM
 aaM
@@ -58413,41 +59236,41 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+msp
+bKH
+trQ
+bPZ
+msp
+tnl
+gIW
+bPZ
+pNR
+trQ
+fyp
+mSA
+trQ
+pUT
+vLP
+nbq
+nbq
+vLP
+nbq
+nbq
+pAn
+vLP
+bJF
+fIV
+trQ
+bPZ
+bPZ
+bPZ
+bPZ
+bPZ
+bPZ
+eoU
+msp
+bPZ
 aaM
 aaM
 aaM
@@ -58671,40 +59494,40 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+vBr
+lIN
+trQ
+trQ
+bPZ
+vxt
+gIW
+bPZ
+dbU
+trQ
+fyp
+mSA
+trQ
+jnL
+vLP
+pAn
+nbq
+nbq
+nbq
+pAn
+vLP
+vLP
+cxT
+trQ
+trQ
+itS
+trQ
+trQ
+fIV
+bPZ
+smS
+smS
+lti
+pyY
 aaM
 aaM
 aaM
@@ -58928,40 +59751,40 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+vBr
+kTs
+iPI
+wCp
+bPZ
+bPZ
+noD
+bPZ
+wrH
+fyp
+fyp
+mSA
+trQ
+gct
+xRm
+vLP
+pAn
+pAn
+pAn
+vLP
+vLP
+vLP
+vQa
+trQ
+trQ
+xwG
+rdg
+trQ
+trQ
+bPZ
+smS
+smS
+tMa
+pyY
 aaM
 aaM
 aaM
@@ -59185,40 +60008,40 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+msp
+trQ
+weC
+trQ
+trQ
+bPZ
+kHn
+kHn
+kHn
+trQ
+trQ
+trQ
+qyH
+vLP
+vLP
+vLP
+vLP
+vLP
+vLP
+vLP
+sZj
+trQ
+trQ
+bPZ
+wek
+trQ
+trQ
+bPZ
+mYs
+smS
+tMa
+pyY
 aaM
 aaM
 aaM
@@ -59443,39 +60266,39 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+bPZ
+bPZ
+pQl
+trQ
+weC
+trQ
+trQ
+trQ
+trQ
+trQ
+trQ
+qyH
+vLP
+vLP
+vLP
+eoi
+gUN
+gUN
+eoi
+fIV
+trQ
+trQ
+bPZ
+rdg
+trQ
+trQ
+bPZ
+smS
+smS
+tMa
+pyY
 aaM
 aaM
 aaM
@@ -59701,38 +60524,38 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+bPZ
+trQ
+trQ
+bPZ
+fIV
+xyQ
+dcd
+vrR
+trQ
+trQ
+eoi
+pSy
+jgh
+pSy
+cfU
+trQ
+trQ
+trQ
+tUd
+trQ
+fIV
+bPZ
+vDD
+trQ
+trQ
+bPZ
+smS
+smS
+tMa
+pyY
 aaM
 aaM
 aaM
@@ -59959,37 +60782,37 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+vBr
+vBr
+bPZ
+vBr
+vBr
+bPZ
+bPZ
+fIV
+trQ
+trQ
+trQ
+trQ
+trQ
+trQ
+trQ
+trQ
+bPZ
+bPZ
+vBr
+vBr
+bPZ
+bPZ
+trQ
+trQ
+tAW
+smS
+smS
+drc
+pyY
 aaM
 aaM
 aaM
@@ -60223,30 +61046,30 @@ aaM
 aaM
 aaM
 aaM
+bPZ
+bPZ
+bPZ
+trQ
+tUd
+trQ
+trQ
+trQ
+tUd
+trQ
+bPZ
+bPZ
+ibw
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+msp
+bPZ
+bPZ
+bPZ
+bPZ
+bPZ
+bPZ
 aaM
 aaM
 aaM
@@ -60481,27 +61304,27 @@ aaM
 aaM
 aaM
 aaM
+bPZ
+bPZ
+wnK
+bPZ
+vBr
+vBr
+vBr
+bPZ
+wnK
+bPZ
+ibw
 aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+bPZ
+bPZ
+bPZ
+ibw
 aaM
 aaM
 aaM
@@ -60738,26 +61561,26 @@ aaM
 aaM
 aaM
 aaM
+apU
+apU
+eYj
+apU
+vwR
+vwR
+vwR
+apU
+eYj
+apU
+apU
 aaM
 aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+bPZ
+bPZ
+bPZ
+ibw
 aaM
 aaM
 aaM
@@ -60995,17 +61818,17 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+apU
+vTQ
+auJ
+egB
+auJ
+auJ
+auJ
+egB
+auJ
+skP
+apU
 aaM
 aaM
 aaM
@@ -61252,17 +62075,17 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+apU
+gkG
+auJ
+auJ
+auJ
+gGT
+auJ
+auJ
+auJ
+ptj
+apU
 aaM
 aaM
 aaM
@@ -61509,17 +62332,17 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+apU
+gyi
+auJ
+auJ
+auJ
+auJ
+auJ
+auJ
+auJ
+skP
+apU
 aaM
 aaM
 aaM
@@ -61766,17 +62589,17 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+apU
+gyi
+auJ
+auJ
+auJ
+auJ
+auJ
+auJ
+auJ
+skP
+apU
 aaM
 aaM
 aaM
@@ -62023,17 +62846,17 @@ aaM
 aaM
 aaM
 aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
-aaM
+apU
+gkG
+auJ
+auJ
+auJ
+gGT
+auJ
+auJ
+auJ
+ptj
+apU
 aaM
 aaM
 aaM
@@ -62281,15 +63104,15 @@ apU
 apU
 apU
 apU
-apU
-apU
-apU
-apU
-apU
-apU
-apU
-apU
-apU
+gyi
+auJ
+auJ
+auJ
+auJ
+auJ
+auJ
+auJ
+skP
 apU
 apU
 apU
@@ -62538,15 +63361,15 @@ aqd
 aqt
 aqt
 aqt
-aqt
-aqt
-aqt
-aqt
-aqt
-aqt
-aqt
-aqt
-aqt
+iha
+iha
+iha
+iha
+iha
+iha
+iha
+iha
+iha
 aqt
 aqt
 aqt
@@ -91301,7 +92124,7 @@ aaM
 alH
 anl
 anx
-anI
+alS
 anT
 alS
 alS
@@ -91556,7 +92379,7 @@ aaM
 aaM
 aaM
 alH
-anm
+any
 any
 anH
 anU
@@ -92070,8 +92893,8 @@ aaM
 aaM
 ale
 amZ
-ano
-ano
+ama
+ama
 anJ
 ait
 ale
@@ -92584,8 +93407,8 @@ amH
 amO
 ajI
 ajI
-ano
-ano
+ama
+ama
 ajI
 ait
 ale
@@ -92840,7 +93663,7 @@ amw
 amw
 amw
 amw
-ana
+amw
 amw
 amw
 anK

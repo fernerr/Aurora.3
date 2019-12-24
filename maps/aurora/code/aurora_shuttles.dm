@@ -197,3 +197,15 @@
 
 	shuttles["Distress"] = distress
 	START_PROCESSING(shuttle_controller, distress)
+
+	// Skrell Event Shuttle
+	shuttle = new()
+	shuttle.location = 1
+	shuttle.warmup_time = 15
+	shuttle.area_offsite = locate(/area/shuttle/skrell_event/centcom)
+	shuttle.area_station = locate(/area/shuttle/skrell_event/station)
+	shuttle.docking_controller_tag = "skrell_shuttle"
+	shuttle.dock_target_station = "skrell_shuttle_dock"
+	shuttle.dock_target_offsite = "skrell_shuttle_bay"
+	shuttles["Skrell"] = shuttle
+	START_PROCESSING(shuttle_controller, shuttle)

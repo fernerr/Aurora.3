@@ -284,3 +284,19 @@
 	name = "\improper Merchant Docking Port"
 	base_turf = /turf/unsimulated/floor/asteroid/ash
 	station_area = 1
+
+/area/shuttle/skrell_event
+	flags = RAD_SHIELDED | SPAWN_ROOF
+	sound_env = LARGE_SOFTFLOOR
+
+/area/shuttle/skrell_event/centcom
+	name = "\improper Shuttle - Centcom"
+	icon_state = "shuttlered"
+	base_turf = /turf/space
+	centcomm_area = 1
+
+/area/shuttle/skrell_event/station
+	name = "\improper Shuttle - Station"
+	icon_state = "shuttlered2"
+	base_turf = /turf/unsimulated/floor/asteroid/ash
+	station_area = 1
