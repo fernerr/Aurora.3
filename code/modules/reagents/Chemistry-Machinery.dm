@@ -50,7 +50,7 @@
 		user.drop_from_inventory(B,src)
 		to_chat(user, "You add the beaker to the machine!")
 		src.updateUsrDialog()
-		icon_state = "mixer1"
+		icon_state = "[initial(icon_state)]1"
 
 	else if(istype(B, /obj/item/storage/pill_bottle))
 
@@ -146,7 +146,7 @@
 				beaker:loc = src.loc
 				beaker = null
 				reagents.clear_reagents()
-				icon_state = "mixer0"
+				icon_state = "[initial(icon_state)]"
 		else if (href_list["createpill"] || href_list["createpill_multiple"])
 			var/count = 1
 
@@ -281,6 +281,9 @@
 /obj/machinery/chem_master/condimaster
 	name = "CondiMaster 3000"
 	condi = 1
+
+/obj/machinery/chem_master/condimaster/alt
+	icon_state = "mixer_alt0"
 
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////

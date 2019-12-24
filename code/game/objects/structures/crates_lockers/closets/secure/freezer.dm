@@ -57,6 +57,28 @@
 	for(var/i = 0, i < 2, i++)
 		new /obj/item/storage/fancy/egg_box(src)
 
+/obj/structure/closet/secure_closet/freezer/wall
+	name = "wall refrigerator"
+	desc = "It's a wall-mounted refrigerator."
+	icon_state = "freezer_wall_locked"
+	icon_closed = "freezer_wall_unlocked"
+	icon_locked = "freezer_wall_locked"
+	icon_opened = "freezer_wall_open"
+	icon_broken = "freezer_wall_spark"
+	icon_off = "freezer_wall_off"
+	anchored = 1
+	density = 0
+	wall_mounted = 1
+	req_access = null
+
+/obj/structure/closet/secure_closet/freezer/wall/fill()
+	..()
+	for(var/i = 0, i < 7, i++)
+		new /obj/item/reagent_containers/food/drinks/milk(src)
+	for(var/i = 0, i < 5, i++)
+		new /obj/item/reagent_containers/food/drinks/soymilk(src)
+	for(var/i = 0, i < 5, i++)
+		new /obj/item/storage/fancy/egg_box(src)
 
 /obj/structure/closet/secure_closet/freezer/money
 	name = "freezer"
