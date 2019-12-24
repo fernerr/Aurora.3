@@ -22153,6 +22153,18 @@
 	dir = 4
 	},
 /area/centcom/spawning)
+"cll" = (
+/obj/effect/decal/spraystill{
+	desc = "The name of this ship.";
+	icon = 'icons/obj/decals.dmi';
+	icon_state = "skrell_ship3";
+	layer = 3.5;
+	name = "The JFV Placeholder";
+	pixel_x = 8;
+	pixel_y = -6
+	},
+/turf/simulated/wall/shuttle,
+/area/shuttle/skrell_event/centcom)
 "clq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
@@ -23142,13 +23154,13 @@
 /area/centcom/distress_prep)
 "egj" = (
 /obj/effect/decal/spraystill{
-	desc = "Looks to be a dropship of some kind.";
+	desc = "The name of this ship.";
 	icon = 'icons/obj/decals.dmi';
-	icon_state = "blv_chariot2";
+	icon_state = "skrell_ship2";
 	layer = 3.5;
-	name = "The BLV Chariot";
-	pixel_x = 0;
-	pixel_y = -4
+	name = "The JFV Placeholder";
+	pixel_x = 8;
+	pixel_y = -5
 	},
 /turf/simulated/wall/shuttle,
 /area/shuttle/skrell_event/centcom)
@@ -28694,7 +28706,7 @@
 	},
 /obj/machinery/microwave{
 	layer = 2.91;
-	pixel_x = 5;
+	pixel_x = 4;
 	pixel_y = 21
 	},
 /turf/simulated/floor/tiled/dark,
@@ -32762,12 +32774,12 @@
 /area/centcom/legion/hangar5)
 "vOE" = (
 /obj/effect/decal/spraystill{
-	desc = "A dropship of some kind.";
+	desc = "The name of this ship.";
 	icon = 'icons/obj/decals.dmi';
-	icon_state = "blv_chariot1";
+	icon_state = "skrell_ship1";
 	layer = 3.5;
-	name = "The BLV Chariot";
-	pixel_x = 0;
+	name = "The JFV Placeholder";
+	pixel_x = 8;
 	pixel_y = -4
 	},
 /turf/simulated/wall/shuttle,
@@ -33734,7 +33746,11 @@
 	},
 /area/centcom/legion/hangar5)
 "xwG" = (
-/obj/structure/sign/patients_only,
+/obj/structure/sign/patients_only{
+	desc = "A big blue sign that reads 'CREW ONLY'..'";
+	icon_state = "crew_only";
+	name = "\improper CREW ONLY"
+	},
 /turf/simulated/wall/shuttle,
 /area/shuttle/skrell_event/centcom)
 "xwI" = (
@@ -58987,7 +59003,7 @@ bPZ
 tQh
 gIW
 vGS
-bPZ
+cll
 wgo
 trQ
 fyp
