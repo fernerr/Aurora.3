@@ -500,6 +500,10 @@
 	health = 160
 	maxhealth = 160
 
+/obj/structure/window/shuttle/palepurple
+	health = 300
+	maxhealth = 300
+
 /obj/structure/window/shuttle/crescent
 	desc = "It looks rather strong."
 

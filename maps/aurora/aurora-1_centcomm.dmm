@@ -21954,7 +21954,7 @@
 	req_one_access = list(101);
 	tag_door = "skrell_shuttle_hatch"
 	},
-/turf/simulated/floor/shuttle/dark_blue,
+/turf/simulated/floor/shuttle/black,
 /area/shuttle/skrell_event/centcom)
 "bKL" = (
 /obj/item/stack/material/marble{
@@ -22008,7 +22008,7 @@
 	},
 /area/centcom/ferry)
 "bPZ" = (
-/turf/simulated/wall/shuttle,
+/turf/simulated/wall/shuttle/palepurple,
 /area/shuttle/skrell_event/centcom)
 "bSI" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -22153,18 +22153,6 @@
 	dir = 4
 	},
 /area/centcom/spawning)
-"cll" = (
-/obj/effect/decal/spraystill{
-	desc = "The name of this ship.";
-	icon = 'icons/obj/decals.dmi';
-	icon_state = "skrell_ship3";
-	layer = 3.5;
-	name = "The JFV Placeholder";
-	pixel_x = 8;
-	pixel_y = -6
-	},
-/turf/simulated/wall/shuttle,
-/area/shuttle/skrell_event/centcom)
 "clq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
@@ -22368,7 +22356,7 @@
 	icon_state = "bridge_generic";
 	dir = 1
 	},
-/turf/simulated/floor/shuttle/dark_blue,
+/turf/simulated/floor/shuttle/black,
 /area/shuttle/skrell_event/centcom)
 "cCo" = (
 /obj/structure/lattice,
@@ -23162,7 +23150,7 @@
 	pixel_x = 8;
 	pixel_y = -5
 	},
-/turf/simulated/wall/shuttle,
+/turf/simulated/wall/shuttle/palepurple,
 /area/shuttle/skrell_event/centcom)
 "egB" = (
 /obj/machinery/light{
@@ -23221,11 +23209,6 @@
 	},
 /obj/structure/window/reinforced,
 /turf/simulated/floor/grass,
-/area/shuttle/skrell_event/centcom)
-"eoU" = (
-/obj/machinery/door/airlock/freezer,
-/obj/structure/plasticflaps/airtight,
-/turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
 "epk" = (
 /obj/structure/table/reinforced,
@@ -25736,7 +25719,7 @@
 	icon_state = "tube1"
 	},
 /obj/structure/table/reinforced,
-/turf/simulated/floor/shuttle/dark_blue,
+/turf/simulated/floor/shuttle/black,
 /area/shuttle/skrell_event/centcom)
 "iQk" = (
 /obj/structure/closet{
@@ -26250,6 +26233,18 @@
 /obj/machinery/door/window/westleft,
 /turf/simulated/floor/lino,
 /area/merchant_station)
+"jFE" = (
+/obj/effect/decal/spraystill{
+	desc = "The name of this ship.";
+	icon = 'icons/obj/decals.dmi';
+	icon_state = "skrell_ship3";
+	layer = 3.5;
+	name = "The JFV Placeholder";
+	pixel_x = 8;
+	pixel_y = -6
+	},
+/turf/simulated/wall/shuttle/palepurple,
+/area/shuttle/skrell_event/centcom)
 "jGf" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -26781,6 +26776,10 @@
 	icon_state = "cafeteria"
 	},
 /area/centcom/legion)
+"kRj" = (
+/obj/machinery/door/airlock/silver,
+/turf/simulated/floor/shuttle/black,
+/area/shuttle/skrell_event/centcom)
 "kSv" = (
 /obj/machinery/button/remote/airlock{
 	desiredstate = 1;
@@ -26803,7 +26802,7 @@
 /area/centcom/checkpoint/fore)
 "kTs" = (
 /obj/structure/computerframe,
-/turf/simulated/floor/shuttle/dark_blue,
+/turf/simulated/floor/shuttle/black,
 /area/shuttle/skrell_event/centcom)
 "kTO" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -27133,7 +27132,7 @@
 	icon_state = "bridge_generic";
 	dir = 4
 	},
-/turf/simulated/floor/shuttle/dark_blue,
+/turf/simulated/floor/shuttle/black,
 /area/shuttle/skrell_event/centcom)
 "lIO" = (
 /obj/machinery/light{
@@ -27443,7 +27442,7 @@
 	},
 /area/centcom/distress_prep)
 "msp" = (
-/turf/simulated/wall/shuttle/cardinal,
+/turf/simulated/wall/shuttle/palepurple/cardinal,
 /area/shuttle/skrell_event/centcom)
 "mtP" = (
 /obj/machinery/door/airlock/centcom{
@@ -28589,6 +28588,9 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
+"ofX" = (
+/turf/simulated/floor/shuttle/black,
+/area/shuttle/skrell_event/centcom)
 "ogE" = (
 /obj/structure/lattice/catwalk/indoor,
 /obj/machinery/door/blast/odin/open{
@@ -30550,6 +30552,10 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
+"rEY" = (
+/obj/machinery/door/airlock/hatch,
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "rFl" = (
 /obj/structure/table/rack,
 /obj/item/rig/retro/equipped,
@@ -32032,7 +32038,7 @@
 	icon_state = "tube1";
 	dir = 2
 	},
-/turf/simulated/floor/shuttle/dark_blue,
+/turf/simulated/floor/shuttle/black,
 /area/shuttle/skrell_event/centcom)
 "uxr" = (
 /obj/structure/computerframe,
@@ -32085,7 +32091,7 @@
 	icon_state = "bridge_generic";
 	dir = 8
 	},
-/turf/simulated/floor/shuttle/dark_blue,
+/turf/simulated/floor/shuttle/black,
 /area/shuttle/skrell_event/centcom)
 "uKc" = (
 /obj/structure/shuttle/engine/router{
@@ -32531,7 +32537,7 @@
 /turf/simulated/floor/wood,
 /area/merchant_station)
 "vBr" = (
-/obj/structure/window/shuttle,
+/obj/structure/window/shuttle/palepurple,
 /obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
@@ -32543,7 +32549,7 @@
 	pixel_y = 0
 	},
 /obj/structure/table/reinforced,
-/turf/simulated/floor/shuttle/dark_blue,
+/turf/simulated/floor/shuttle/black,
 /area/shuttle/skrell_event/centcom)
 "vCq" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -32738,7 +32744,7 @@
 /area/shuttle/skrell_event/centcom)
 "vLS" = (
 /obj/machinery/smartfridge/foodheater,
-/turf/simulated/wall/shuttle,
+/turf/simulated/wall/shuttle/palepurple,
 /area/shuttle/skrell_event/centcom)
 "vML" = (
 /obj/structure/closet/secure_closet/guncabinet{
@@ -32782,7 +32788,7 @@
 	pixel_x = 8;
 	pixel_y = -4
 	},
-/turf/simulated/wall/shuttle,
+/turf/simulated/wall/shuttle/palepurple,
 /area/shuttle/skrell_event/centcom)
 "vPK" = (
 /obj/vehicle/droppod/legion{
@@ -33134,7 +33140,7 @@
 	req_access = list(150);
 	shuttle_tag = "Skrell"
 	},
-/turf/simulated/floor/shuttle/dark_blue,
+/turf/simulated/floor/shuttle/black,
 /area/shuttle/skrell_event/centcom)
 "wxq" = (
 /obj/effect/decal/fake_object{
@@ -33751,7 +33757,7 @@
 	icon_state = "crew_only";
 	name = "\improper CREW ONLY"
 	},
-/turf/simulated/wall/shuttle,
+/turf/simulated/wall/shuttle/palepurple,
 /area/shuttle/skrell_event/centcom)
 "xwI" = (
 /obj/structure/closet/walllocker/emerglocker/south,
@@ -57457,8 +57463,8 @@ aaM
 bPZ
 bPZ
 msp
-trQ
-weC
+ofX
+kRj
 trQ
 trQ
 bPZ
@@ -57970,8 +57976,8 @@ aaM
 aaM
 vBr
 uIP
-trQ
-trQ
+ofX
+ofX
 bPZ
 byE
 gIW
@@ -58226,8 +58232,8 @@ aaM
 aaM
 bPZ
 msp
-trQ
-trQ
+ofX
+ofX
 bPZ
 msp
 eST
@@ -58256,10 +58262,10 @@ bPZ
 bPZ
 bPZ
 bPZ
-eoU
+goL
 msp
 bPZ
-aaM
+bPZ
 aaM
 aaM
 aaM
@@ -58483,8 +58489,8 @@ aaM
 aaM
 vBr
 kTs
-trQ
-trQ
+ofX
+ofX
 bPZ
 ooJ
 gIW
@@ -58514,9 +58520,9 @@ jiD
 bPZ
 goL
 goL
-bPZ
-aaM
-aaM
+rEY
+goL
+rEY
 aaM
 aaM
 aaM
@@ -58771,9 +58777,9 @@ bPZ
 bPZ
 mXH
 goL
-eoU
-aaM
-aaM
+msp
+goL
+msp
 aaM
 aaM
 aaM
@@ -58997,13 +59003,13 @@ aaM
 aaM
 vBr
 kTs
-trQ
-trQ
+ofX
+ofX
 bPZ
 tQh
 gIW
 vGS
-cll
+jFE
 wgo
 trQ
 fyp
@@ -59028,9 +59034,9 @@ jiD
 bPZ
 goL
 goL
-bPZ
-aaM
-aaM
+rEY
+goL
+rEY
 aaM
 aaM
 aaM
@@ -59255,7 +59261,7 @@ aaM
 bPZ
 msp
 bKH
-trQ
+ofX
 bPZ
 msp
 tnl
@@ -59284,10 +59290,10 @@ bPZ
 bPZ
 bPZ
 bPZ
-eoU
+goL
 msp
 bPZ
-aaM
+bPZ
 aaM
 aaM
 aaM
@@ -59512,8 +59518,8 @@ aaM
 aaM
 vBr
 lIN
-trQ
-trQ
+ofX
+ofX
 bPZ
 vxt
 gIW
@@ -60027,8 +60033,8 @@ aaM
 bPZ
 bPZ
 msp
-trQ
-weC
+ofX
+kRj
 trQ
 trQ
 bPZ
