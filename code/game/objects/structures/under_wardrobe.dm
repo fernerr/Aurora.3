@@ -58,6 +58,11 @@
 
 	return 1
 
+/obj/structure/undies_wardrobe/box
+	name = "underwear box"
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "medalbox"
+
 #undef M_UNDER
 #undef F_UNDER
 #undef M_SOCKS
