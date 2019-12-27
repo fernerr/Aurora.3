@@ -381,7 +381,10 @@
 	maxhealth = 600
 	insecure = 0
 
-
+/obj/machinery/door/airlock/palepurple
+	name = "airlock"
+	icon = 'icons/obj/doors/Doorpalepurple.dmi'
+	hashatch = FALSE
 
 /obj/machinery/door/airlock/uranium/machinery_process()
 	if(world.time > last_event+20)
