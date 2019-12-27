@@ -185,3 +185,13 @@
 /obj/item/reagent_containers/food/condiment/garlicsauce/Initialize()
 	..()
 	reagents.add_reagent("garlicsauce", 50)
+
+/obj/item/reagent_containers/food/condiment/soysauce
+	name = "soy sauce"
+	desc = "A salty soy-based flavoring."
+	icon_state = "soysauce"
+	center_of_mass = list("x"=16, "y"=6)
+
+/obj/item/reagent_containers/food/condiment/soysauce/Initialize()
+	..()
+	reagents.add_reagent("soysauce", 50)

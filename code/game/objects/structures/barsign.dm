@@ -26,7 +26,8 @@
 
 /obj/structure/sign/double/barsign/Initialize()
 	. = ..()
-	icon_state = pick(get_valid_states())
+	if(icon_state == "empty")
+		icon_state = pick(get_valid_states())
 
 /obj/structure/sign/double/barsign/attackby(obj/item/I, mob/user)
 	if(cult)
