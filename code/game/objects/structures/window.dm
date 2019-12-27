@@ -501,6 +501,7 @@
 	maxhealth = 160
 
 /obj/structure/window/shuttle/palepurple
+	icon = 'icons/obj/smooth/shuttle_window_palepurple.dmi'
 	health = 300
 	maxhealth = 300
 

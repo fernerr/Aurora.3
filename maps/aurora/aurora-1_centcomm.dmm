@@ -21807,6 +21807,27 @@
 /obj/structure/cryofeed,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
+"bnh" = (
+/obj/structure/table/stone/marble,
+/obj/machinery/reagentgrinder{
+	pixel_x = 10;
+	pixel_y = 17
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_x = -8;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/glass/beaker/bowl{
+	pixel_y = 3
+	},
+/obj/structure/sink/kitchen{
+	layer = 2.7;
+	pixel_x = -5;
+	pixel_y = 24
+	},
+/obj/effect/floor_decal/corner/purple/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "bpO" = (
 /obj/structure/grille,
 /obj/machinery/door/blast/shutters/open{
@@ -21878,26 +21899,7 @@
 	},
 /area/centcom/distress_prep)
 "byE" = (
-/obj/effect/floor_decal/corner/white/diagonal,
-/obj/structure/table/stone/marble,
-/obj/item/reagent_containers/food/condiment/flour{
-	layer = 2.99;
-	pixel_x = -10;
-	pixel_y = 20
-	},
-/obj/item/reagent_containers/food/condiment/flour{
-	layer = 2.99;
-	pixel_x = 6;
-	pixel_y = 20
-	},
-/obj/item/reagent_containers/food/condiment/flour{
-	pixel_x = -4;
-	pixel_y = 17
-	},
-/obj/item/storage/box/gloves{
-	pixel_x = -8;
-	pixel_y = 3
-	},
+/obj/effect/floor_decal/corner/purple/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "bBd" = (
@@ -21954,7 +21956,7 @@
 	req_one_access = list(101);
 	tag_door = "skrell_shuttle_hatch"
 	},
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
 "bKL" = (
 /obj/item/stack/material/marble{
@@ -22035,6 +22037,12 @@
 	name = "plating"
 	},
 /area/centcom/legion)
+"bUp" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "bUI" = (
 /obj/structure/table/rack,
 /obj/structure/sign/poster{
@@ -22091,6 +22099,21 @@
 	icon_state = "wood"
 	},
 /area/centcom/legion/hangar5)
+"cfc" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/structure/table/wood{
+	table_reinf = "wood"
+	},
+/turf/simulated/floor/beach{
+	desc = "A shallow pool of water only deep enough to stick your feet in at most.";
+	dir = 1;
+	icon_state = "small-dark";
+	name = "shallow pool"
+	},
+/area/shuttle/skrell_event/centcom)
 "cfM" = (
 /obj/structure/table/stone/marble,
 /obj/structure/window/reinforced{
@@ -22132,15 +22155,6 @@
 	},
 /turf/simulated/floor/shuttle/black,
 /area/shuttle/legion/centcom)
-"chs" = (
-/obj/machinery/door/window/southleft{
-	name = "jacuzzi"
-	},
-/turf/simulated/floor/beach{
-	icon_state = "pool1";
-	name = "jacuzzi"
-	},
-/area/shuttle/skrell_event/centcom)
 "chO" = (
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -22365,7 +22379,7 @@
 	icon_state = "bridge_generic";
 	dir = 1
 	},
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
 "cCo" = (
 /obj/structure/lattice,
@@ -22405,6 +22419,17 @@
 	icon_state = "floor"
 	},
 /area/centcom/legion)
+"cDN" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	name = "adjusted light fixture";
+	pixel_y = -15
+	},
+/turf/simulated/floor/beach/water/pool{
+	name = "jacuzzi"
+	},
+/area/shuttle/skrell_event/centcom)
 "cDW" = (
 /turf/space/transit/east/shuttlespace_ew11,
 /area/shuttle/distress/transit)
@@ -22955,12 +22980,6 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
-"dQg" = (
-/obj/structure/bed/chair/comfy/black{
-	dir = 8
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "dQD" = (
 /obj/structure/grille,
 /obj/machinery/door/blast/shutters{
@@ -23326,11 +23345,6 @@
 	name = "plating"
 	},
 /area/centcom/distress_prep)
-"eMC" = (
-/turf/simulated/floor/beach/water/pool{
-	name = "jacuzzi"
-	},
-/area/shuttle/skrell_event/centcom)
 "eNF" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /turf/unsimulated/floor{
@@ -23462,42 +23476,6 @@
 	icon_state = "floor"
 	},
 /area/centcom/holding)
-"eST" = (
-/obj/effect/floor_decal/corner/white/diagonal,
-/obj/structure/table/stone/marble,
-/obj/item/material/kitchen/rollingpin,
-/obj/item/material/knife,
-/obj/item/reagent_containers/food/condiment/enzyme{
-	pixel_x = -10;
-	pixel_y = 20
-	},
-/obj/item/reagent_containers/food/condiment/sugar{
-	pixel_x = -4;
-	pixel_y = 20
-	},
-/obj/item/reagent_containers/food/condiment/spacespice{
-	pixel_x = -16;
-	pixel_y = 14
-	},
-/obj/item/reagent_containers/food/condiment/saltshaker{
-	pixel_x = 1;
-	pixel_y = 14
-	},
-/obj/item/reagent_containers/food/condiment/peppermill{
-	pixel_x = 7;
-	pixel_y = 14
-	},
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/skrell_event/centcom)
-"eTQ" = (
-/obj/structure/table/wood,
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1";
-	pixel_y = 0
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "eVj" = (
 /obj/structure/table/wood/gamblingtable,
 /obj/item/trash/plate,
@@ -23577,31 +23555,6 @@
 	},
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/distress/centcom)
-"fas" = (
-/obj/effect/floor_decal/corner/white/diagonal,
-/obj/structure/closet/secure_closet/freezer/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/obj/item/reagent_containers/food/snacks/meat,
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/skrell_event/centcom)
-"faP" = (
-/obj/structure/table/wood,
-/turf/simulated/floor/beach{
-	dir = 1;
-	icon_state = "pool";
-	name = "shallow pool"
-	},
-/area/shuttle/skrell_event/centcom)
 "fbV" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
@@ -23769,6 +23722,22 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/start)
+"fjZ" = (
+/obj/structure/window/reinforced{
+	layer = 4.01;
+	name = "jacuzzi window"
+	},
+/obj/machinery/shower{
+	dir = 8;
+	icon_state = "shower";
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/simulated/floor/beach{
+	icon_state = "pool1";
+	name = "jacuzzi"
+	},
+/area/shuttle/skrell_event/centcom)
 "fkT" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/reagent_containers/blood/OMinus,
@@ -23859,6 +23828,15 @@
 	icon_state = "steel_dirty"
 	},
 /area/centcom/legion/hangar5)
+"fxM" = (
+/obj/machinery/door/window/southleft{
+	name = "jacuzzi"
+	},
+/turf/simulated/floor/beach{
+	icon_state = "pool1";
+	name = "jacuzzi"
+	},
+/area/shuttle/skrell_event/centcom)
 "fyp" = (
 /obj/structure/table/stone/marble,
 /turf/simulated/floor/shuttle/dark_blue,
@@ -23923,13 +23901,6 @@
 	icon_state = "cafeteria"
 	},
 /area/centcom/legion)
-"fHF" = (
-/obj/structure/bed/chair/office/bridge/generic{
-	icon_state = "bridge_generic";
-	dir = 4
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "fIs" = (
 /obj/machinery/door/blast/regular/open{
 	id = "tcflcheckpointouter";
@@ -23979,13 +23950,6 @@
 	icon_state = "floor3"
 	},
 /area/centcom/legion)
-"fMT" = (
-/obj/machinery/light/spot{
-	icon_state = "tube_empty";
-	dir = 8
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "fNp" = (
 /obj/structure/banner/unmovable,
 /obj/structure/sign/christmas/lights{
@@ -24356,6 +24320,10 @@
 	name = "plating"
 	},
 /area/centcom/legion/hangar5)
+"goL" = (
+/obj/machinery/door/airlock/hatch,
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "gpl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -24616,10 +24584,6 @@
 	icon_state = "floor"
 	},
 /area/centcom/distress_prep)
-"gIW" = (
-/obj/effect/floor_decal/corner/white/diagonal,
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/skrell_event/centcom)
 "gLc" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
@@ -25498,6 +25462,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/merchant_station/warehouse)
+"inE" = (
+/obj/structure/table/stone/marble,
+/obj/machinery/chem_master/condimaster/alt{
+	density = 0;
+	pixel_y = 4
+	},
+/obj/effect/floor_decal/corner/purple/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "iol" = (
 /obj/machinery/door/blast/odin/shuttle/tcfl/shutter{
 	density = 1;
@@ -25755,13 +25728,6 @@
 /obj/structure/bed/roller,
 /turf/simulated/floor/tiled/white,
 /area/merchant_station)
-"iPI" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/shuttle/black,
-/area/shuttle/skrell_event/centcom)
 "iQk" = (
 /obj/structure/closet{
 	icon_closed = "blue";
@@ -25797,6 +25763,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station/warehouse)
+"iTf" = (
+/obj/machinery/light/spot{
+	icon_state = "tube_empty";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "iUt" = (
 /turf/space/transit/east/shuttlespace_ew8,
 /area/shuttle/distress/transit)
@@ -26155,6 +26128,10 @@
 	},
 /turf/simulated/floor/holofloor/snow,
 /area/holodeck/source_dininghall)
+"jvH" = (
+/obj/machinery/light/spot,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "jxm" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/oxygen/prechilled,
@@ -26274,6 +26251,53 @@
 /obj/machinery/door/window/westleft,
 /turf/simulated/floor/lino,
 /area/merchant_station)
+"jFl" = (
+/obj/structure/table/wood{
+	pixel_x = 3
+	},
+/obj/structure/undies_wardrobe/box{
+	density = 0;
+	pixel_x = 3;
+	pixel_y = 10
+	},
+/obj/item/clothing/under/swimsuit/red{
+	pixel_x = 12
+	},
+/obj/item/clothing/under/swimsuit/purple{
+	pixel_x = 12
+	},
+/obj/item/clothing/under/swimsuit/green{
+	pixel_x = 12;
+	pixel_y = 0
+	},
+/obj/item/clothing/under/swimsuit/blue{
+	pixel_x = 12
+	},
+/obj/item/clothing/under/swimsuit/black{
+	pixel_x = 12
+	},
+/obj/item/clothing/under/shorts/black{
+	name = "black swim shorts";
+	pixel_x = 3;
+	pixel_y = -1
+	},
+/obj/item/clothing/under/shorts/blue{
+	name = "blue swim shorts";
+	pixel_x = 3;
+	pixel_y = -1
+	},
+/obj/item/clothing/under/shorts/red{
+	name = "red swim shorts";
+	pixel_x = 3;
+	pixel_y = -1
+	},
+/obj/item/clothing/under/shorts/green{
+	name = "green swim shorts";
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "jFE" = (
 /obj/effect/decal/spraystill{
 	desc = "The name of this ship.";
@@ -26391,13 +26415,6 @@
 	icon_state = "cafeteria"
 	},
 /area/centcom/legion)
-"jQV" = (
-/obj/machinery/light/spot{
-	icon_state = "tube_empty";
-	dir = 4
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "jRD" = (
 /obj/structure/sign/christmas/lights{
 	icon_state = "xmaslights";
@@ -26742,13 +26759,6 @@
 	icon_state = "floor"
 	},
 /area/centcom/checkpoint/fore)
-"kHn" = (
-/obj/structure/bed/chair/office/bridge/generic{
-	icon_state = "bridge_generic";
-	dir = 8
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "kHB" = (
 /obj/item/modular_computer/console/preset/merchant,
 /turf/simulated/floor/tiled/dark,
@@ -26832,10 +26842,19 @@
 	pixel_x = 0;
 	pixel_y = 24
 	},
+/obj/effect/decal/fake_object{
+	desc = "null";
+	icon = 'icons/misc/beach.dmi';
+	icon_state = "poolwater 1/2";
+	layer = 4.1;
+	name = "jacuzzi";
+	pixel_x = 0;
+	pixel_y = 0
+	},
 /turf/simulated/floor/beach{
-	dir = 1;
-	icon_state = "pool1";
-	name = "jacuzzi"
+	name = "jacuzzi";
+	icon_state = "freezer";
+	dir = 1
 	},
 /area/shuttle/skrell_event/centcom)
 "kSv" = (
@@ -26860,7 +26879,7 @@
 /area/centcom/checkpoint/fore)
 "kTs" = (
 /obj/structure/computerframe,
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
 "kTO" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -27031,16 +27050,6 @@
 /obj/structure/lattice/catwalk,
 /turf/template_noop,
 /area/template_noop)
-"lnO" = (
-/obj/structure/sign/flag/jargon{
-	pixel_y = 29
-	},
-/turf/simulated/floor/beach{
-	dir = 1;
-	icon_state = "pool1";
-	name = "jacuzzi"
-	},
-/area/shuttle/skrell_event/centcom)
 "lpW" = (
 /obj/machinery/computer/borgupload,
 /turf/unsimulated/floor{
@@ -27200,7 +27209,7 @@
 	icon_state = "bridge_generic";
 	dir = 4
 	},
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
 "lIO" = (
 /obj/machinery/light{
@@ -27652,14 +27661,6 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
-"mIn" = (
-/obj/structure/table/wood,
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 1
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "mLc" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -27763,13 +27764,6 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
-"mSA" = (
-/obj/structure/bed/chair/office/bridge/generic{
-	icon_state = "bridge_generic";
-	dir = 1
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "mSN" = (
 /turf/simulated/wall/shuttle/dark/corner/underlay{
 	icon_state = "wall3";
@@ -27844,14 +27838,17 @@
 	},
 /area/centcom/spawning)
 "nbq" = (
-/obj/structure/table/wood,
+/obj/structure/table/wood{
+	table_reinf = "wood"
+	},
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/beach{
+	desc = "A shallow pool of water only deep enough to stick your feet in at most.";
 	dir = 1;
-	icon_state = "pool";
+	icon_state = "small-dark";
 	name = "shallow pool"
 	},
 /area/shuttle/skrell_event/centcom)
@@ -28060,7 +28057,7 @@
 	},
 /area/centcom/legion/hangar5)
 "noD" = (
-/obj/effect/floor_decal/corner/white/diagonal,
+/obj/effect/floor_decal/corner/purple/diagonal,
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
@@ -28665,9 +28662,6 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
-"ofX" = (
-/turf/simulated/floor/shuttle/black,
-/area/shuttle/skrell_event/centcom)
 "ogE" = (
 /obj/structure/lattice/catwalk/indoor,
 /obj/machinery/door/blast/odin/open{
@@ -28772,7 +28766,6 @@
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/start)
 "ooJ" = (
-/obj/effect/floor_decal/corner/white/diagonal,
 /obj/machinery/microwave{
 	pixel_x = 4;
 	pixel_y = 2
@@ -28788,6 +28781,7 @@
 	pixel_x = 4;
 	pixel_y = 21
 	},
+/obj/effect/floor_decal/corner/purple/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "opd" = (
@@ -29455,6 +29449,33 @@
 	},
 /turf/simulated/floor/shuttle/tan,
 /area/shuttle/skrell_event/centcom)
+"pAX" = (
+/obj/structure/table/stone/marble,
+/obj/item/material/kitchen/rollingpin,
+/obj/item/material/knife,
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_x = -10;
+	pixel_y = 20
+	},
+/obj/item/reagent_containers/food/condiment/sugar{
+	pixel_x = -4;
+	pixel_y = 20
+	},
+/obj/item/reagent_containers/food/condiment/spacespice{
+	pixel_x = -16;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/food/condiment/saltshaker{
+	pixel_x = 1;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/food/condiment/peppermill{
+	pixel_x = 7;
+	pixel_y = 14
+	},
+/obj/effect/floor_decal/corner/purple/diagonal,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "pBa" = (
 /obj/effect/floor_decal/corner/blue{
 	icon_state = "corner_white";
@@ -29583,6 +29604,12 @@
 	icon_state = "wood"
 	},
 /area/centcom/distress_prep)
+"pNg" = (
+/obj/structure/curtain/open/shower{
+	name = "changing curtain"
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "pNR" = (
 /obj/structure/table/reinforced,
 /obj/machinery/chemical_dispenser/bar_alc/full{
@@ -29613,12 +29640,9 @@
 	},
 /area/centcom/living)
 "pQl" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1";
-	pixel_y = 0
+/turf/simulated/floor/beach/water/pool{
+	name = "jacuzzi"
 	},
-/turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
 "pQJ" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -29693,6 +29717,25 @@
 	icon_state = "floor3"
 	},
 /area/centcom/legion/hangar5)
+"pVi" = (
+/obj/structure/sign/flag/jargon{
+	pixel_y = 29
+	},
+/obj/effect/decal/fake_object{
+	desc = "null";
+	icon = 'icons/misc/beach.dmi';
+	icon_state = "poolwater 1/2";
+	layer = 4.1;
+	name = "jacuzzi";
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/simulated/floor/beach{
+	name = "jacuzzi";
+	icon_state = "freezer";
+	dir = 1
+	},
+/area/shuttle/skrell_event/centcom)
 "pWv" = (
 /turf/unsimulated/floor{
 	name = "plating"
@@ -29726,6 +29769,10 @@
 "qck" = (
 /turf/space/transit/east/shuttlespace_ew3,
 /area/shuttle/merchant/transit)
+"qeR" = (
+/obj/structure/closet/secure_closet/guncabinet,
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "qft" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 8;
@@ -30360,10 +30407,6 @@
 	icon_state = "floor"
 	},
 /area/centcom/legion/hangar5)
-"rdg" = (
-/obj/structure/bed/padded,
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "rdA" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	icon_state = "intact";
@@ -30826,6 +30869,48 @@
 	},
 /turf/simulated/floor/shuttle/black,
 /area/shuttle/legion/centcom)
+"rXw" = (
+/obj/structure/window/reinforced{
+	layer = 4.01;
+	name = "jacuzzi window"
+	},
+/obj/item/towel{
+	pixel_x = -6;
+	pixel_y = -5
+	},
+/obj/item/towel{
+	pixel_x = -6;
+	pixel_y = -5
+	},
+/obj/item/towel{
+	pixel_x = -6;
+	pixel_y = -5
+	},
+/obj/item/towel{
+	pixel_x = -6;
+	pixel_y = -5
+	},
+/obj/item/towel{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/towel{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/towel{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/towel{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/turf/simulated/floor/beach{
+	icon_state = "pool1";
+	name = "jacuzzi"
+	},
+/area/shuttle/skrell_event/centcom)
 "rYS" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/effect/floor_decal/spline/fancy/wood/corner{
@@ -31093,10 +31178,6 @@
 	name = "plating"
 	},
 /area/centcom/evac)
-"srD" = (
-/obj/machinery/light/spot,
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "srN" = (
 /obj/structure/table/reinforced,
 /turf/unsimulated/floor{
@@ -31261,53 +31342,6 @@
 	},
 /turf/unsimulated/wall/darkshuttlewall,
 /area/centcom/legion/hangar5)
-"sNc" = (
-/obj/structure/table/wood{
-	pixel_x = 3
-	},
-/obj/structure/undies_wardrobe/box{
-	density = 0;
-	pixel_x = 3;
-	pixel_y = 10
-	},
-/obj/item/clothing/under/swimsuit/red{
-	pixel_x = 12
-	},
-/obj/item/clothing/under/swimsuit/purple{
-	pixel_x = 12
-	},
-/obj/item/clothing/under/swimsuit/green{
-	pixel_x = 12;
-	pixel_y = 0
-	},
-/obj/item/clothing/under/swimsuit/blue{
-	pixel_x = 12
-	},
-/obj/item/clothing/under/swimsuit/black{
-	pixel_x = 12
-	},
-/obj/item/clothing/under/shorts/black{
-	name = "black swim shorts";
-	pixel_x = 3;
-	pixel_y = -1
-	},
-/obj/item/clothing/under/shorts/blue{
-	name = "blue swim shorts";
-	pixel_x = 3;
-	pixel_y = -1
-	},
-/obj/item/clothing/under/shorts/red{
-	name = "red swim shorts";
-	pixel_x = 3;
-	pixel_y = -1
-	},
-/obj/item/clothing/under/shorts/green{
-	name = "green swim shorts";
-	pixel_x = 3;
-	pixel_y = -3
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "sQb" = (
 /turf/unsimulated/floor{
 	icon_state = "floor"
@@ -31531,6 +31565,17 @@
 	name = "plating"
 	},
 /area/centcom/legion)
+"tgH" = (
+/obj/structure/table/wood{
+	table_reinf = "wood"
+	},
+/turf/simulated/floor/beach{
+	desc = "A shallow pool of water only deep enough to stick your feet in at most.";
+	dir = 1;
+	icon_state = "small-dark";
+	name = "shallow pool"
+	},
+/area/shuttle/skrell_event/centcom)
 "thO" = (
 /obj/effect/decal/fake_object{
 	density = 0;
@@ -31558,11 +31603,11 @@
 /turf/simulated/wall/shuttle/legion,
 /area/shuttle/legion/centcom)
 "tlB" = (
-/obj/effect/floor_decal/corner/white/diagonal,
 /obj/machinery/appliance/cooker/oven{
 	pixel_y = 4
 	},
 /obj/structure/table/stone/marble,
+/obj/effect/floor_decal/corner/purple/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "tmg" = (
@@ -31574,27 +31619,6 @@
 /obj/structure/flora/grass/green,
 /turf/simulated/floor/snow,
 /area/centcom/spawning)
-"tnl" = (
-/obj/effect/floor_decal/corner/white/diagonal,
-/obj/structure/table/stone/marble,
-/obj/machinery/reagentgrinder{
-	pixel_x = 10;
-	pixel_y = 17
-	},
-/obj/item/reagent_containers/glass/beaker/large{
-	pixel_x = -8;
-	pixel_y = 14
-	},
-/obj/item/reagent_containers/glass/beaker/bowl{
-	pixel_y = 3
-	},
-/obj/structure/sink/kitchen{
-	layer = 2.7;
-	pixel_x = -5;
-	pixel_y = 24
-	},
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/skrell_event/centcom)
 "tnJ" = (
 /obj/machinery/vending/snack{
 	name = "Free Chocolate Corp";
@@ -31848,8 +31872,8 @@
 /turf/simulated/floor/plating,
 /area/merchant_station/warehouse)
 "tQh" = (
-/obj/effect/floor_decal/corner/white/diagonal,
 /obj/machinery/smartfridge/secure,
+/obj/effect/floor_decal/corner/purple/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "tQq" = (
@@ -32157,27 +32181,9 @@
 	},
 /turf/simulated/floor/holofloor/snow,
 /area/holodeck/source_picnicarea)
-"uwc" = (
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 2
-	},
-/turf/simulated/floor/shuttle/black,
-/area/shuttle/skrell_event/centcom)
 "uxr" = (
 /obj/structure/computerframe,
 /turf/simulated/floor,
-/area/shuttle/skrell_event/centcom)
-"uyi" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1";
-	name = "adjusted light fixture";
-	pixel_y = -15
-	},
-/turf/simulated/floor/beach/water/pool{
-	name = "jacuzzi"
-	},
 /area/shuttle/skrell_event/centcom)
 "uzX" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -32226,7 +32232,7 @@
 	icon_state = "bridge_generic";
 	dir = 8
 	},
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
 "uKc" = (
 /obj/structure/shuttle/engine/router{
@@ -32264,22 +32270,6 @@
 	icon_state = "white"
 	},
 /area/centcom/legion)
-"uMV" = (
-/obj/structure/window/reinforced{
-	layer = 4.01;
-	name = "jacuzzi window"
-	},
-/obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower";
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/turf/simulated/floor/beach{
-	icon_state = "pool1";
-	name = "jacuzzi"
-	},
-/area/shuttle/skrell_event/centcom)
 "uNJ" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/manifold/visible,
@@ -32547,48 +32537,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/start)
-"vkz" = (
-/obj/structure/window/reinforced{
-	layer = 4.01;
-	name = "jacuzzi window"
-	},
-/obj/item/towel{
-	pixel_x = -6;
-	pixel_y = -5
-	},
-/obj/item/towel{
-	pixel_x = -6;
-	pixel_y = -5
-	},
-/obj/item/towel{
-	pixel_x = -6;
-	pixel_y = -5
-	},
-/obj/item/towel{
-	pixel_x = -6;
-	pixel_y = -5
-	},
-/obj/item/towel{
-	pixel_x = 6;
-	pixel_y = -5
-	},
-/obj/item/towel{
-	pixel_x = 6;
-	pixel_y = -5
-	},
-/obj/item/towel{
-	pixel_x = 6;
-	pixel_y = -5
-	},
-/obj/item/towel{
-	pixel_x = 6;
-	pixel_y = -5
-	},
-/turf/simulated/floor/beach{
-	icon_state = "pool1";
-	name = "jacuzzi"
-	},
-/area/shuttle/skrell_event/centcom)
 "vmT" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/projectile/gauss{
@@ -32659,13 +32607,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station/warehouse)
-"vrR" = (
-/obj/structure/bed/chair/comfy/black{
-	icon_state = "chair_padding_over";
-	dir = 1
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "vsg" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/heavy_vehicle/premade/light/legion,
@@ -32699,12 +32640,20 @@
 	},
 /area/centcom/legion/hangar5)
 "vxt" = (
-/obj/effect/floor_decal/corner/white/diagonal,
-/obj/structure/table/stone/marble,
-/obj/machinery/chem_master/condimaster/alt{
-	density = 0;
-	pixel_y = 4
-	},
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/effect/floor_decal/corner/purple/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "vyG" = (
@@ -32736,14 +32685,11 @@
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
 "vCb" = (
-/obj/structure/window/reinforced,
 /obj/machinery/light{
-	dir = 8;
 	icon_state = "tube1";
-	pixel_y = 0
+	dir = 2
 	},
-/obj/structure/table/reinforced,
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
 "vCq" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -32849,10 +32795,6 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
-"vDD" = (
-/obj/structure/closet/secure_closet/personal,
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "vEy" = (
 /obj/effect/floor_decal/spline/plain{
 	icon_state = "spline_plain";
@@ -32896,11 +32838,11 @@
 	},
 /area/centcom/legion)
 "vGS" = (
-/obj/effect/floor_decal/corner/white/diagonal,
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 2
 	},
+/obj/effect/floor_decal/corner/purple/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "vHg" = (
@@ -32938,7 +32880,7 @@
 /area/shuttle/skrell_event/centcom)
 "vLS" = (
 /obj/machinery/smartfridge/foodheater,
-/turf/simulated/wall/shuttle/palepurple,
+/turf/simulated/wall/shuttle/palepurple/cardinal,
 /area/shuttle/skrell_event/centcom)
 "vML" = (
 /obj/structure/closet/secure_closet/guncabinet{
@@ -33123,12 +33065,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/merchant_station)
-"vZM" = (
-/obj/structure/curtain/open/shower{
-	name = "changing curtain"
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "wag" = (
 /obj/machinery/sleeper{
 	dir = 4
@@ -33156,15 +33092,6 @@
 	icon_state = "floor"
 	},
 /area/centcom/legion/hangar5)
-"wek" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1";
-	pixel_y = 0
-	},
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "weC" = (
 /obj/machinery/door/airlock/silver,
 /turf/simulated/floor/shuttle/dark_blue,
@@ -33340,7 +33267,7 @@
 	req_access = list(150);
 	shuttle_tag = "Skrell"
 	},
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
 "wxq" = (
 /obj/effect/decal/fake_object{
@@ -33466,6 +33393,29 @@
 	icon_state = "rampbot";
 	dir = 4
 	},
+/area/shuttle/skrell_event/centcom)
+"wDC" = (
+/obj/structure/table/stone/marble,
+/obj/item/reagent_containers/food/condiment/flour{
+	layer = 2.99;
+	pixel_x = -10;
+	pixel_y = 20
+	},
+/obj/item/reagent_containers/food/condiment/flour{
+	layer = 2.99;
+	pixel_x = 6;
+	pixel_y = 20
+	},
+/obj/item/reagent_containers/food/condiment/flour{
+	pixel_x = -4;
+	pixel_y = 17
+	},
+/obj/item/storage/box/gloves{
+	pixel_x = -8;
+	pixel_y = 3
+	},
+/obj/effect/floor_decal/corner/purple/diagonal,
+/turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "wDU" = (
 /obj/structure/table/standard,
@@ -34152,6 +34102,13 @@
 "xHu" = (
 /turf/space/transit/east/shuttlespace_ew8,
 /area/shuttle/legion/transit)
+"xIX" = (
+/obj/machinery/light/spot{
+	icon_state = "tube_empty";
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "xKx" = (
 /obj/structure/window/reinforced{
 	icon_state = "rwindow";
@@ -34300,6 +34257,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/merchant_station/warehouse)
+"xTX" = (
+/obj/structure/table/wood,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "xVE" = (
 /turf/unsimulated/wall/fakepdoor{
 	icon_state = "shutter1";
@@ -56648,7 +56614,7 @@ bPZ
 trQ
 trQ
 trQ
-fMT
+xIX
 trQ
 trQ
 trQ
@@ -56916,8 +56882,8 @@ vBr
 vBr
 bPZ
 bPZ
-prO
-prO
+trQ
+trQ
 bPZ
 hak
 vwL
@@ -57150,14 +57116,14 @@ aaM
 aaM
 bPZ
 bPZ
-bPZ
-mIn
+xTX
 pbc
-bPZ
 fIV
 xyQ
-eTQ
-vrR
+prO
+bUp
+trQ
+trQ
 trQ
 trQ
 eoi
@@ -57407,10 +57373,10 @@ aaM
 bPZ
 bPZ
 bPZ
-bPZ
 xyQ
 trQ
-weC
+trQ
+trQ
 trQ
 trQ
 trQ
@@ -57430,8 +57396,8 @@ trQ
 trQ
 bPZ
 trQ
-pbc
-pbc
+trQ
+trQ
 bPZ
 kcU
 ngB
@@ -57662,15 +57628,15 @@ aaM
 aaM
 bPZ
 bPZ
-msp
 trQ
 weC
 trQ
 trQ
-bPZ
 trQ
-fHF
-fHF
+trQ
+trQ
+lIN
+lIN
 trQ
 trQ
 trQ
@@ -57687,8 +57653,8 @@ trQ
 trQ
 itS
 trQ
-prO
-prO
+trQ
+trQ
 bPZ
 mYs
 smS
@@ -57920,15 +57886,15 @@ aaM
 vBr
 kTs
 vCb
-gUN
 bPZ
-bPZ
+msp
+msp
 noD
-bPZ
+msp
 uhg
 cfM
 fyp
-mSA
+cAl
 trQ
 sij
 pKl
@@ -57943,9 +57909,9 @@ vQa
 trQ
 trQ
 bPZ
-pQl
-dQg
-dQg
+trQ
+trQ
+trQ
 bPZ
 hOD
 smS
@@ -58176,23 +58142,23 @@ aaM
 aaM
 vBr
 uIP
-ofX
-ofX
+trQ
 bPZ
+wDC
 byE
-gIW
+byE
 vLS
 trQ
 trQ
 fyp
-mSA
+cAl
 trQ
 jnL
 vLP
 eOy
-faP
-faP
-faP
+tgH
+tgH
+tgH
 eOy
 vLP
 vLP
@@ -58202,7 +58168,7 @@ trQ
 bPZ
 trQ
 trQ
-fIV
+trQ
 bPZ
 uxr
 smS
@@ -58432,25 +58398,25 @@ aaM
 aaM
 bPZ
 msp
-ofX
-ofX
+trQ
+trQ
 bPZ
-msp
-eST
-gIW
+pAX
+byE
+byE
 noD
 trQ
 trQ
 fyp
-mSA
+cAl
 trQ
 pUT
 vLP
-faP
-faP
+tgH
+tgH
 vLP
-faP
-faP
+tgH
+tgH
 eOy
 vLP
 bJF
@@ -58461,8 +58427,8 @@ bPZ
 bPZ
 bPZ
 bPZ
-smS
-smS
+bPZ
+goL
 msp
 bPZ
 aaM
@@ -58689,26 +58655,26 @@ aaM
 aaM
 vBr
 kTs
-ofX
-ofX
+trQ
+trQ
 bPZ
 ooJ
-gIW
+byE
 vGS
 vOE
 hxO
 trQ
 fyp
-mSA
+cAl
 trQ
 eoi
 nbq
-faP
+tgH
 vLP
 vLP
 vLP
-faP
-faP
+tgH
+tgH
 ssw
 vLP
 jqH
@@ -58947,16 +58913,16 @@ aaM
 vBr
 wvE
 cAl
-uwc
+vCb
 bPZ
 tlB
-gIW
-gIW
+byE
+byE
 egj
 pKd
 trQ
 fyp
-mSA
+cAl
 trQ
 wxP
 vLP
@@ -58965,12 +58931,12 @@ vLP
 vLP
 vLP
 vLP
-faP
+tgH
 ssw
 vLP
 vQa
 trQ
-srD
+jvH
 bPZ
 bPZ
 bPZ
@@ -59203,26 +59169,26 @@ aaM
 aaM
 vBr
 kTs
-ofX
-ofX
+trQ
+trQ
 bPZ
 tQh
-gIW
+byE
 vGS
 jFE
 wgo
 trQ
 fyp
-mSA
+cAl
 trQ
 eoi
-nbq
-faP
+cfc
+tgH
 vLP
 vLP
 vLP
-faP
-faP
+tgH
+tgH
 ssw
 vLP
 ghz
@@ -59461,24 +59427,24 @@ aaM
 bPZ
 msp
 bKH
-ofX
+trQ
 bPZ
-msp
-tnl
-gIW
+bnh
+byE
+byE
 bPZ
 pNR
 trQ
 fyp
-mSA
+cAl
 trQ
 pUT
 vLP
-faP
-faP
+tgH
+tgH
 vLP
-faP
-faP
+tgH
+tgH
 pAn
 vLP
 bJF
@@ -59489,8 +59455,8 @@ bPZ
 bPZ
 bPZ
 bPZ
-smS
-smS
+bPZ
+bPZ
 msp
 bPZ
 aaM
@@ -59718,23 +59684,23 @@ aaM
 aaM
 vBr
 lIN
-ofX
+trQ
 bPZ
-bPZ
+inE
 vxt
-fas
+byE
 bPZ
 dbU
 trQ
 fyp
-mSA
+cAl
 trQ
 jnL
 vLP
 pAn
-faP
-faP
-faP
+tgH
+tgH
+tgH
 pAn
 vLP
 vLP
@@ -59744,9 +59710,9 @@ trQ
 itS
 trQ
 trQ
-fIV
+trQ
+trQ
 bPZ
-smS
 smS
 lti
 pyY
@@ -59975,7 +59941,7 @@ aaM
 aaM
 vBr
 kTs
-iPI
+vCb
 bPZ
 bPZ
 bPZ
@@ -59984,7 +59950,7 @@ msp
 wrH
 fyp
 fyp
-mSA
+cAl
 trQ
 gct
 xRm
@@ -59999,11 +59965,11 @@ vQa
 trQ
 trQ
 xwG
-rdg
+trQ
+trQ
 trQ
 trQ
 bPZ
-smS
 smS
 tMa
 pyY
@@ -60232,15 +60198,15 @@ aaM
 aaM
 bPZ
 bPZ
-msp
+qeR
 bPZ
 kRj
-uyi
-eMC
-vkz
-kHn
-kHn
-kHn
+cDN
+pQl
+rXw
+uIP
+uIP
+uIP
 trQ
 trQ
 trQ
@@ -60256,11 +60222,11 @@ sZj
 trQ
 trQ
 bPZ
-wek
+trQ
+trQ
 trQ
 trQ
 bPZ
-mYs
 smS
 tMa
 pyY
@@ -60491,10 +60457,10 @@ aaM
 bPZ
 bPZ
 bPZ
-lnO
-eMC
-eMC
-chs
+pVi
+pQl
+pQl
+fxM
 trQ
 trQ
 trQ
@@ -60513,11 +60479,11 @@ fIV
 trQ
 trQ
 bPZ
-rdg
+trQ
+trQ
 trQ
 trQ
 bPZ
-smS
 smS
 tMa
 pyY
@@ -60749,11 +60715,11 @@ aaM
 bPZ
 bPZ
 kRj
-eMC
-eMC
-uMV
-vZM
-sNc
+pQl
+pQl
+fjZ
+pNg
+jFl
 dcd
 fIV
 trQ
@@ -60770,11 +60736,11 @@ tUd
 trQ
 fIV
 bPZ
-vDD
+trQ
+trQ
 trQ
 trQ
 bPZ
-smS
 smS
 tMa
 pyY
@@ -61030,8 +60996,8 @@ bPZ
 bPZ
 trQ
 trQ
+trQ
 bPZ
-smS
 smS
 drc
 pyY
@@ -61274,7 +61240,7 @@ bPZ
 trQ
 tUd
 trQ
-jQV
+iTf
 trQ
 tUd
 trQ
