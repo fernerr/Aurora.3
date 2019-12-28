@@ -7,6 +7,7 @@
  *		Kitty ears
  *		Chicken mask
  *		Warning cone
+ *		Starchanter Headpiece
  */
 
 /*
@@ -290,3 +291,11 @@
 	body_parts_covered = HEAD
 	attack_verb = list("warned", "cautioned", "smashed")
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/head/starchanter
+	name = "starchanter headpiece"
+	desc = "A bland headpiece, signifying the wearer as a starchanter."
+	icon = 'icons/obj/skrell_items.dmi'
+	icon_state = "starchanter_headpiece"
+	item_state = "starchanter_headpiece"
+	contained_sprite = TRUE

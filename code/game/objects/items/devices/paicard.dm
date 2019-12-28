@@ -404,3 +404,9 @@
 		var/rendered = "<span class='message'>[msg]</span>"
 		pai.show_message(rendered, type)
 	..()
+
+/obj/item/device/paicard/proc/inhabit(var/playerKey)
+	if(pai?.key)
+		return
+	pai = new(src)
+	pai.key = playerKey
