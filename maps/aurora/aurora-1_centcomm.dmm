@@ -23368,6 +23368,13 @@
 	},
 /turf/simulated/wall/shuttle/palepurple,
 /area/shuttle/skrell_event/centcom)
+"eEJ" = (
+/obj/machinery/door/airlock/palepurple,
+/obj/structure/plasticflaps/airtight/skrell{
+	layer = 2.5
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "eLM" = (
 /obj/effect/wingrille_spawn/reinforced/crescent,
 /turf/unsimulated/floor{
@@ -23905,6 +23912,19 @@
 "fyp" = (
 /obj/structure/table/stone/marble,
 /turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
+"fyF" = (
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	pixel_x = -12;
+	pixel_y = 0
+	},
+/obj/machinery/light/small/emergency{
+	icon_state = "bulb1";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "fzQ" = (
 /obj/machinery/vending/snack{
@@ -25960,6 +25980,17 @@
 	icon_state = "floor3"
 	},
 /area/centcom/legion/hangar5)
+"iVt" = (
+/obj/machinery/door/airlock/palepurple{
+	id_tag = "skrell_unit2";
+	name = "washroom"
+	},
+/obj/structure/plasticflaps/airtight/skrell{
+	layer = 2.5;
+	opacity = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "iVE" = (
 /obj/structure/table/rack,
 /obj/item/gun/energy/rifle,
@@ -26168,8 +26199,18 @@
 /area/centcom/holding)
 "jiD" = (
 /obj/structure/toilet{
+	dir = 1;
 	icon_state = "toilet00";
-	dir = 1
+	layer = 4.01;
+	pixel_y = -2
+	},
+/obj/machinery/button/remote/airlock{
+	dir = 8;
+	id = "skrell_unit1";
+	name = "Door Bolt Control";
+	pixel_x = 23;
+	pixel_y = 6;
+	specialfunctions = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
@@ -27587,10 +27628,32 @@
 	icon_state = "red"
 	},
 /area/centcom/holding)
+"mgy" = (
+/obj/machinery/button/remote/blast_door{
+	dir = 2;
+	id = "skrell_blast";
+	name = "window blast shields";
+	pixel_x = 0;
+	pixel_y = 24;
+	req_access = list(150)
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "mjX" = (
 /obj/machinery/photocopier,
 /turf/simulated/floor/wood,
 /area/merchant_station)
+"mkm" = (
+/obj/structure/window/shuttle/palepurple,
+/obj/structure/grille,
+/obj/machinery/door/blast/shutters/open{
+	closed_layer = 3.1;
+	dir = 8;
+	id = "skrell_blast";
+	name = "blast shield"
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "mkQ" = (
 /obj/structure/table/reinforced/steel,
 /obj/item/device/flashlight/lamp{
@@ -27938,6 +28001,17 @@
 	},
 /turf/simulated/floor/shuttle/black,
 /area/shuttle/legion/centcom)
+"mVA" = (
+/obj/structure/window/shuttle/palepurple,
+/obj/structure/grille,
+/obj/machinery/door/blast/shutters/open{
+	closed_layer = 3.1;
+	dir = 4;
+	id = "skrell_blast";
+	name = "blast shield"
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "mVG" = (
 /obj/structure/cryofeed,
 /turf/simulated/floor/tiled,
@@ -28189,12 +28263,13 @@
 /obj/structure/shuttle/engine/heater{
 	layer = 2.5
 	},
-/obj/structure/table/reinforced/steel{
-	pixel_y = 4
-	},
 /obj/item/blueprints/deco{
 	name = "station blueprint";
-	pixel_y = 10
+	pixel_y = 6
+	},
+/obj/structure/table/reinforced/steel,
+/obj/item/paper/monitorkey{
+	name = "intercepted transmission"
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
@@ -29009,13 +29084,10 @@
 /obj/structure/shuttle/engine/heater{
 	layer = 2.5
 	},
-/obj/structure/table/reinforced/steel{
-	pixel_y = 4
-	},
 /obj/structure/closet/crate/internals{
-	anchored = 1;
+	anchored = 0;
 	name = "equipment crate";
-	pixel_y = 4
+	pixel_y = 0
 	},
 /obj/item/device/multitool{
 	pixel_y = 4
@@ -29025,6 +29097,7 @@
 	},
 /obj/item/storage/firstaid/regular,
 /obj/item/storage/firstaid/o2,
+/obj/structure/table/reinforced/steel,
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
 "otY" = (
@@ -29282,7 +29355,14 @@
 	},
 /area/centcom/holding)
 "oMe" = (
-/obj/machinery/door/airlock/palepurple,
+/obj/machinery/door/airlock/palepurple{
+	id_tag = "skrell_unit1";
+	name = "washroom"
+	},
+/obj/structure/plasticflaps/airtight/skrell{
+	layer = 2.5;
+	opacity = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "oMF" = (
@@ -31054,10 +31134,8 @@
 	icon_state = "sink";
 	pixel_x = 12
 	},
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1";
-	pixel_y = 0
+/obj/machinery/light/small/emergency{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
@@ -31255,6 +31333,10 @@
 	luminosity = 1;
 	name = "thruster maintenance access";
 	req_access = list(150)
+	},
+/obj/structure/plasticflaps/airtight/skrell{
+	layer = 2.5;
+	opacity = 0
 	},
 /turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
@@ -32552,6 +32634,9 @@
 	pixel_y = 3;
 	req_access = null
 	},
+/obj/item/paper/monitorkey{
+	name = "intercepted code"
+	},
 /turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
 "uzX" = (
@@ -32570,6 +32655,23 @@
 /obj/effect/floor_decal/corner/yellow/full,
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/start)
+"uEj" = (
+/obj/machinery/button/remote/airlock{
+	dir = 4;
+	id = "skrell_unit2";
+	name = "Door Bolt Control";
+	pixel_x = -23;
+	pixel_y = 6;
+	specialfunctions = 4
+	},
+/obj/structure/toilet{
+	dir = 1;
+	icon_state = "toilet00";
+	layer = 4.01;
+	pixel_y = -2
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "uFy" = (
 /obj/machinery/recharger/wallcharger{
 	pixel_x = -27;
@@ -33049,6 +33151,12 @@
 "vBr" = (
 /obj/structure/window/shuttle/palepurple,
 /obj/structure/grille,
+/obj/machinery/door/blast/shutters/open{
+	closed_layer = 3.1;
+	dir = 1;
+	id = "skrell_blast";
+	name = "blast shield"
+	},
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
 "vCb" = (
@@ -33647,6 +33755,9 @@
 	locked = 1;
 	name = "Shuttle Hatch";
 	req_access = list(13)
+	},
+/obj/structure/plasticflaps/airtight/skrell{
+	layer = 2.5
 	},
 /turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
@@ -34761,13 +34872,11 @@
 /obj/structure/shuttle/engine/heater{
 	layer = 2.5
 	},
-/obj/structure/table/reinforced/steel{
-	pixel_y = 4
-	},
 /obj/structure/closet/crate/freezer/rations{
-	anchored = 1;
-	pixel_y = 4
+	anchored = 0;
+	pixel_y = 0
 	},
+/obj/structure/table/reinforced/steel,
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
 "ygK" = (
@@ -34867,6 +34976,19 @@
 	locked = 1;
 	luminosity = 1;
 	name = "thruster maintenance access";
+	req_access = list(150)
+	},
+/obj/machinery/door/blast/regular{
+	dir = 4;
+	id = "skrell_blast_aft";
+	name = "Thruster Maintenance Access"
+	},
+/obj/machinery/button/remote/blast_door{
+	dir = 4;
+	id = "skrell_blast_aft";
+	name = "access panel";
+	pixel_x = -22;
+	pixel_y = 0;
 	req_access = list(150)
 	},
 /turf/simulated/floor/plating,
@@ -56848,13 +56970,13 @@ aaM
 aaM
 bPZ
 bPZ
-vBr
-vBr
-vBr
+mkm
+mkm
+mkm
 bPZ
-vBr
-vBr
-vBr
+mkm
+mkm
+mkm
 bPZ
 clI
 aaM
@@ -57354,11 +57476,11 @@ aaM
 aaM
 bPZ
 bPZ
-vBr
-vBr
+mkm
+mkm
 bPZ
-vBr
-vBr
+mkm
+mkm
 bPZ
 bPZ
 fIV
@@ -57372,8 +57494,8 @@ trQ
 trQ
 bPZ
 bPZ
-vBr
-vBr
+mkm
+mkm
 bPZ
 bPZ
 trQ
@@ -58123,7 +58245,7 @@ aaM
 bPZ
 bPZ
 trQ
-ofX
+eEJ
 trQ
 trQ
 trQ
@@ -58892,7 +59014,7 @@ aaM
 aaM
 bPZ
 msp
-trQ
+mgy
 trQ
 bPZ
 wEg
@@ -59688,9 +59810,9 @@ vLP
 ghz
 trQ
 trQ
-oMe
-rOh
-jiD
+iVt
+fyF
+uEj
 fwn
 wbH
 pgj
@@ -61465,10 +61587,10 @@ aaM
 aaM
 aaM
 bPZ
-vBr
-vBr
-vBr
-vBr
+mVA
+mVA
+mVA
+mVA
 bPZ
 bPZ
 bPZ
@@ -61484,8 +61606,8 @@ trQ
 trQ
 bPZ
 bPZ
-vBr
-vBr
+mVA
+mVA
 bPZ
 bPZ
 trQ
@@ -61732,11 +61854,11 @@ bPZ
 bPZ
 bPZ
 trQ
-tUd
+trQ
 trQ
 ihC
 trQ
-tUd
+trQ
 trQ
 bPZ
 bPZ
@@ -61990,9 +62112,9 @@ bPZ
 bPZ
 wnK
 bPZ
-vBr
-vBr
-vBr
+mVA
+mVA
+mVA
 bPZ
 wnK
 bPZ
