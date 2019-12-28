@@ -40,8 +40,6 @@
 	icon_state = "abyss"
 	watertype = "seadeep"
 
-/turf/simulated/floor/beach/water/
-
 /obj/effect/water_effect
 	name = "water"
 	icon = 'icons/misc/beach.dmi'

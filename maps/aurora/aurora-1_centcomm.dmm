@@ -21867,20 +21867,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
-"byE" = (
-/obj/effect/floor_decal/corner/purple/diagonal,
-/obj/structure/closet/secure_closet/freezer/wall{
-	layer = 2.99;
-	pixel_x = -29;
-	pixel_y = 5
-	},
-/obj/machinery/vending/dinnerware{
-	pixel_x = -5;
-	pixel_y = 4;
-	products = list(/obj/item/tray = 24, /obj/item/material/kitchen/utensil/fork = 24, /obj/item/material/kitchen/utensil/knife = 24, /obj/item/material/kitchen/utensil/spoon = 24, /obj/item/material/knife = 2, /obj/item/material/hatchet/butch = 2, /obj/item/reagent_containers/food/drinks/drinkingglass = 24, /obj/item/clothing/suit/chef/classic = 2, /obj/item/material/kitchen/rollingpin = 2, /obj/item/reagent_containers/cooking_container/oven = 5, /obj/item/reagent_containers/cooking_container/fryer = 4, /obj/item/storage/toolbox/lunchbox/nt = 6, /obj/item/reagent_containers/glass/beaker/bowl = 4, /obj/item/reagent_containers/glass/rag = 8)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/shuttle/skrell_event/centcom)
 "bBd" = (
 /turf/unsimulated/floor{
 	icon_state = "wood"
@@ -21921,6 +21907,16 @@
 "bEh" = (
 /turf/space/transit/east/shuttlespace_ew1,
 /area/shuttle/distress/transit)
+"bHg" = (
+/obj/effect/floor_decal/corner/purple/diagonal,
+/obj/structure/sink/kitchen{
+	dir = 8;
+	icon_state = "sink_alt";
+	pixel_x = 22;
+	pixel_y = -4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "bJF" = (
 /obj/structure/window/reinforced,
 /turf/simulated/floor/shuttle/tan,
@@ -21991,6 +21987,12 @@
 "bPZ" = (
 /turf/simulated/wall/shuttle/palepurple,
 /area/shuttle/skrell_event/centcom)
+"bQr" = (
+/obj/structure/reagent_dispensers/keg/xuizikeg{
+	pixel_y = -3
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "bSI" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	icon_state = "spline_fancy";
@@ -22059,7 +22061,32 @@
 /area/shuttle/merchant/start)
 "ccj" = (
 /obj/effect/floor_decal/corner/purple/diagonal,
-/obj/machinery/icecream_vat,
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/meat/chicken,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/structure/table/stone/marble,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "ccJ" = (
@@ -23337,6 +23364,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/legion/centcom)
+"eCV" = (
+/obj/effect/floor_decal/corner/purple/diagonal,
+/obj/structure/table/stone/marble,
+/obj/item/material/kitchen/rollingpin,
+/obj/item/material/knife{
+	pixel_y = 3
+	},
+/obj/machinery/light{
+	dir = 2;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "eDN" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/energy/blaster/carbine{
@@ -23666,6 +23706,7 @@
 	use_power = 0
 	},
 /obj/effect/decal/fake_object{
+	desc = "The hatch at the top of the ladder to the service crawlspace is bolted shut.";
 	name = "service ladder";
 	pixel_y = 24
 	},
@@ -24714,35 +24755,11 @@
 /area/centcom/distress_prep)
 "gIW" = (
 /obj/effect/floor_decal/corner/purple/diagonal,
-/obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 2
-	},
+/obj/structure/table/stone/marble,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/flour,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "gLc" = (
@@ -25013,26 +25030,20 @@
 /turf/simulated/floor/wood,
 /area/merchant_station)
 "hog" = (
-/obj/structure/table/stone/marble,
-/obj/item/reagent_containers/food/condiment/flour{
-	layer = 2.99;
-	pixel_x = -10;
-	pixel_y = 20
-	},
-/obj/item/reagent_containers/food/condiment/flour{
-	layer = 2.99;
-	pixel_x = 6;
-	pixel_y = 20
-	},
-/obj/item/reagent_containers/food/condiment/flour{
-	pixel_x = -4;
-	pixel_y = 17
-	},
-/obj/item/storage/box/gloves{
-	pixel_x = -8;
-	pixel_y = 3
-	},
 /obj/effect/floor_decal/corner/purple/diagonal,
+/obj/machinery/vending/dinnerware{
+	pixel_x = 0;
+	pixel_y = 0;
+	products = list(/obj/item/tray = 24, /obj/item/material/kitchen/utensil/fork = 24, /obj/item/material/kitchen/utensil/knife = 24, /obj/item/material/kitchen/utensil/spoon = 24, /obj/item/material/knife = 2, /obj/item/material/hatchet/butch = 2, /obj/item/reagent_containers/food/drinks/drinkingglass = 24, /obj/item/clothing/suit/chef/classic = 2, /obj/item/material/kitchen/rollingpin = 2, /obj/item/reagent_containers/cooking_container/oven = 5, /obj/item/reagent_containers/cooking_container/fryer = 4, /obj/item/storage/toolbox/lunchbox/nt = 6, /obj/item/reagent_containers/glass/beaker/bowl = 4, /obj/item/reagent_containers/glass/rag = 8)
+	},
+/obj/machinery/button/remote/blast_door{
+	dir = 2;
+	id = "galley_blast";
+	name = "galley shutter";
+	pixel_x = 0;
+	pixel_y = 24;
+	req_access = list(150)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
 "hrO" = (
@@ -28363,8 +28374,23 @@
 /area/centcom/evac)
 "nqJ" = (
 /obj/effect/floor_decal/corner/purple/diagonal,
-/obj/structure/reagent_dispensers/keg/xuizikeg{
-	pixel_y = -3
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/soymilk,
+/obj/item/reagent_containers/food/drinks/soymilk,
+/obj/item/reagent_containers/food/drinks/soymilk,
+/obj/item/reagent_containers/food/drinks/soymilk,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/bag/plants{
+	layer = 2.9
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
@@ -28630,6 +28656,12 @@
 	name = "Service Airlock"
 	},
 /area/centcom/legion)
+"nPh" = (
+/obj/structure/sink/kitchen{
+	pixel_y = 24
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "nPo" = (
 /obj/structure/table/rack,
 /obj/item/plastique{
@@ -28709,11 +28741,22 @@
 	},
 /area/centcom/legion)
 "nSE" = (
-/obj/structure/window/shuttle/palepurple,
-/obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5;
 	icon_state = "intact"
+	},
+/obj/machinery/door/airlock/external{
+	frequency = 1444;
+	icon_state = "door_locked";
+	id_tag = "skrell_aft_inner";
+	locked = 1;
+	luminosity = 1;
+	name = "thruster maintenance access";
+	req_access = list(150)
+	},
+/obj/structure/plasticflaps/airtight/skrell{
+	layer = 2.5;
+	opacity = 0
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
@@ -29996,6 +30039,16 @@
 	icon_state = "floor3"
 	},
 /area/centcom/legion)
+"pOr" = (
+/obj/structure/table/stone/marble,
+/obj/effect/floor_decal/corner/purple/diagonal,
+/obj/machinery/door/blast/shutters/open{
+	dir = 8;
+	id = "galley_blast";
+	name = "galley shutter"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "pOS" = (
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/tiled/dark,
@@ -31776,6 +31829,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station/warehouse)
+"sXo" = (
+/obj/effect/floor_decal/corner/purple/diagonal,
+/obj/structure/table/stone/marble,
+/obj/machinery/chemical_dispenser/bar_soft/full{
+	layer = 2.99;
+	pixel_x = 1;
+	pixel_y = -3
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
 "sXR" = (
 /obj/machinery/light/small/emergency{
 	dir = 8
@@ -31951,6 +32014,15 @@
 	icon_state = "floor-shuttle"
 	},
 /area/centcom/legion)
+"tjn" = (
+/obj/machinery/icecream_vat,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	pixel_x = 0
+	},
+/turf/simulated/floor/shuttle/dark_blue,
+/area/shuttle/skrell_event/centcom)
 "tkz" = (
 /obj/effect/decal/spraystill{
 	desc = "Looks to be a dropship of some kind.";
@@ -31968,6 +32040,10 @@
 /obj/structure/table/stone/marble,
 /obj/machinery/appliance/cooker/oven{
 	pixel_y = 4
+	},
+/obj/structure/sign/flag/jargon/left{
+	layer = 2.5;
+	pixel_y = 28
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
@@ -32193,6 +32269,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
+"tMF" = (
+/obj/machinery/smartfridge/foodheater,
+/obj/structure/table/stone/marble,
+/obj/machinery/door/blast/shutters/open{
+	dir = 8;
+	id = "galley_blast";
+	name = "galley shutter"
+	},
+/turf/simulated/wall/shuttle/palepurple/cardinal,
+/area/shuttle/skrell_event/centcom)
 "tOh" = (
 /obj/structure/table/rack,
 /obj/item/rig/retro/equipped,
@@ -32240,8 +32326,12 @@
 /area/merchant_station/warehouse)
 "tQh" = (
 /obj/effect/floor_decal/corner/purple/diagonal,
-/obj/machinery/smartfridge/secure{
+/obj/machinery/smartfridge/stocked{
 	pixel_y = 4
+	},
+/obj/structure/sign/flag/jargon/right{
+	layer = 2.5;
+	pixel_y = 28
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
@@ -32427,10 +32517,11 @@
 /area/holodeck/source_dininghall)
 "uhg" = (
 /obj/machinery/door/window/westright,
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1";
-	pixel_y = 0
+/obj/structure/flora/pottedplant{
+	anchored = 1;
+	icon_state = "plant-28";
+	pixel_x = 4;
+	pixel_y = 24
 	},
 /turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
@@ -32633,9 +32724,6 @@
 	pixel_x = 24;
 	pixel_y = 3;
 	req_access = null
-	},
-/obj/item/paper/monitorkey{
-	name = "intercepted code"
 	},
 /turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
@@ -33114,6 +33202,7 @@
 "vxt" = (
 /obj/structure/table/stone/marble,
 /obj/machinery/chem_master/condimaster/alt{
+	condi = 0;
 	density = 0;
 	pixel_y = 9
 	},
@@ -33122,6 +33211,14 @@
 	dir = 4;
 	icon_state = "tube1";
 	pixel_x = 0
+	},
+/obj/item/storage/box/gloves{
+	pixel_x = 0;
+	pixel_y = -17
+	},
+/obj/item/reagent_containers/glass/beaker/large/honey{
+	name = "honey beaker";
+	pixel_y = -2
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/skrell_event/centcom)
@@ -33364,10 +33461,6 @@
 /area/centcom/legion/hangar5)
 "vLP" = (
 /turf/simulated/floor/shuttle/tan,
-/area/shuttle/skrell_event/centcom)
-"vLS" = (
-/obj/machinery/smartfridge/foodheater,
-/turf/simulated/wall/shuttle/palepurple/cardinal,
 /area/shuttle/skrell_event/centcom)
 "vML" = (
 /obj/structure/closet/secure_closet/guncabinet{
@@ -33885,7 +33978,9 @@
 	},
 /area/centcom/legion)
 "wxP" = (
-/obj/machinery/door/window/southleft,
+/obj/machinery/door/window/southleft{
+	req_access = list(150)
+	},
 /turf/simulated/floor/tiled/ramp/bottom,
 /area/shuttle/skrell_event/centcom)
 "wyl" = (
@@ -33971,10 +34066,6 @@
 /area/merchant_station)
 "wEg" = (
 /obj/structure/table/stone/marble,
-/obj/item/material/kitchen/rollingpin,
-/obj/item/material/knife{
-	pixel_y = 3
-	},
 /obj/item/reagent_containers/food/condiment/enzyme{
 	pixel_x = -10;
 	pixel_y = 20
@@ -33984,8 +34075,8 @@
 	pixel_y = 20
 	},
 /obj/item/reagent_containers/food/condiment/spacespice{
-	pixel_x = -16;
-	pixel_y = 14
+	pixel_x = -8;
+	pixel_y = 8
 	},
 /obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = 1;
@@ -57738,8 +57829,8 @@ fIV
 xyQ
 prO
 uoZ
-trQ
-trQ
+tjn
+bQr
 trQ
 trQ
 eoi
@@ -58503,10 +58594,10 @@ vBr
 kTs
 vCb
 bPZ
-msp
-msp
-noD
-msp
+tMF
+pOr
+pOr
+bPZ
 uhg
 cfM
 fyp
@@ -58761,10 +58852,10 @@ uIP
 trQ
 bPZ
 hog
-byE
 eST
-vLS
-trQ
+sXo
+bPZ
+nPh
 trQ
 fyp
 cAl
@@ -59276,7 +59367,7 @@ trQ
 bPZ
 ooJ
 eST
-vGS
+eCV
 bPZ
 hxO
 trQ
@@ -60046,8 +60137,8 @@ bKH
 trQ
 bPZ
 fwg
-eST
-eST
+bHg
+vGS
 bPZ
 pNR
 trQ
@@ -60837,7 +60928,7 @@ vLP
 sZj
 trQ
 trQ
-jFE
+bPZ
 woW
 trQ
 trQ
