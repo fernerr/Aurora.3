@@ -22792,6 +22792,13 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced{
+	dir = 1;
+	icon_state = "rwindow";
+	pixel_x = -5;
+	pixel_y = -6
+	},
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -23215,18 +23222,6 @@
 	icon_state = "wood"
 	},
 /area/centcom/distress_prep)
-"egj" = (
-/obj/effect/decal/spraystill{
-	desc = "The name of this ship.";
-	icon = 'icons/obj/decals.dmi';
-	icon_state = "skrell_ship2";
-	layer = 3.5;
-	name = "The JFV Placeholder";
-	pixel_x = 8;
-	pixel_y = -5
-	},
-/turf/simulated/wall/shuttle/palepurple,
-/area/shuttle/skrell_event/centcom)
 "egB" = (
 /obj/machinery/light{
 	dir = 8;
@@ -23387,6 +23382,13 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
+"eEl" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10;
+	icon_state = "intact"
+	},
+/turf/simulated/wall/shuttle/palepurple,
+/area/shuttle/skrell_event/centcom)
 "eLM" = (
 /obj/effect/wingrille_spawn/reinforced/crescent,
 /turf/unsimulated/floor{
@@ -23668,6 +23670,24 @@
 /obj/structure/undies_wardrobe,
 /turf/simulated/floor/wood,
 /area/merchant_station)
+"feY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/binary/passive_gate{
+	dir = 8;
+	name = "shuttle airlock pressure regulator";
+	target_pressure = 50;
+	unlocked = 1;
+	use_power = 0
+	},
+/obj/effect/decal/fake_object{
+	name = "service ladder";
+	pixel_y = 24
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "ffk" = (
 /obj/machinery/light/spot{
 	icon_state = "tube1";
@@ -23890,6 +23910,18 @@
 	pixel_y = 2
 	},
 /turf/simulated/floor/tiled/dark,
+/area/shuttle/skrell_event/centcom)
+"fwn" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/wall/shuttle/palepurple,
+/area/shuttle/skrell_event/centcom)
+"fwJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
 "fyp" = (
 /obj/structure/table/stone/marble,
@@ -24247,9 +24279,9 @@
 	},
 /area/centcom/legion/hangar5)
 "gex" = (
-/obj/machinery/door/window/eastleft,
+/obj/machinery/door/window/westright,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
 "gfl" = (
 /obj/structure/curtain/open/shower,
@@ -24878,8 +24910,12 @@
 /turf/simulated/floor/wood,
 /area/merchant_station)
 "hak" = (
-/obj/structure/table/steel,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/emergency{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/obj/structure/bed/padded,
 /turf/simulated/floor/reinforced,
 /area/shuttle/skrell_event/centcom)
 "haK" = (
@@ -25249,14 +25285,6 @@
 /obj/item/folder/blue,
 /turf/simulated/floor/carpet,
 /area/merchant_station)
-"hOD" = (
-/obj/structure/bed/chair/office/bridge/generic{
-	icon_state = "bridge_generic";
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor,
-/area/shuttle/skrell_event/centcom)
 "hOG" = (
 /obj/structure/sign/christmas/lights{
 	icon_state = "xmaslights";
@@ -25820,6 +25848,14 @@
 	icon_state = "floor"
 	},
 /area/centcom/distress_prep)
+"iLj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "iLu" = (
 /obj/structure/sign/christmas/lights{
 	icon_state = "xmaslights";
@@ -26575,11 +26611,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "kcU" = (
-/obj/structure/closet/crate/secure/large/reinforced,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8
-	},
+/obj/structure/bed/chair/shuttle,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/recharger/wallcharger{
+	pixel_x = 4;
+	pixel_y = 22
+	},
 /turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
 "kdI" = (
@@ -27948,12 +27985,20 @@
 /turf/simulated/floor/shuttle,
 /area/shuttle/escape/centcom)
 "mYs" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1";
-	pixel_y = 0
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
+	frequency = 1444;
+	id_tag = "skrell_aft_airlock";
+	name = "thruster maintenance airlock";
+	pixel_x = -1;
+	pixel_y = 25;
+	req_access = list(150);
+	tag_airpump = "skrell_aft_pump";
+	tag_chamber_sensor = "skrell_aft_sensor";
+	tag_exterior_door = "skrell_aft_outer";
+	tag_interior_door = "skrell_aft_inner"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
 "mZZ" = (
@@ -28039,13 +28084,6 @@
 	dir = 1
 	},
 /area/centcom/legion)
-"ngB" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor,
-/area/shuttle/skrell_event/centcom)
 "nhp" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -28168,6 +28206,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/merchant_station)
+"nlw" = (
+/obj/structure/shuttle/engine/heater{
+	layer = 2.5
+	},
+/obj/structure/table/reinforced/steel{
+	pixel_y = 4
+	},
+/obj/item/blueprints/deco{
+	name = "station blueprint";
+	pixel_y = 10
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "nlS" = (
 /obj/structure/curtain/open/shower{
 	name = "changing curtain"
@@ -28603,6 +28654,15 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion)
+"nSE" = (
+/obj/structure/window/shuttle/palepurple,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 5;
+	icon_state = "intact"
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "nTu" = (
 /obj/structure/shuttle/engine/router{
 	icon_state = "router";
@@ -28966,6 +29026,28 @@
 	name = "plating"
 	},
 /area/centcom/legion/hangar5)
+"osk" = (
+/obj/structure/shuttle/engine/heater{
+	layer = 2.5
+	},
+/obj/structure/table/reinforced/steel{
+	pixel_y = 4
+	},
+/obj/structure/closet/crate/internals{
+	anchored = 1;
+	name = "equipment crate";
+	pixel_y = 4
+	},
+/obj/item/device/multitool{
+	pixel_y = 4
+	},
+/obj/item/storage/belt/utility/full{
+	pixel_y = 8
+	},
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/o2,
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "otY" = (
 /turf/unsimulated/floor{
 	icon_state = "floor"
@@ -29181,6 +29263,19 @@
 	},
 /turf/simulated/floor/wood,
 /area/shuttle/merchant/start)
+"oHW" = (
+/obj/machinery/access_button{
+	command = "cycle_interior";
+	frequency = 1444;
+	master_tag = "skrell_aft_airlock";
+	name = "interior access button";
+	pixel_x = 24;
+	pixel_y = 21;
+	req_access = list(150)
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "oIb" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -29236,6 +29331,15 @@
 	icon_state = "whitegreen"
 	},
 /area/centcom/legion)
+"oNh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 4;
+	frequency = 1444;
+	id_tag = "skrell_aft_pump"
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "oNW" = (
 /obj/structure/sign/christmas/lights{
 	icon_state = "xmaslights";
@@ -29444,6 +29548,12 @@
 	},
 /turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/skrell_event/centcom)
+"pbl" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 6
+	},
+/turf/simulated/wall/shuttle/palepurple,
+/area/shuttle/skrell_event/centcom)
 "pcj" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/regular{
@@ -29493,6 +29603,15 @@
 	},
 /turf/simulated/floor/shuttle/black,
 /area/shuttle/legion/centcom)
+"pgj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1444;
+	id_tag = "skrell_aft_pump"
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "pgN" = (
 /obj/structure/sign/christmas/lights{
 	icon_state = "xmaslights";
@@ -30510,12 +30629,18 @@
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station/warehouse)
 "rbD" = (
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/structure/window/phoronreinforced{
+	icon_state = "phoronrwindow";
+	dir = 8
 	},
-/obj/structure/bed/padded,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/reinforced,
+/obj/structure/closet/secure_closet/guncabinet{
+	pixel_x = 4
+	},
+/obj/item/device/radiojammer,
+/obj/item/airbubble,
+/obj/item/airbubble,
+/turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
 "rbI" = (
 /obj/structure/table/rack,
@@ -30628,6 +30753,10 @@
 	icon_state = "dark"
 	},
 /area/centcom/legion/hangar5)
+"rgt" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/turf/simulated/wall/shuttle/palepurple,
+/area/shuttle/skrell_event/centcom)
 "rhl" = (
 /obj/structure/table/stone/marble,
 /obj/machinery/door/window/southright{
@@ -30824,6 +30953,15 @@
 	icon_state = "whitegreen"
 	},
 /area/centcom/holding)
+"rDt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/tank/air{
+	icon_state = "air_map";
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "rEP" = (
 /obj/machinery/button/remote/blast_door{
 	dir = 4;
@@ -31129,8 +31267,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "sib" = (
-/obj/machinery/door/airlock/hatch,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/external{
+	frequency = 1444;
+	icon_state = "door_locked";
+	id_tag = "skrell_aft_inner";
+	locked = 1;
+	luminosity = 1;
+	name = "thruster maintenance access";
+	req_access = list(150)
+	},
 /turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
 "sij" = (
@@ -31252,13 +31398,20 @@
 /turf/simulated/floor/shuttle/black,
 /area/shuttle/legion/centcom)
 "smS" = (
-/obj/machinery/light{
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/emergency{
 	dir = 1;
-	icon_state = "tube1";
+	icon_state = "bulb1";
 	name = "adjusted light fixture";
 	pixel_x = -16
 	},
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
 "smT" = (
@@ -31376,10 +31529,6 @@
 	icon_state = "dark"
 	},
 /area/centcom/shared_dream)
-"sCO" = (
-/obj/structure/closet/secure_closet/guncabinet,
-/turf/simulated/floor/shuttle/dark_blue,
-/area/shuttle/skrell_event/centcom)
 "sDs" = (
 /obj/structure/table/wood/gamblingtable,
 /obj/item/material/ashtray/bronze,
@@ -31975,6 +32124,12 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	icon_state = "rwindow";
+	pixel_x = 2;
+	pixel_y = -6
+	},
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
 "tOh" = (
@@ -32227,6 +32382,21 @@
 	icon_state = "floor"
 	},
 /area/centcom/evac)
+"ukH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/airlock_sensor{
+	frequency = 1444;
+	id_tag = "skrell_aft_sensor";
+	master_tag = "skrell_aft_airlock";
+	pixel_y = -24
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 4;
+	frequency = 1444;
+	id_tag = "skrell_aft_pump"
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "ukL" = (
 /obj/effect/decal/warning_stripes,
 /obj/machinery/porta_turret/crescent,
@@ -32388,8 +32558,21 @@
 /turf/simulated/floor/holofloor/snow,
 /area/holodeck/source_picnicarea)
 "uxr" = (
-/obj/structure/computerframe,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/computer/message_monitor{
+	desc = "A standard communications console, tied to listening to specific networks.";
+	name = "communications console"
+	},
+/obj/machinery/light/small/emergency{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/obj/machinery/vending/wallmed1{
+	name = "Medical Supplies";
+	pixel_x = 24;
+	pixel_y = 3;
+	req_access = null
+	},
 /turf/simulated/floor,
 /area/shuttle/skrell_event/centcom)
 "uzX" = (
@@ -32822,11 +33005,11 @@
 	},
 /area/centcom/legion/hangar5)
 "vwL" = (
-/obj/structure/toilet{
-	dir = 4;
-	pixel_y = 5
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/glass/bucket{
+	pixel_x = -9;
+	pixel_y = -5
+	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/skrell_event/centcom)
 "vwR" = (
@@ -33131,18 +33314,6 @@
 	icon_state = "floor3"
 	},
 /area/centcom/legion/hangar5)
-"vOE" = (
-/obj/effect/decal/spraystill{
-	desc = "The name of this ship.";
-	icon = 'icons/obj/decals.dmi';
-	icon_state = "skrell_ship1";
-	layer = 3.5;
-	name = "The JFV Placeholder";
-	pixel_x = 8;
-	pixel_y = -4
-	},
-/turf/simulated/wall/shuttle/palepurple,
-/area/shuttle/skrell_event/centcom)
 "vPK" = (
 /obj/vehicle/droppod/legion{
 	connected_blastdoor = "tcfl_droppod_4"
@@ -33312,6 +33483,19 @@
 	icon_state = "wood"
 	},
 /area/centcom/legion)
+"wbH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1444;
+	id_tag = "skrell_aft_pump"
+	},
+/obj/machinery/light/small/emergency{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "wdJ" = (
 /obj/machinery/door/airlock/silver{
 	name = "Washroom"
@@ -33614,6 +33798,15 @@
 /obj/machinery/door/window/southleft,
 /turf/simulated/floor/tiled/ramp/bottom,
 /area/shuttle/skrell_event/centcom)
+"wyl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/item/trash/skrellsnacks,
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "wyr" = (
 /obj/structure/bed/chair/comfy/brown{
 	dir = 8
@@ -33817,6 +34010,17 @@
 	dir = 8
 	},
 /area/centcom/spawning)
+"wNZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/shuttle/skrell_event/centcom)
 "wOb" = (
 /turf/unsimulated/floor{
 	dir = 8;
@@ -34574,6 +34778,19 @@
 	dir = 4
 	},
 /area/centcom/spawning)
+"yeZ" = (
+/obj/structure/shuttle/engine/heater{
+	layer = 2.5
+	},
+/obj/structure/table/reinforced/steel{
+	pixel_y = 4
+	},
+/obj/structure/closet/crate/freezer/rations{
+	anchored = 1;
+	pixel_y = 4
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/skrell_event/centcom)
 "ygK" = (
 /turf/unsimulated/floor{
 	dir = 8;
@@ -34654,8 +34871,25 @@
 	},
 /area/centcom/legion)
 "ylS" = (
-/obj/machinery/door/airlock/hatch,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/access_button{
+	command = "cycle_exterior";
+	frequency = 1444;
+	master_tag = "skrell_aft_airlock";
+	name = "exterior access button";
+	pixel_x = 24;
+	pixel_y = 0;
+	req_access = list(10,13)
+	},
+/obj/machinery/door/airlock/external{
+	frequency = 1444;
+	icon_state = "door_locked";
+	id_tag = "skrell_aft_outer";
+	locked = 1;
+	luminosity = 1;
+	name = "thruster maintenance access";
+	req_access = list(150)
+	},
 /turf/simulated/floor/plating,
 /area/shuttle/skrell_event/centcom)
 
@@ -57681,8 +57915,8 @@ trQ
 trQ
 bPZ
 kcU
-ngB
-tMa
+goL
+osk
 pyY
 aaM
 aaM
@@ -57937,9 +58171,9 @@ trQ
 trQ
 trQ
 bPZ
-mYs
+kcU
 goL
-tMa
+yeZ
 pyY
 aaM
 aaM
@@ -58194,9 +58428,9 @@ woW
 trQ
 trQ
 bPZ
-hOD
+kcU
 goL
-tMa
+nlw
 pyY
 aaM
 aaM
@@ -58452,7 +58686,7 @@ trQ
 trQ
 bPZ
 uxr
-goL
+oHW
 drc
 pyY
 aaM
@@ -58965,8 +59199,8 @@ oMe
 rOh
 jiD
 bPZ
-goL
-goL
+oNh
+ukH
 bPZ
 aaM
 aaM
@@ -59221,9 +59455,9 @@ qAO
 bPZ
 bPZ
 bPZ
-bPZ
+pbl
 mYs
-goL
+fwJ
 ylS
 aaM
 aaM
@@ -59478,9 +59712,9 @@ trQ
 oMe
 rOh
 jiD
-bPZ
-goL
-goL
+fwn
+wbH
+pgj
 bPZ
 aaM
 aaM
@@ -59735,9 +59969,9 @@ bPZ
 bPZ
 bPZ
 bPZ
-bPZ
-bPZ
-bPZ
+eEl
+rgt
+nSE
 msp
 bPZ
 aaM
@@ -59994,7 +60228,7 @@ trQ
 trQ
 trQ
 bPZ
-goL
+wNZ
 vWY
 pyY
 aaM
@@ -60251,7 +60485,7 @@ trQ
 trQ
 trQ
 bPZ
-goL
+wyl
 mbQ
 pyY
 aaM
@@ -60479,7 +60713,7 @@ aaM
 aaM
 bPZ
 bPZ
-sCO
+trQ
 bPZ
 kRj
 dGs
@@ -60502,13 +60736,13 @@ vLP
 sZj
 trQ
 trQ
-vOE
+jFE
 woW
 trQ
 trQ
 trQ
 bPZ
-goL
+iLj
 mbQ
 pyY
 aaM
@@ -60759,7 +60993,7 @@ eoi
 fIV
 trQ
 trQ
-egj
+bPZ
 trQ
 trQ
 trQ
@@ -61022,7 +61256,7 @@ trQ
 trQ
 trQ
 bPZ
-goL
+feY
 mbQ
 pyY
 aaM
@@ -61279,7 +61513,7 @@ trQ
 trQ
 trQ
 bPZ
-goL
+rDt
 byy
 pyY
 aaM

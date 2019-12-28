@@ -228,3 +228,10 @@ move an amendment</a> to the drawing.</p>
 					return ROOM_ERR_SPACE
 		found+=T
 	return found
+
+/obj/item/blueprints/deco
+	name = "blueprints of NSS Aurora"
+	desc = "Intricate blueprints of the NSS Aurora. There is a \"Classified\" stamp and several points of entry marked out on it."
+
+/obj/item/blueprints/attack_self(mob/user as mob)
+	return
