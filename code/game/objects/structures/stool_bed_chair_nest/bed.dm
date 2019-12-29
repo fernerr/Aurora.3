@@ -23,8 +23,8 @@
 	gfi_layer_rotation = GFI_ROTATION_DEFDIR
 	var/apply_material_color = TRUE
 
-/obj/structure/bed/Initialize(mapload, var/new_material, var/new_padding_material)
-	. = ..()
+/obj/structure/bed/New(var/newloc, var/new_material, var/new_padding_material)
+	..()
 	color = null
 	if(!new_material)
 		new_material = DEFAULT_WALL_MATERIAL
@@ -175,6 +175,15 @@
 
 /obj/structure/bed/padded/New(var/newloc)
 	..(newloc,"plastic","cotton")
+
+/obj/structure/bed/massage
+	name = "massage table"
+	desc = "Comfortable and ergonomic, like resting on a cloud."
+	icon_state = "psychbed"
+	base_icon = "psychbed"
+
+/obj/structure/bed/massage/New(var/newloc)
+	..(newloc,"wood","leather")
 
 /*
  * Roller beds
