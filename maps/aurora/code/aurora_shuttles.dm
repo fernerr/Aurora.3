@@ -124,31 +124,31 @@
 	shuttles["Skipjack"] = VS
 
 	//Nuke Ops shuttle.
-	var/datum/shuttle/multi_shuttle/MS = new/datum/shuttle/multi_shuttle()
-	MS.origin = locate(/area/syndicate_station/start)
-	MS.start_location = "Mercenary Base"
+	//var/datum/shuttle/multi_shuttle/MS = new/datum/shuttle/multi_shuttle()
+	//MS.origin = locate(/area/syndicate_station/start)
+	//MS.start_location = "Mercenary Base"
 
-	MS.destinations = list(
-		"Surface of the station" = locate(/area/syndicate_station/surface),
-		"Above the station" = locate(/area/syndicate_station/above),
-		"Under the station" = locate(/area/syndicate_station/under),
-		"Mining caverns" = locate(/area/syndicate_station/caverns),
-		"Arrivals dock" = locate(/area/syndicate_station/arrivals_dock)
-	)
+	//MS.destinations = list(
+	//	"Surface of the station" = locate(/area/syndicate_station/surface),
+	//	"Above the station" = locate(/area/syndicate_station/above),
+	//	"Under the station" = locate(/area/syndicate_station/under),
+	//	"Mining caverns" = locate(/area/syndicate_station/caverns),
+	//	"Arrivals dock" = locate(/area/syndicate_station/arrivals_dock)
+	//)
 
-	MS.docking_controller_tag = "merc_shuttle"
-	MS.destination_dock_targets = list(
-		"Mercenary Base" = "merc_base",
-		"Arrivals dock" = "nuke_shuttle_dock_airlock"
-	)
+	//MS.docking_controller_tag = "merc_shuttle"
+	//MS.destination_dock_targets = list(
+	//	"Mercenary Base" = "merc_base",
+	//	"Arrivals dock" = "nuke_shuttle_dock_airlock"
+	//)
 
-	MS.announcer = "NDV Icarus"
-	MS.arrival_message = "Attention, [station_short], you have a large signature approaching the station - looks unarmed to surface scans. We're too far out to intercept - brace for visitors."
-	MS.departure_message = "Your visitors are on their way out of the system, [station_short], burning delta-v like it's nothing. Good riddance."
-	MS.interim = locate(/area/syndicate_station/transit)
+	//MS.announcer = "NDV Icarus"
+	//MS.arrival_message = "Attention, [station_short], you have a large signature approaching the station - looks unarmed to surface scans. We're too far out to intercept - brace for visitors."
+	//MS.departure_message = "Your visitors are on their way out of the system, [station_short], burning delta-v like it's nothing. Good riddance."
+	//MS.interim = locate(/area/syndicate_station/transit)
 
-	MS.warmup_time = 0
-	shuttles["Mercenary"] = MS
+	//MS.warmup_time = 0
+	//shuttles["Mercenary"] = MS
 
 	// Tau Ceti Foreign Legion
 
