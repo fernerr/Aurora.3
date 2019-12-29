@@ -2,7 +2,7 @@
 	name = "hoverscooter"
 	desc = "Forward, my trusty steed!"
 	icon = 'icons/obj/bike.dmi'
-	icon_state = "hoverscooter"
+	icon_state = "hoverscooter_on"
 	dir = SOUTH
 
 	load_item_visible = 1
