@@ -343,8 +343,6 @@
 	glass = 1
 	hatch_colour = "#caa638"
 
-
-
 /obj/machinery/door/airlock/gold
 	name = "Gold Airlock"
 	icon = 'icons/obj/doors/Doorgold.dmi'
@@ -381,7 +379,17 @@
 	maxhealth = 600
 	insecure = 0
 
+/obj/machinery/door/airlock/skrell
+	name = "airlock"
+	icon = 'icons/obj/doors/purple_skrell_door.dmi'
+	explosion_resistance = 20
+	secured_wires = 1
+	maxhealth = 600
+	insecure = 0
+	hashatch = FALSE
 
+/obj/machinery/door/airlock/skrell/grey
+	icon = 'icons/obj/doors/grey_skrell_door.dmi'
 
 /obj/machinery/door/airlock/uranium/machinery_process()
 	if(world.time > last_event+20)

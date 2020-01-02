@@ -111,6 +111,27 @@
 /turf/simulated/wall/shuttle/legion
 	icon = 'icons/turf/smooth/shuttle_wall_legion.dmi'
 
+/turf/simulated/wall/shuttle/skrell
+	icon_state = "skrell_purple"
+	icon = 'icons/turf/smooth/skrell_purple.dmi'
+	canSmoothWith = list(
+		/turf/simulated/wall/shuttle/skrell,
+		/obj/structure/window/shuttle,
+		/obj/machinery/door/airlock,
+		/obj/structure/shuttle/engine/propulsion
+	)
+
+/turf/simulated/wall/shuttle/skrell/cardinal
+	smooth = SMOOTH_MORE
+
+/turf/simulated/wall/shuttle/skrell/corner
+	icon = 'icons/turf/shuttle.dmi'
+	icon_state = "skrell_diagonal"
+	use_set_icon_state = 1
+	smooth = null
+	canSmoothWith = null
+
+
 //--Floors--//
 
 /turf/simulated/floor/shuttle
@@ -149,6 +170,22 @@
 /turf/simulated/floor/shuttle/dark_blue
 	icon_state = "floor9"
 	initial_flooring = /decl/flooring/shuttle/dark_blue
+
+/turf/simulated/floor/shuttle/skrell
+	icon_state = "skrell_purple"
+	initial_flooring = /decl/flooring/shuttle/skrell
+
+/turf/simulated/floor/shuttle/skrell/blue
+	icon_state = "skrell_blue"
+	initial_flooring = /decl/flooring/shuttle/skrell/blue
+
+/turf/simulated/floor/shuttle/skrell/ramp
+	icon_state = "skrellramp-bottom"
+	initial_flooring = /decl/flooring/shuttle/skrell/ramp
+
+/turf/simulated/floor/shuttle/skrell/ramp/top
+	icon_state = "skrellramp-top"
+	initial_flooring = /decl/flooring/shuttle/skrell/ramp/top
 
 //--Roofs--//
 

@@ -45,6 +45,17 @@
 
 	var/previous_stat
 
+/obj/machinery/light/skrell
+	base_state = "skrell"
+	icon_state = "skrell_empty"
+	supports_nightmode = FALSE
+	fitting= "skrell"
+	bulb_is_noisy = FALSE
+	light_type = /obj/item/light/tube/skrell
+	inserted_light = /obj/item/light/tube/skrell
+	brightness_power = 1
+	brightness_color = LIGHT_COLOR_PURPLE
+
 // the smaller bulb light fixture
 
 /obj/machinery/light/small

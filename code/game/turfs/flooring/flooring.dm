@@ -280,3 +280,15 @@ var/list/flooring_types
 
 /decl/flooring/shuttle/dark_blue
 	icon_base = "floor9"
+
+/decl/flooring/shuttle/skrell
+	icon_base = "skrell_purple"
+
+/decl/flooring/shuttle/skrell/blue
+	icon_base = "skrell_blue"
+
+/decl/flooring/shuttle/skrell/ramp
+	icon_base = "skrellramp-bottom"
+
+/decl/flooring/shuttle/skrell/ramp/top
+	icon_base = "skrellramp-top"

@@ -7,6 +7,14 @@
 	base_turf = /turf/space
 	requires_power = FALSE
 
+/area/derelict/skrell_station
+	name = "aaSkrell Station"
+	icon_state = "yellow"
+
+/area/derelict/skrell_station/center
+	name = "aaaSkrell Center"
+	icon_state = "blue"
+
 /area/derelict/hallway/northwest
 	name = "\improper NSS Aurora I"
 	icon_state = "hallP"

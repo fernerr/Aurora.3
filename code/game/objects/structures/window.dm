@@ -444,6 +444,12 @@
 	damage_per_fire_tick = 1.0 // This should last for 80 fire ticks if the window is not damaged at all. The idea is that borosilicate windows have something like ablative layer that protects them for a while.
 	maxhealth = 80.0
 
+/obj/structure/window/phoronreinforced/skrell
+	name = "advanced borosilicate-alloy window"
+	desc = "A window made out of a higly advanced borosilicate alloy. It seems to be extremely strong."
+	basestate = "skrell_phoronwindow"
+	icon_state = "skrell_phoronwindow"
+	maxhealth = 500
 
 /obj/structure/window/reinforced
 	name = "reinforced window"
@@ -500,6 +506,17 @@
 	icon = 'icons/obj/smooth/shuttle_window_legion.dmi'
 	health = 160
 	maxhealth = 160
+
+/obj/structure/window/shuttle/skrell
+	name = "shuttle window"
+	icon = 'icons/obj/smooth/skrell_window_purple.dmi'
+	health = 300
+	maxhealth = 300
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(
+		/turf/simulated/wall/shuttle/skrell,
+		/obj/structure/window/shuttle/skrell
+	)
 
 /obj/structure/window/shuttle/crescent
 	desc = "It looks rather strong."
