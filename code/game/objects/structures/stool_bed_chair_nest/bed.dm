@@ -176,6 +176,15 @@
 /obj/structure/bed/padded/New(var/newloc)
 	..(newloc,"plastic","cotton")
 
+/obj/structure/bed/massage
+	name = "massage table"
+	desc = "Comfortable and ergonomic, like resting on a cloud."
+	icon_state = "psychbed"
+	base_icon = "psychbed"
+
+/obj/structure/bed/massage/New(var/newloc)
+	..(newloc,"wood","leather")
+
 /*
  * Roller beds
  */
