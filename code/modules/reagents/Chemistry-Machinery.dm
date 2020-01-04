@@ -10,7 +10,7 @@
 	density = 1
 	anchored = 1
 	icon = 'icons/obj/chemical.dmi'
-	icon_state = "mixer0"
+	icon_state = "mixer"
 	use_power = 1
 	idle_power_usage = 20
 	layer = 2.9
@@ -27,6 +27,7 @@
 
 /obj/machinery/chem_master/Initialize()
 	. = ..()
+	icon_state = "[initial(icon_state)]0"
 	create_reagents(300)
 
 /obj/machinery/chem_master/ex_act(severity)
@@ -146,7 +147,7 @@
 				beaker:loc = src.loc
 				beaker = null
 				reagents.clear_reagents()
-				icon_state = "mixer0"
+				icon_state = "[initial(icon_state)]0"
 		else if (href_list["createpill"] || href_list["createpill_multiple"])
 			var/count = 1
 
@@ -281,6 +282,9 @@
 /obj/machinery/chem_master/condimaster
 	name = "CondiMaster 3000"
 	condi = 1
+
+/obj/machinery/chem_master/condimaster/alt
+	icon_state = "mixer_alt"
 
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////

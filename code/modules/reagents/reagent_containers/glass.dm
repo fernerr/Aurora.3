@@ -155,6 +155,11 @@
 	flags = OPENCONTAINER
 	fragile = 6 // a bit sturdier
 
+/obj/item/reagent_containers/glass/beaker/large/honey/Initialize()
+	. = ..()
+	reagents.add_reagent("honey", 120)
+	update_icon()
+
 /obj/item/reagent_containers/glass/beaker/bowl
 	name = "mixing bowl"
 	desc = "A large mixing bowl."
