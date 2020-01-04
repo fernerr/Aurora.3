@@ -297,6 +297,7 @@
 		return
 	anchored = TRUE // good luck getting this bad boy off
 	canremove = FALSE
+	icon_state = "[initial(icon_state)]_active"
 	to_chat(wearer, span("warning", "\The [src] clamps down around your ear, releasing a burst of static before going silent. Something probes at your ear canal..."))
 	addtimer(CALLBACK(src, .proc/do_loyalty, wearer), 15)
 
@@ -304,6 +305,7 @@
 	if(fried)
 		return
 	if(anchored && !canremove)
+		icon_state = initial(icon_state)
 		visible_message(span("warning", "\The [src] fizzles loudly, then clicks open!"))
 		anchored = FALSE
 		canremove = TRUE
