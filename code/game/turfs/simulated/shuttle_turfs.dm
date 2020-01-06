@@ -171,9 +171,18 @@
 	icon_state = "floor9"
 	initial_flooring = /decl/flooring/shuttle/dark_blue
 
+/turf/simulated/floor/shuttle/advanced
+	icon_state = "advanced_plating"
+	initial_flooring = /decl/flooring/shuttle/advanced
+
+/turf/simulated/floor/shuttle/advanced/alt
+	icon_state = "advanced_plating_alt"
+	initial_flooring = /decl/flooring/shuttle/advanced/alt
+
 /turf/simulated/floor/shuttle/skrell
 	icon_state = "skrell_purple"
 	initial_flooring = /decl/flooring/shuttle/skrell
+	footstep_sound = "sandstep"
 
 /turf/simulated/floor/shuttle/skrell/blue
 	icon_state = "skrell_blue"
@@ -186,6 +195,9 @@
 /turf/simulated/floor/shuttle/skrell/ramp/top
 	icon_state = "skrellramp-top"
 	initial_flooring = /decl/flooring/shuttle/skrell/ramp/top
+
+/turf/simulated/floor/shuttle/advanced
+
 
 //--Roofs--//
 

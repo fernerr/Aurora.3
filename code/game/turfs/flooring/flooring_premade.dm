@@ -30,6 +30,9 @@
 	initial_flooring = /decl/flooring/grass
 	footstep_sound = "grassstep"
 
+/turf/simulated/floor/grass/edgeless
+	initial_flooring = /decl/flooring/grass/edgeless
+
 /turf/simulated/floor/carpet/blue
 	name = "blue carpet"
 	icon_state = "bcarpet"
@@ -108,10 +111,19 @@
 	initial_flooring = /decl/flooring/tiling/red
 
 /turf/simulated/floor/tiled/steel
+	icon = 'icons/turf/total_floors.dmi'
 	name = "steel floor"
 	icon_state = "steel_dirty"
 	initial_flooring = /decl/flooring/tiling/steel
 
+/turf/simulated/floor/tiled/asteroid
+	icon = 'icons/turf/total_floors.dmi'
+	icon_state = "asteroidfloor"
+	initial_flooring = /decl/flooring/tiling/asteroid
+
+/turf/simulated/floor/plating/asteroid
+	icon = 'icons/turf/total_floors.dmi'
+	icon_state = "asteroidplating"
 
 /turf/simulated/floor/tiled/steel/airless
 	oxygen = 0

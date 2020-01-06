@@ -124,6 +124,7 @@
 /obj/structure/bed/chair/office
 	anchored = 0
 	buckle_movable = 1
+	var/makes_sound = TRUE
 
 /obj/structure/bed/chair/office/update_icon()
 	return
@@ -135,7 +136,8 @@
 
 /obj/structure/bed/chair/office/Move()
 	. = ..()
-	playsound(src, 'sound/effects/roll.ogg', 100, 1)
+	if(makes_sound)
+		playsound(src, 'sound/effects/roll.ogg', 100, 1)
 	if(buckled_mob)
 		var/mob/living/occupant = buckled_mob
 		occupant.buckled = null
@@ -180,6 +182,15 @@
 
 /obj/structure/bed/chair/office/dark
 	icon_state = "officechair_dark"
+
+/obj/structure/bed/chair/office/hover
+	icon_state = "hover_chair"
+	makes_sound = FALSE
+	can_dismantle = FALSE
+
+/obj/structure/bed/chair/office/hover/Initialize()
+	.=..()
+	set_light(1,1,LIGHT_COLOR_CYAN)
 
 /obj/structure/bed/chair/office/bridge
 	name = "command chair"

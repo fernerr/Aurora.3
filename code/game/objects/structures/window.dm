@@ -508,11 +508,11 @@
 	maxhealth = 160
 
 /obj/structure/window/shuttle/skrell
-	name = "shuttle window"
+	name = "advanced borosilicate alloy window"
 	icon = 'icons/obj/smooth/skrell_window_purple.dmi'
-	health = 300
-	maxhealth = 300
-	smooth = SMOOTH_MORE
+	health = 500
+	maxhealth = 500
+	smooth = SMOOTH_MORE|SMOOTH_DIAGONAL
 	canSmoothWith = list(
 		/turf/simulated/wall/shuttle/skrell,
 		/obj/structure/window/shuttle/skrell

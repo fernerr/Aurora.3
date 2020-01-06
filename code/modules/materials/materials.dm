@@ -1017,3 +1017,13 @@ var/list/name_to_material
 	hardness = 500
 	weight = 500
 	protectiveness = 80 // 80%
+
+/material/shuttle/skrell
+	name = "skrell"
+	display_name = "superadvanced alloy"
+	icon_colour = null
+	icon_base = "skrell"
+
+/material/shuttle/skrell/colored
+	name = "skrell_colored"
+	icon_colour = "#a27ab0"

@@ -744,3 +744,10 @@
 	new /obj/item/organ/external/hand/right/autakh/tool/mining(src)
 	new /obj/item/organ/external/hand/right/autakh/medical(src)
 	new /obj/item/organ/external/hand/right/autakh/security(src)
+
+/obj/structure/closet/crate/skrell
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "skrell"
+	icon_opened = "skrellopen"
+	icon_closed = "skrell"
+	layer = OBJ_LAYER - 0.01
