@@ -192,6 +192,9 @@
 	.=..()
 	set_light(1,1,LIGHT_COLOR_CYAN)
 
+/obj/structure/bed/chair/office/hover/command
+	icon_state = "hover_command"
+
 /obj/structure/bed/chair/office/bridge
 	name = "command chair"
 	desc = "It exudes authority... and looks about as comfortable as a brick."

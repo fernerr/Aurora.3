@@ -31,6 +31,8 @@
 	footstep_sound = "grassstep"
 
 /turf/simulated/floor/grass/edgeless
+	icon = 'icons/turf/total_floors.dmi'
+	icon_state = "grass_alt"
 	initial_flooring = /decl/flooring/grass/edgeless
 
 /turf/simulated/floor/carpet/blue

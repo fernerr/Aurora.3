@@ -32,6 +32,18 @@
 	..()
 	icon_state = "tree_[rand(1, 6)]"
 
+/obj/structure/flora/tree/jungle
+	name = "tree"
+	icon_state = "tree"
+	desc = "It's seriously hampering your view of the jungle."
+	icon = 'icons/obj/flora/jungletrees.dmi'
+	pixel_x = -48
+	pixel_y = -20
+
+/obj/structure/flora/tree/jungle/small
+	pixel_y = 0
+	pixel_x = -32
+	icon = 'icons/obj/flora/jungletreesmall.dmi'
 
 //grass
 /obj/structure/flora/grass
@@ -328,3 +340,15 @@
 /obj/structure/flora/ausbushes/fullgrass/New()
 	..()
 	icon_state = "fullgrass_[rand(1, 3)]"
+
+
+//Jungle grass
+
+/obj/structure/flora/grass/jungle
+	name = "jungle grass"
+	desc = "Thick alien flora."
+	icon = 'icons/obj/flora/jungleflora.dmi'
+	icon_state = "grassa"
+
+/obj/structure/flora/grass/jungle/b
+	icon_state = "grassb"

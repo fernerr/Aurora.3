@@ -49,8 +49,13 @@ var/list/flooring_types
 	build_type = /obj/item/stack/tile/grass
 
 /decl/flooring/grass/edgeless
+	name = "grass"
+	desc = "A soft patch of grass"
+	icon = 'icons/turf/total_floors.dmi'
+	icon_base = "grass_alt"
 	flags = TURF_ACID_IMMUNE
 	build_type = null
+	has_base_range = 0
 
 /decl/flooring/asteroid
 	name = "coarse sand"

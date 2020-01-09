@@ -176,6 +176,17 @@
 /obj/structure/bed/padded/New(var/newloc)
 	..(newloc,"plastic","cotton")
 
+/obj/structure/bed/aqua
+	name = "aquabed"
+	icon_state = "aquabed"
+
+/obj/structure/bed/aqua/Initialize()
+	.=..()
+	set_light(1,1,LIGHT_COLOR_CYAN)
+
+/obj/structure/bed/aqua/update_icon()
+	return
+
 /*
  * Roller beds
  */
