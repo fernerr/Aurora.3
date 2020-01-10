@@ -73,6 +73,10 @@
 	can_be_unanchored = TRUE
 	layer = 2.7	// Above wires.
 
+/obj/structure/lattice/indoor
+	restrict_placement = FALSE
+	layer = 2.7
+
 /obj/structure/lattice/catwalk/attackby(obj/item/C, mob/user)
 	if (C.iswelder())
 		var/obj/item/weldingtool/WT = C
