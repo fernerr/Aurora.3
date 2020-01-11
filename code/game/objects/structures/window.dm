@@ -502,7 +502,6 @@
 	can_be_unanchored = TRUE
 
 /obj/structure/window/shuttle/legion
-	name = "cockpit window"
 	icon = 'icons/obj/smooth/shuttle_window_legion.dmi'
 	health = 160
 	maxhealth = 160

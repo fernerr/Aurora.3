@@ -111,6 +111,9 @@
 /turf/simulated/wall/shuttle/legion
 	icon = 'icons/turf/smooth/shuttle_wall_legion.dmi'
 
+/turf/simulated/wall/shuttle/legion/cardinal
+	smooth = SMOOTH_MORE
+
 /turf/simulated/wall/shuttle/skrell
 	icon_state = "skrell_purple"
 	icon = 'icons/turf/smooth/skrell_purple.dmi'
