@@ -15,6 +15,9 @@
 
 	permit_ao = FALSE
 
+/turf/space/dynamic
+	dynamic_lighting = 1
+
 // Copypaste of parent for performance.
 /turf/space/Initialize()
 	appearance = SSicon_cache.space_cache["[((x + y) ^ ~(x * y) + z) % 25]"]
