@@ -1317,7 +1317,7 @@
 						"<span class='warning'>Your movement jostles [O] in your [organ.name] painfully.</span>")
 					to_chat(src, msg)
 
-				adjustHalLoss(rand(1, 3))
+				organ.take_damage(rand(1, 3), sharp = TRUE, edge = TRUE, used_weapon = O)
 
 /mob/living/carbon/human/verb/check_pulse()
 	set category = "Object"
@@ -1714,7 +1714,7 @@
 /mob/living/carbon/human/proc/get_traumas()
 	. = list()
 	var/obj/item/organ/internal/brain/B = internal_organs_by_name[BP_BRAIN]
-	if(istype(B, /obj/item/organ/borer))
+	if(istype(B, /obj/item/organ/internal/borer))
 		return
 	if(B && should_have_organ(BP_BRAIN) && !isipc(src))
 		. = B.traumas

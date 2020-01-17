@@ -380,6 +380,17 @@
 		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/industrial/xion)
 	)
 
+/datum/species/machine/industrial/xion/remote
+	name = "Remote Xion Industrial Frame"
+	short_name = "rem_xmf"
+
+	has_organ = list(
+		BP_BRAIN   = /obj/item/organ/internal/mmi_holder/circuit,
+		BP_CELL    = /obj/item/organ/internal/cell,
+		BP_OPTICS  = /obj/item/organ/internal/eyes/optical_sensor,
+		BP_IPCTAG = /obj/item/organ/internal/ipc_tag
+	)
+
 /datum/species/machine/industrial/xion/get_light_color(mob/living/carbon/human/H)
 	if (istype(H))
 		return rgb(H.r_eyes, H.g_eyes, H.b_eyes)
@@ -387,6 +398,7 @@
 /datum/species/machine/zenghu
 	name = "Zeng-Hu Mobility Frame"
 	short_name = "zhf"
+	bodytype = "Zeng-Hu Mobility Frame"
 
 	icobase = 'icons/mob/human_races/ipc/r_ind_zenghu.dmi'
 	deform = 'icons/mob/human_races/ipc/r_ind_zenghu.dmi'
@@ -432,7 +444,7 @@
 /datum/species/machine/bishop
 	name = "Bishop Accessory Frame"
 	short_name = "bcf"
-	bodytype = "Human"
+	bodytype = "Bishop Accessory Frame"
 
 	icobase = 'icons/mob/human_races/ipc/r_ind_bishop.dmi'
 	deform = 'icons/mob/human_races/ipc/r_ind_bishop.dmi'
@@ -509,6 +521,18 @@
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/self_diagnostics
 		)
+
+/datum/species/machine/unbranded/remote
+	name = "Remote Unbranded Frame"
+	short_name = "rem_unbran"
+	name_plural = "Remote Unbranded Frames"
+
+	has_organ = list(
+		BP_BRAIN   = /obj/item/organ/internal/mmi_holder/circuit,
+		BP_CELL    = /obj/item/organ/internal/cell,
+		BP_OPTICS  = /obj/item/organ/internal/eyes/optical_sensor,
+		BP_IPCTAG = /obj/item/organ/internal/ipc_tag
+	)
 
 /datum/species/machine/unbranded/get_light_color(mob/living/carbon/human/H)
 	if (istype(H))
