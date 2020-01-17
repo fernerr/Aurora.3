@@ -7,14 +7,6 @@
 	base_turf = /turf/space
 	requires_power = FALSE
 
-/area/derelict/skrell_station
-	name = "aaSkrell Station"
-	icon_state = "yellow"
-
-/area/derelict/skrell_station/center
-	name = "aaaSkrell Center"
-	icon_state = "blue"
-
 /area/derelict/hallway/northwest
 	name = "\improper NSS Aurora I"
 	icon_state = "hallP"
@@ -208,3 +200,43 @@
 /area/construction/Storage
 	name = "Construction Site Storage"
 	icon_state = "yellow"
+
+//Skrell Station Stuff
+
+/area/derelict/skrell_station
+	name = "aaSkrell Station"
+	icon_state = "yellow"
+
+/area/derelict/skrell_station/center
+	name = "aaaSkrell Center"
+	icon_state = "blue"
+
+/area/derelict/skrell_station/jfv_voqueva
+	name = "\improper JFV Voqueva"
+	icon_state = "purple"
+	no_light_control = FALSE
+	requires_power = FALSE
+
+/area/derelict/skrell_station/jfv_voqueva/hallway
+	name = "\improper JFV Voqueva - Hallways"
+
+/area/derelict/skrell_station/jfv_voqueva/bridge
+	name = "\improper JFV Voqueva - Bridge"
+	icon_state = "bluenew"
+
+/area/derelict/skrell_station/jfv_voqueva/engineering
+	name = "\improper JFV Voqueva - Engineering"
+	icon_state = "engineering"
+
+/area/derelict/skrell_station/jfv_voqueva/medical
+	name = "\improper JFV Voqueva - Medical Wing"
+	icon_state = "medbay"
+
+/area/derelict/skrell_station/jfv_voqueva/research
+	name = "\improper JFV Voqueva - Research Wing"
+	icon_state = "research"
+
+/area/derelict/skrell_station/jfv_voqueva/crew
+	name = "\improper JFV Voqueva - Crew Quarters"
+	icon_state = "crew_quarters"
+

@@ -24,3 +24,15 @@
 	density = 0
 	anchored = 1
 	layer = 3
+
+/obj/effect/decal/fake_object/fusion_reactor
+	name = "fusion reactor"
+	desc = "A fusion reactor of skrell design. Can reliably power a medium-sized spacefaring vessel or a small city."
+	icon = 'icons/obj/machines/skrell_reactor.dmi'
+	icon_state = "reactor"
+	density = 1
+	pixel_x = -32
+
+/obj/effect/decal/fake_object/fusion_reactor/Initialize()
+	.=..()
+	set_light(4,2,LIGHT_COLOR_CYAN)

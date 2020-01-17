@@ -121,7 +121,8 @@
 		/turf/simulated/wall/shuttle/skrell,
 		/obj/structure/window/shuttle,
 		/obj/machinery/door/airlock,
-		/obj/structure/shuttle/engine/propulsion
+		/obj/structure/shuttle/engine/propulsion,
+		/turf/unsimulated/wall/fakeairlock
 	)
 
 /turf/simulated/wall/shuttle/skrell/cardinal
