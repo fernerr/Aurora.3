@@ -36,3 +36,15 @@
 /obj/effect/decal/fake_object/fusion_reactor/Initialize()
 	.=..()
 	set_light(4,2,LIGHT_COLOR_CYAN)
+
+/obj/effect/decal/fake_object/particle_cannon
+	name = "naval particle cannon"
+	desc = "A highly advanced particle cannon, for use in disabling or destroying enemy vessels with ease. Used exclusively by Jargon Federation martial vessels."
+	icon = 'icons/obj/machines/particlecannon.dmi'
+	icon_state = "navalparticlecannon"
+	density = 1
+	pixel_x = -128
+
+/obj/effect/decal/fake_object/particle_cannon/Initialize()
+	.=..()
+	set_light(6,2,LIGHT_COLOR_CYAN)
