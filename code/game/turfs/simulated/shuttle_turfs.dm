@@ -193,15 +193,13 @@
 	initial_flooring = /decl/flooring/shuttle/skrell/blue
 
 /turf/simulated/floor/shuttle/skrell/ramp
+	name = "footramp"
 	icon_state = "skrellramp-bottom"
 	initial_flooring = /decl/flooring/shuttle/skrell/ramp
 
 /turf/simulated/floor/shuttle/skrell/ramp/top
 	icon_state = "skrellramp-top"
 	initial_flooring = /decl/flooring/shuttle/skrell/ramp/top
-
-/turf/simulated/floor/shuttle/advanced
-
 
 //--Roofs--//
 

@@ -184,6 +184,8 @@
 	icon_state = "officechair_dark"
 
 /obj/structure/bed/chair/office/hover
+	name = "hoverchair"
+	desc = "Adjusts itself to the sitter's weight resulting in a most comfortable sitting experience. Like floating on a cloud."
 	icon_state = "hover_chair"
 	makes_sound = FALSE
 	can_dismantle = FALSE

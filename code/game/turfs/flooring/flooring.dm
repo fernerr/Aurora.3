@@ -307,12 +307,14 @@ var/list/flooring_types
 	icon_base = "advanced_plating_alt"
 
 /decl/flooring/shuttle/skrell
+	desc = "Typical flooring of skrell vessels, soft and springy to the touch."
 	icon_base = "skrell_purple"
 
 /decl/flooring/shuttle/skrell/blue
 	icon_base = "skrell_blue"
 
 /decl/flooring/shuttle/skrell/ramp
+	name = "footramp"
 	icon_base = "skrellramp-bottom"
 
 /decl/flooring/shuttle/skrell/ramp/top

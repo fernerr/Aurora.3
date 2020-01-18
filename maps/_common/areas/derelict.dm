@@ -204,21 +204,44 @@
 //Skrell Station Stuff
 
 /area/derelict/skrell_station
-	name = "aaSkrell Station"
+	name = "Skrell Station"
 	icon_state = "yellow"
+	no_light_control = TRUE
+	requires_power = FALSE
 
 /area/derelict/skrell_station/center
-	name = "aaaSkrell Center"
+	name = "Abandoned Asteroid Station"
+	sound_env = STANDARD_STATION
+	icon_state = "yellow"
+
+/area/derelict/skrell_station/arboretum
+	name = "Arboretum"
+	icon_state = "green"
+	sound_env = LARGE_SOFTFLOOR
+
+/area/derelict/skrell_station/kitchen
+	name = "Arboretum Kitchen"
+	icon_state = "green"
+	sound_env = SMALL_SOFTFLOOR
+
+/area/derelict/skrell_station/blv_sisyphus
+	name = "BLV Sisyphus"
 	icon_state = "blue"
+	sound_env = LARGE_ENCLOSED
+
+/area/derelict/skrell_station/jfv_ocirvama
+	name = "\improper JFV Ocirvama"
+	icon_state = "blue"
+	sound_env = MEDIUM_SOFTFLOOR
 
 /area/derelict/skrell_station/jfv_voqueva
 	name = "\improper JFV Voqueva"
 	icon_state = "purple"
-	no_light_control = FALSE
-	requires_power = FALSE
+	sound_env = MEDIUM_SOFTFLOOR
 
 /area/derelict/skrell_station/jfv_voqueva/hallway
 	name = "\improper JFV Voqueva - Hallways"
+	sound_env = LARGE_SOFTFLOOR
 
 /area/derelict/skrell_station/jfv_voqueva/bridge
 	name = "\improper JFV Voqueva - Bridge"

@@ -39,7 +39,7 @@
 
 /obj/effect/decal/fake_object/particle_cannon
 	name = "naval particle cannon"
-	desc = "A highly advanced particle cannon, for use in disabling or destroying enemy vessels with ease. Used exclusively by Jargon Federation martial vessels."
+	desc = "A highly advanced particle cannon, for use in disabling or destroying enemy vessels with both pinpoint accuracy and ease. Used exclusively by Jargon Federation martial vessels."
 	icon = 'icons/obj/machines/particlecannon.dmi'
 	icon_state = "navalparticlecannon"
 	density = 1

@@ -35,7 +35,7 @@
 /obj/structure/flora/tree/jungle
 	name = "tree"
 	icon_state = "tree"
-	desc = "It's seriously hampering your view of the jungle."
+	desc = "A lush and healthy tree."
 	icon = 'icons/obj/flora/jungletrees.dmi'
 	pixel_x = -48
 	pixel_y = -20
