@@ -430,3 +430,17 @@
 	. = ..()
 	if(mounted)
 		mounted.switch_firemodes()
+
+/obj/item/clothing/gloves/skrell/stun
+	name = "federation shock gloves"
+	desc = "A pair of armored gloves with circuits laid within, permitting the user to knock out targets with shocked strikes."
+	icon = 'icons/obj/skrell_items.dmi'
+	icon_state = "peacekeeper_gloves"
+	item_state = "peacekeeper_gloves"
+	attack_verb = list("punched")
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 40, bio = 0, rad = 0)
+	siemens_coefficient = 0
+	punch_damtype = PAIN
+	force = 5
+	punch_force = 25
+	contained_sprite = TRUE

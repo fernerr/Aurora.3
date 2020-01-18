@@ -70,7 +70,6 @@
 
 
 /obj/item/rig_module/teleporter
-
 	name = "bluespace teleportation module"
 	desc = "A complex, sleek-looking, hardsuit-integrated teleportation module that exploits bluespace energy to phase from one location to another instantaneously."
 	icon_state = "teleporter"
@@ -79,6 +78,8 @@
 	usable = 1
 	selectable = 1
 	var/lastteleport
+	var/anim_to_play = 'icons/mob/mob.dmi'
+	var/state_to_play = "phasein"
 
 	engage_string = "Emergency Leap"
 
@@ -95,7 +96,7 @@
 	holder.spark_system.queue()
 	playsound(T, 'sound/effects/phasein.ogg', 25, 1)
 	playsound(T, 'sound/effects/sparks2.ogg', 50, 1)
-	anim(T,M,'icons/mob/mob.dmi',,"phasein",,M.dir)
+	anim(T, M, anim_to_play,,state_to_play,,M.dir)
 
 /obj/item/rig_module/teleporter/proc/phase_out(var/mob/M,var/turf/T)
 
@@ -364,3 +365,11 @@
 
 	for(var/obj/item/device/multitool/hacktool/rig/hacktool in M.contents)
 		qdel(hacktool)
+
+/obj/item/rig_module/teleporter/skrell
+	name = "jargon teleportation module"
+	anim_to_play = 'icons/obj/rig_modules.dmi'
+	state_to_play = "rift"
+
+	interface_name = "starshift teleportation module"
+	interface_desc = "An advanced teleportation system. It is capable of pinpoint precision or random leaps forward."

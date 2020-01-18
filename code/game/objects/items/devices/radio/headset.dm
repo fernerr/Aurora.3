@@ -457,6 +457,14 @@
 	icon_state = "com_headset"
 	ks2type = /obj/item/device/encryptionkey/headset_com
 
+// A secret full-access headset
+/obj/item/device/radio/headset/fullaccess
+	name = "radio headset"
+	desc = "An updated, modular intercom that fits over the head. Takes encryption keys."
+	icon_state = "headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/fullaccess
+
 /obj/item/device/radio/headset/heads/ai_integrated //No need to care about icons, it should be hidden inside the AI anyway.
 	name = "\improper AI subspace transceiver"
 	desc = "Integrated AI radio transceiver."

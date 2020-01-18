@@ -128,6 +128,61 @@
 /datum/outfit/admin/lance_operative/get_id_access()
 	return get_syndicate_access(id_access)
 
+/datum/outfit/admin/skrell
+	name = "Jargon Peacekeeper"
+
+	uniform = /obj/item/clothing/under/skrell/jargon
+	accessory = /obj/item/clothing/accessory/holster/thigh
+	accessory_contents = list(/obj/item/gun/energy/gun/skrell/pistol = 1)
+	back = /obj/item/storage/backpack/satchel_norm
+	backpack_contents = list(
+							/obj/item/martial_manual/skrell = 1
+						)
+	gloves = /obj/item/clothing/gloves/skrell/stun
+	shoes = /obj/item/clothing/shoes/skrell/armored
+	belt = /obj/item/storage/belt/security/tactical
+	belt_contents = list(
+							/obj/item/grenade/frag = 1,
+							/obj/item/grenade/empgrenade = 1,
+							/obj/item/device/flash = 1,
+							/obj/item/handcuffs/ziptie = 2
+						)
+	l_ear = /obj/item/device/radio/headset/ert
+	id = /obj/item/card/id/syndicate
+	suit = /obj/item/clothing/suit/armor/skrell
+	head = /obj/item/clothing/head/helmet/skrell
+	var/id_access = "Jargon Peacekeeper"
+
+/datum/outfit/admin/skrell/get_id_access()
+	return get_all_accesses() | get_syndicate_access(id_access)
+
+/datum/outfit/admin/skrell/officer
+	name = "Jargon Peacekeeper Officer"
+
+	uniform = /obj/item/clothing/under/skrell/jargon/officer
+	id_access = "Jargon Peacekeeper Officer"
+
+/datum/outfit/admin/skrell/officer/get_id_access()
+	return get_all_accesses() | get_syndicate_access(id_access)
+
+/datum/outfit/admin/starchanter
+	name = "Starchanter"
+
+	uniform = /obj/item/clothing/under/skrell
+	shoes = /obj/item/clothing/shoes/sandal/flipflop
+	belt = /obj/item/storage/belt/fannypack/purple
+	belt_contents = list(
+							/obj/item/skrell_projector = 1
+						)
+	l_ear = /obj/item/device/radio/headset/fullaccess
+	id = /obj/item/card/id/syndicate
+	suit = /obj/item/clothing/suit/starchanter
+	head = /obj/item/clothing/head/starchanter
+	var/id_access = "Starchanter"
+
+/datum/outfit/admin/starchanter/get_id_access()
+	return get_syndicate_access(id_access) | get_syndicate_access(id_access)
+
 /datum/outfit/admin/nt
 	name = "NanoTrasen Representative"
 

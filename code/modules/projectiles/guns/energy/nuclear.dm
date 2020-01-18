@@ -165,3 +165,44 @@
 		list(mode_name="incapacitate", projectile_type=/obj/item/projectile/beam/stun, modifystate="hegemony_pistol", fire_sound='sound/weapons/Taser.ogg'),
 		list(mode_name="smite", projectile_type=/obj/item/projectile/beam/pistol/hegemony, modifystate="hegemony_pistol", fire_sound='sound/weapons/Laser.ogg')
 		)
+
+/obj/item/gun/energy/gun/skrell
+	self_recharge = 1
+	fire_sound = 'sound/weapons/Laser2.ogg'
+	modifystate = null
+	charge_failure_message = "'s charging socket was removed to make room for a recharger."
+	secondary_fire_sound = 'sound/weapons/Laser3.ogg'
+
+/obj/item/gun/energy/skrell/emp_act(severity)
+	return //Fuck robots.
+
+/obj/item/gun/energy/gun/skrell/pistol
+	name = "jargon particle pistol"
+	desc = "A Jargon Federation particle-beam pistol with two settings: Disable and Lethal."
+	icon_state = "particlepistol"
+	item_state = "particlepistol"
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
+	force = 5
+	projectile_type = /obj/item/projectile/beam/stun/skrell
+	secondary_projectile_type = /obj/item/projectile/beam/pulse/skrell
+
+	firemodes = list(
+		list(mode_name="disable", projectile_type=/obj/item/projectile/beam/stun/skrell, fire_sound='sound/weapons/Laser2.ogg'),
+		list(mode_name="lethal", projectile_type=/obj/item/projectile/beam/pulse/skrell, fire_sound='sound/weapons/Laser3.ogg')
+		)
+
+/obj/item/gun/energy/gun/skrell/smg
+	name = "jargon particle submachinegun"
+	desc = "A Jargon Federation particle-beam submachine gun with two settings: Disable and Lethal."
+	icon_state = "particlesmg"
+	item_state = "particlesmg"
+	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_BACK
+	max_shots = 14
+	force = 7
+	projectile_type = /obj/item/projectile/beam/stun/skrell
+	secondary_projectile_type = /obj/item/projectile/beam/pulse/skrell
+
+	firemodes = list(
+		list(mode_name="disable", projectile_type=/obj/item/projectile/beam/stun/skrell, fire_sound='sound/weapons/Laser2.ogg'),
+		list(mode_name="lethal", projectile_type=/obj/item/projectile/beam/pulse/skrell, fire_sound='sound/weapons/Laser3.ogg', burst = 2, burst_delay = 2)
+		)
