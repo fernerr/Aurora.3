@@ -206,3 +206,74 @@
 		list(mode_name="disable", projectile_type=/obj/item/projectile/beam/stun/skrell, fire_sound='sound/weapons/Laser2.ogg'),
 		list(mode_name="lethal", projectile_type=/obj/item/projectile/beam/pulse/skrell, fire_sound='sound/weapons/Laser3.ogg', burst = 2, burst_delay = 2)
 		)
+
+/obj/item/gun/energy/gun/skrell/special
+	can_switch_modes = FALSE
+	is_wieldable = TRUE
+	firemodes = list()
+
+/obj/item/gun/energy/gun/skrell/special/special_check(mob/user)
+	if(!wielded)
+		to_chat(user, "<span class='warning'>You can't fire without stabilizing \the [src]!</span>")
+		return 0
+	return ..()
+
+/obj/item/gun/energy/gun/skrell/special/disruptor
+	name = "jargon particle disruptor"
+	desc = "A Jargon Federation... rifle? This looks heavy and complicated."
+	icon_state = "disruptor"
+	item_state = "disruptor"
+	fire_sound = 'sound/weapons/resonator_blast.ogg'
+	slot_flags = SLOT_HOLSTER|SLOT_BACK
+	can_switch_modes = FALSE
+	max_shots = 16
+	force = 10 //Bulky stock.
+	projectile_type = /obj/item/projectile/beam/pulse/skrell/disrupt
+
+	fire_delay_wielded = 1
+	accuracy_wielded = 2
+	is_wieldable = TRUE
+
+	firemodes = list()
+
+/obj/item/gun/energy/gun/skrell/special/disintegrator
+	name = "jargon disintegrator"
+	desc = "A very bulky... cannon? This doesn't look safe to use at all."
+	icon_state = "disintegrator"
+	item_state = "disintegrator"
+	slot_flags = SLOT_BACK
+	max_shots = 2
+	fire_delay = 30
+	self_recharge = 0
+	force = 12 //Do NOT get hit by this. Seriously.
+	fire_sound = 'sound/magic/LightningShock.ogg'
+	secondary_fire_sound = 'sound/effects/psi/power_feedback.ogg'
+	projectile_type = /obj/item/projectile/disintegrator
+	secondary_projectile_type = /obj/item/projectile/ion/skrell
+	is_wieldable = TRUE
+	can_switch_modes = TRUE
+
+	firemodes = list(
+		list(mode_name = "mindstrike", projectile_type = /obj/item/projectile/disintegrator, fire_sound = 'sound/magic/LightningShock.ogg'),
+		list(mode_name = "pulsar", projectile_type = /obj/item/projectile/ion/skrell, fire_sound = 'sound/effects/psi/power_feedback.ogg')
+	)
+
+/obj/item/gun/energy/gun/skrell/special/disintegrator/special_check(mob/user)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(!H.psi)
+			to_chat(H, "<span class='danger'>You press the trigger, and a sudden shock courses through you!</span>")
+			playsound(src.loc, 'sound/weapons/psisword.ogg', 100, 1)
+			H.adjustHalLoss(65)
+			H.Weaken(10)
+			H.stuttering = max(H.stuttering, 10)
+			H.drop_item()
+			return 0
+		else
+			if(!wielded)
+				to_chat(user, "<span class='warning'>You can't fire without stabilizing \the [src]!</span>")
+				return 0
+			else
+				return ..()
+
+	

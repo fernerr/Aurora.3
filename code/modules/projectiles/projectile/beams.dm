@@ -429,3 +429,13 @@
 	muzzle_type = /obj/effect/projectile/muzzle/pulse
 	tracer_type = /obj/effect/projectile/tracer/pulse
 	impact_type = /obj/effect/projectile/impact/pulse
+
+/obj/item/projectile/beam/pulse/skrell/disrupt
+	name = "disruptor pulse"
+	icon_state = "emitter"
+	damage = 55
+	armor_penetration = 55
+
+	muzzle_type = /obj/effect/projectile/muzzle/xray
+	tracer_type = /obj/effect/projectile/tracer/emitter
+	impact_type = /obj/effect/projectile/impact/xray
