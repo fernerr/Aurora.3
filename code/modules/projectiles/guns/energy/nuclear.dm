@@ -246,6 +246,8 @@
 	fire_delay = 30
 	self_recharge = 0
 	force = 12 //Do NOT get hit by this. Seriously.
+	fire_sound = 'sound/magic/LightningShock.ogg'
+	secondary_fire_sound = 'sound/effects/psi/power_feedback.ogg'
 	projectile_type = /obj/item/projectile/disintegrator
 	secondary_projectile_type = /obj/item/projectile/ion/skrell
 	is_wieldable = TRUE

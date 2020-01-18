@@ -313,26 +313,25 @@
 /obj/item/projectile/disintegrator
 	name = "disintegration ball"
 	icon_state = "bluespace"
-	damage = 70
+	damage = 90
 	armor_penetration = 25
 	damage_type = BRUTE
 	penetrating = 0
 
 /obj/item/projectile/disintegrator/on_hit(var/atom/A)
-	if(QDELETED(src))
-		return
 	if(istype(A, /mob/living/carbon/human)) //The fun begins.
 		var/mob/living/carbon/human/victim = A
 		var/turf/T = get_turf(victim)
 		for(var/i = 0 to 4)
 			T = get_step(T, reverse_dir[victim.dir])
+		sound_to(victim, 'sound/voice/psiscreech.ogg')
 		victim.visible_message("<span class='danger'><font size=4>A ball of pure energy explodes with an ear-deafening scream!</span>")
 		victim.seizure()
-		for(var/mob/living/carbon/human/H in viewers(7, victim))
-			sound_to(victim, 'sound/voice/psiscreech.ogg')
+		for(var/mob/living/carbon/human/H in oview(8, victim))
+			sound_to(H, 'sound/voice/psiscreech.ogg')
 			shake_camera(H, 30, 3, FALSE)
 			if(!H.psi)
-				to_chat(H, "<span class='danger'><font size=5>Your mind is screaming and reeling in pain!</span>")
+				to_chat(H, "<span class='danger'><font size=5>Your mind screams and reels in pain!</span>")
 				H.adjustBrainLoss(15)
 				H.Weaken(10)
 				H.ear_damage = max(H.ear_damage, 10)
