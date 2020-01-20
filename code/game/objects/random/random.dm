@@ -1495,9 +1495,7 @@
 		/obj/item/gun/projectile/revolver/mateba = 1
 		)
 
-/obj/random/weapon_with_ammo/post_spawn(var/obj/item/gun/spawned)
-	if(!istype(spawned, /obj/item/gun/projectile)
-		return
+/obj/random/weapon_with_ammo/post_spawn(var/obj/item/gun/projectile/spawned)
 	if(spawned.magazine_type)
 		message_admins("magazine_type")
 		var/obj/item/ammo_magazine/am = spawned.magazine_type
