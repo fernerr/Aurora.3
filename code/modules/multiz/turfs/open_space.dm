@@ -98,7 +98,7 @@
 	oxygen = 0
 	nitrogen = 0
 	temperature = TCMB
-	icon_state = "opendebug_airless"
+	icon_state = "black"
 
 /turf/simulated/open/chasm
 	icon = 'icons/turf/smooth/chasms_seethrough.dmi'
