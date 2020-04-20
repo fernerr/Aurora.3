@@ -4,19 +4,20 @@
 /area/template_noop)
 "ab" = (
 /turf/simulated/floor,
-/area/template_noop)
+/area/chapel/main)
 "ac" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/punching_bag,
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/chapel/main)
 "ad" = (
 /turf/template_noop,
 /area/space)
 "ae" = (
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/weightlifter,
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/chapel/main)
 "af" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled,
@@ -33,26 +34,11 @@
 /area/chapel/main)
 "ai" = (
 /obj/effect/floor_decal/corner/red/diagonal,
-/obj/structure/weightlifter,
-/turf/simulated/floor/tiled,
-/area/template_noop)
-"aj" = (
-/obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/table/wood,
 /obj/item/storage/box/cups,
 /turf/simulated/floor/tiled,
-/area/template_noop)
-"ak" = (
-/obj/effect/floor_decal/corner/red/diagonal,
-/obj/item/stool/padded,
-/turf/simulated/floor/tiled,
 /area/chapel/main)
-"al" = (
-/obj/effect/floor_decal/corner/red/diagonal,
-/obj/item/stool/padded,
-/turf/simulated/floor/tiled,
-/area/template_noop)
-"am" = (
+"aj" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/cans/waterbottle{
@@ -60,33 +46,38 @@
 	},
 /obj/item/reagent_containers/food/drinks/cans/waterbottle,
 /turf/simulated/floor/tiled,
-/area/template_noop)
+/area/chapel/main)
+"ak" = (
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/item/stool/padded,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"al" = (
+/obj/machinery/door/airlock/glass{
+	name = "Fitness Center"
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"am" = (
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/disposal,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
 "an" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/table/wood,
 /turf/simulated/floor/tiled,
 /area/chapel/main)
 "ao" = (
-/obj/machinery/door/airlock/glass{
-	name = "Fitness Center"
-	},
-/obj/effect/floor_decal/corner/red/diagonal,
-/turf/simulated/floor/tiled,
-/area/template_noop)
-"ap" = (
-/obj/effect/floor_decal/corner/red/diagonal,
-/obj/machinery/disposal,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"aq" = (
 /obj/machinery/alarm{
 	pixel_y = 28
 	},
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/item/stool/padded,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"ar" = (
+/area/chapel/main)
+"ap" = (
 /obj/machinery/power/apc{
 	dir = 1;
 	is_critical = 1;
@@ -96,8 +87,8 @@
 	},
 /obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"as" = (
+/area/chapel/main)
+"aq" = (
 /obj/machinery/door/airlock{
 	id_tag = "dorm4";
 	name = "Dorm 4"
@@ -105,15 +96,8 @@
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"at" = (
-/obj/effect/decal/fake_object/light_source,
-/turf/simulated/floor/tiled/dark,
 /area/chapel/main)
-"au" = (
-/turf/simulated/floor/tiled,
-/area/chapel/main)
-"av" = (
+"ar" = (
 /obj/effect/floor_decal/corner/red{
 	icon_state = "corner_white";
 	dir = 9
@@ -122,22 +106,38 @@
 	pixel_y = 28
 	},
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"aw" = (
+/area/chapel/main)
+"as" = (
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"ax" = (
+/area/chapel/main)
+"at" = (
+/obj/effect/decal/fake_object/light_source,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"au" = (
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"av" = (
 /obj/structure/table/wood,
 /obj/structure/bedsheetbin,
 /turf/simulated/floor/wood,
-/area/template_noop)
-"ay" = (
+/area/chapel/main)
+"aw" = (
 /obj/machinery/washing_machine,
 /obj/machinery/alarm{
 	pixel_y = 28
 	},
 /turf/simulated/floor/wood,
-/area/template_noop)
+/area/chapel/main)
+"ax" = (
+/obj/machinery/newscaster{
+	pixel_x = -32
+	},
+/turf/simulated/floor/holofloor/carpet,
+/area/chapel/main)
+"ay" = (
+/turf/simulated/floor/holofloor/carpet,
+/area/chapel/main)
 "az" = (
 /obj/machinery/washing_machine,
 /obj/machinery/power/apc{
@@ -150,21 +150,6 @@
 /turf/simulated/floor/wood,
 /area/chapel/main)
 "aA" = (
-/turf/simulated/wall,
-/area/template_noop)
-"aB" = (
-/turf/simulated/floor/plating,
-/area/chapel/main)
-"aC" = (
-/obj/machinery/newscaster{
-	pixel_x = -32
-	},
-/turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
-"aD" = (
-/turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
-"aE" = (
 /obj/machinery/button/remote/airlock{
 	id = "dorm4";
 	name = "Dorm 5 Bolts";
@@ -172,29 +157,22 @@
 	specialfunctions = 4
 	},
 /turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
-"aF" = (
+/area/chapel/main)
+"aB" = (
+/turf/simulated/floor/plating,
+/area/chapel/main)
+"aC" = (
 /obj/machinery/door/airlock/glass{
 	name = "Laundry Room"
 	},
 /turf/simulated/floor/wood,
-/area/template_noop)
-"aG" = (
-/obj/structure/stairs/north,
-/turf/simulated/floor/tiled,
-/area/template_noop)
-"aH" = (
-/turf/simulated/floor/wood,
-/area/template_noop)
-"aI" = (
-/turf/simulated/floor/wood,
 /area/chapel/main)
-"aJ" = (
+"aD" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet/dorms,
 /turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
-"aK" = (
+/area/chapel/main)
+"aE" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin{
 	pixel_x = -3;
@@ -202,17 +180,17 @@
 	},
 /obj/item/pen,
 /turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
-"aL" = (
+/area/chapel/main)
+"aF" = (
 /obj/structure/closet/cabinet,
 /obj/item/toy/plushie/spider,
 /turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
-"aM" = (
+/area/chapel/main)
+"aG" = (
 /obj/structure/closet/cabinet,
 /turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
-"aN" = (
+/area/chapel/main)
+"aH" = (
 /obj/machinery/alarm{
 	pixel_y = 28
 	},
@@ -223,7 +201,50 @@
 	},
 /obj/item/pen,
 /turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
+/area/chapel/main)
+"aI" = (
+/turf/simulated/floor/wood,
+/area/chapel/main)
+"aJ" = (
+/obj/effect/floor_decal/corner/purple/diagonal,
+/obj/machinery/disposal,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
+"aK" = (
+/obj/machinery/alarm{
+	pixel_y = 28
+	},
+/obj/effect/floor_decal/corner/purple/diagonal,
+/obj/item/stool/padded,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
+"aL" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	is_critical = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/effect/floor_decal/corner/purple/diagonal,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
+"aM" = (
+/obj/machinery/door/airlock{
+	id_tag = "dorm3";
+	name = "Dorm 3"
+	},
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/corner/purple/diagonal,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
+"aN" = (
+/obj/effect/floor_decal/corner/purple{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
 "aO" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -237,29 +258,30 @@
 /turf/simulated/floor/holofloor/carpet,
 /area/chapel/main)
 "aP" = (
-/obj/effect/floor_decal/corner/purple/diagonal,
-/obj/machinery/disposal,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
+/obj/machinery/button/remote/airlock{
+	id = "dorm5";
+	name = "Dorm 5 Bolts";
+	pixel_x = -32;
+	specialfunctions = 4
+	},
+/turf/simulated/floor/holofloor/carpet,
+/area/chapel/main)
 "aQ" = (
-/obj/machinery/alarm{
-	pixel_y = 28
+/obj/machinery/button/remote/airlock{
+	id = "dorm3";
+	name = "Dorm 3 Bolts";
+	pixel_x = 32;
+	specialfunctions = 4
 	},
-/obj/effect/floor_decal/corner/purple/diagonal,
-/obj/item/stool/padded,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
+/turf/simulated/floor/holofloor/carpet,
+/area/chapel/main)
 "aR" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	is_critical = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
+/obj/effect/floor_decal/corner/yellow{
+	icon_state = "corner_light";
+	dir = 6
 	},
-/obj/effect/floor_decal/corner/purple/diagonal,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
+/area/chapel/main)
 "aS" = (
 /obj/machinery/door/airlock/lift,
 /turf/simulated/floor/tiled/dark,
@@ -274,59 +296,6 @@
 /turf/simulated/wall/r_wall,
 /area/chapel/main)
 "aW" = (
-/turf/simulated/floor/tiled,
-/area/template_noop)
-"aX" = (
-/obj/machinery/door/airlock{
-	id_tag = "dorm3";
-	name = "Dorm 3"
-	},
-/obj/machinery/door/firedoor,
-/obj/effect/floor_decal/corner/purple/diagonal,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"aY" = (
-/obj/effect/floor_decal/corner/purple{
-	icon_state = "corner_white";
-	dir = 9
-	},
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"aZ" = (
-/turf/simulated/wall,
-/area/chapel/main)
-"ba" = (
-/obj/machinery/button/remote/airlock{
-	id = "dorm5";
-	name = "Dorm 5 Bolts";
-	pixel_x = -32;
-	specialfunctions = 4
-	},
-/turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
-"bb" = (
-/obj/machinery/newscaster{
-	pixel_x = 32
-	},
-/turf/simulated/floor/holofloor/carpet,
-/area/chapel/main)
-"bc" = (
-/obj/machinery/button/remote/airlock{
-	id = "dorm3";
-	name = "Dorm 3 Bolts";
-	pixel_x = 32;
-	specialfunctions = 4
-	},
-/turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
-"bd" = (
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_light";
-	dir = 6
-	},
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"be" = (
 /obj/machinery/door/airlock{
 	id_tag = "dorm5";
 	name = "Dorm 5"
@@ -334,41 +303,119 @@
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/corner/yellow/diagonal,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"bf" = (
+/area/chapel/main)
+"aX" = (
 /obj/effect/floor_decal/corner/yellow/diagonal,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"bg" = (
+/area/chapel/main)
+"aY" = (
 /obj/effect/floor_decal/corner/yellow/diagonal,
 /obj/item/stool/padded,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
+/area/chapel/main)
+"aZ" = (
+/turf/simulated/wall,
+/area/chapel/main)
+"ba" = (
+/obj/machinery/door/firedoor/multi_tile,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
+"bb" = (
+/obj/machinery/newscaster{
+	pixel_x = 32
+	},
+/turf/simulated/floor/holofloor/carpet,
+/area/chapel/main)
+"bc" = (
+/obj/effect/floor_decal/corner/green/diagonal,
+/obj/machinery/disposal,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
+"bd" = (
+/obj/machinery/alarm{
+	pixel_y = 28
+	},
+/obj/effect/floor_decal/corner/green/diagonal,
+/obj/item/stool/padded,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
+"be" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	is_critical = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/effect/floor_decal/corner/green/diagonal,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
+"bf" = (
+/obj/machinery/door/airlock{
+	id_tag = "dorm2";
+	name = "Dorm 2"
+	},
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/corner/green/diagonal,
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
+"bg" = (
+/obj/effect/floor_decal/corner/green{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/turf/simulated/floor/holofloor/tiled/dark,
+/area/chapel/main)
 "bh" = (
 /obj/effect/floor_decal/corner/yellow/diagonal,
 /obj/machinery/disposal,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/chapel/main)
 "bi" = (
-/obj/machinery/door/firedoor/multi_tile,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
+/obj/structure/table/rack,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/item/towel,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/chapel/main)
 "bj" = (
-/obj/machinery/door/airlock{
-	name = "Showers"
+/obj/machinery/button/remote/airlock{
+	id = "dorm2";
+	name = "Dorm 2 Bolts";
+	pixel_x = 32;
+	specialfunctions = 4
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/freezer,
-/area/template_noop)
+/turf/simulated/floor/holofloor/carpet,
+/area/chapel/main)
 "bk" = (
-/turf/simulated/floor/tiled/freezer,
-/area/template_noop)
-"bl" = (
-/obj/machinery/alarm{
-	pixel_y = 28
+/obj/structure/curtain/open/shower,
+/obj/machinery/shower{
+	icon_state = "shower";
+	dir = 4
 	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/window/eastleft,
+/obj/random/soap,
 /turf/simulated/floor/tiled/freezer,
-/area/template_noop)
+/area/chapel/main)
+"bl" = (
+/obj/structure/table/rack,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/obj/item/towel,
+/turf/simulated/floor/tiled/freezer,
+/area/chapel/main)
 "bm" = (
 /obj/structure/table/rack,
 /obj/item/towel,
@@ -414,18 +461,18 @@
 /turf/simulated/floor/tiled/freezer,
 /area/chapel/main)
 "br" = (
-/obj/effect/floor_decal/corner/green/diagonal,
+/obj/effect/floor_decal/corner/blue/diagonal,
 /obj/machinery/disposal,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
+/area/chapel/main)
 "bs" = (
 /obj/machinery/alarm{
 	pixel_y = 28
 	},
-/obj/effect/floor_decal/corner/green/diagonal,
+/obj/effect/floor_decal/corner/blue/diagonal,
 /obj/item/stool/padded,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
+/area/chapel/main)
 "bt" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -434,37 +481,33 @@
 	pixel_x = 0;
 	pixel_y = 24
 	},
-/obj/effect/floor_decal/corner/green/diagonal,
+/obj/effect/floor_decal/corner/blue/diagonal,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
+/area/chapel/main)
 "bu" = (
 /obj/machinery/door/airlock{
-	id_tag = "dorm2";
-	name = "Dorm 2"
+	id_tag = "dorm1";
+	name = "Dorm 1"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/floor_decal/corner/green/diagonal,
+/obj/effect/floor_decal/corner/blue/diagonal,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
+/area/chapel/main)
 "bv" = (
-/obj/effect/floor_decal/corner/green{
+/obj/effect/floor_decal/corner/blue{
 	icon_state = "corner_white";
 	dir = 9
 	},
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
+/area/chapel/main)
 "bw" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/item/towel,
-/obj/structure/window/reinforced{
-	icon_state = "rwindow";
-	dir = 1
-	},
 /turf/simulated/floor/tiled/freezer,
-/area/template_noop)
+/area/chapel/main)
 "bx" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced{
@@ -482,13 +525,13 @@
 /area/chapel/main)
 "bz" = (
 /obj/machinery/button/remote/airlock{
-	id = "dorm2";
-	name = "Dorm 2 Bolts";
+	id = "dorm1";
+	name = "Dorm 1 Bolts";
 	pixel_x = 32;
 	specialfunctions = 4
 	},
 /turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
+/area/chapel/main)
 "bA" = (
 /obj/structure/curtain/open/shower,
 /obj/machinery/shower{
@@ -497,9 +540,8 @@
 	},
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/eastleft,
-/obj/random/soap,
 /turf/simulated/floor/tiled/freezer,
-/area/template_noop)
+/area/chapel/main)
 "bB" = (
 /obj/structure/curtain/open/shower,
 /obj/machinery/shower{
@@ -552,18 +594,9 @@
 /turf/simulated/floor/tiled/freezer,
 /area/chapel/main)
 "bF" = (
-/obj/structure/table/rack,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1";
-	pixel_y = 0
-	},
-/obj/item/towel,
-/turf/simulated/floor/tiled/freezer,
-/area/template_noop)
+/obj/structure/stairs/north,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
 "bG" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced{
@@ -598,53 +631,40 @@
 /turf/simulated/floor/tiled/freezer,
 /area/chapel/main)
 "bJ" = (
-/obj/effect/floor_decal/corner/blue/diagonal,
-/obj/machinery/disposal,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"bK" = (
-/obj/machinery/alarm{
-	pixel_y = 28
-	},
-/obj/effect/floor_decal/corner/blue/diagonal,
-/obj/item/stool/padded,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"bL" = (
+/obj/structure/table/rack,
+/obj/random/soap,
+/obj/random/soap,
+/obj/random/soap,
 /obj/machinery/power/apc{
-	dir = 1;
-	is_critical = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
 	},
-/obj/effect/floor_decal/corner/blue/diagonal,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"bM" = (
+/turf/simulated/floor/tiled/freezer,
+/area/chapel/main)
+"bK" = (
 /obj/machinery/door/airlock{
-	id_tag = "dorm1";
-	name = "Dorm 1"
+	name = "Temporary Quarters"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/floor_decal/corner/blue/diagonal,
 /turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"bN" = (
-/obj/effect/floor_decal/corner/blue{
-	icon_state = "corner_white";
-	dir = 9
-	},
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"bO" = (
-/obj/structure/table/rack,
+/area/chapel/main)
+"bL" = (
+/obj/structure/grille,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/towel,
-/turf/simulated/floor/tiled/freezer,
-/area/template_noop)
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor,
+/area/chapel/main)
 "bP" = (
 /obj/machinery/door/airlock{
 	name = "Showers"
@@ -652,25 +672,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/freezer,
 /area/chapel/main)
-"bQ" = (
-/obj/machinery/button/remote/airlock{
-	id = "dorm1";
-	name = "Dorm 1 Bolts";
-	pixel_x = 32;
-	specialfunctions = 4
-	},
-/turf/simulated/floor/holofloor/carpet,
-/area/template_noop)
-"bR" = (
-/obj/structure/curtain/open/shower,
-/obj/machinery/shower{
-	icon_state = "shower";
-	dir = 4
-	},
-/obj/structure/window/reinforced,
-/obj/machinery/door/window/eastleft,
-/turf/simulated/floor/tiled/freezer,
-/area/template_noop)
 "bS" = (
 /obj/structure/curtain/open/shower,
 /obj/machinery/shower{
@@ -693,18 +694,6 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/chapel/main)
-"bU" = (
-/obj/structure/table/rack,
-/obj/random/soap,
-/obj/random/soap,
-/obj/random/soap,
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled/freezer,
-/area/template_noop)
 "bV" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced{
@@ -718,29 +707,6 @@
 /obj/machinery/firealarm/south,
 /turf/simulated/floor/tiled/freezer,
 /area/chapel/main)
-"bX" = (
-/obj/machinery/door/airlock{
-	name = "Temporary Quarters"
-	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/holofloor/tiled/dark,
-/area/template_noop)
-"bY" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/turf/simulated/floor,
-/area/template_noop)
 "bZ" = (
 /obj/machinery/door/airlock{
 	name = "Unisex Restrooms"
@@ -21187,13 +21153,13 @@ aa
 aa
 aa
 aa
-aA
-aA
-aA
-aA
-aA
-aA
-aA
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
 aa
 aa
 aa
@@ -21444,13 +21410,13 @@ aa
 aa
 aa
 aa
-aA
-aG
-aW
-aW
-aW
-aW
-aA
+aZ
+bF
+au
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -21701,13 +21667,13 @@ aa
 aa
 aa
 aa
-aA
-aG
-aW
-aW
-aW
-aW
-aA
+aZ
+bF
+au
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -21939,32 +21905,32 @@ aa
 aa
 aa
 aa
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aW
-aW
-aW
-aA
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -22196,32 +22162,32 @@ aa
 aa
 aa
 aa
-aA
+aZ
 ab
 ab
 ab
 ab
-aA
-ap
-aC
+aZ
+am
+ax
+aD
+aZ
 aJ
-aA
-aP
-aC
-aM
-aA
+ax
+aG
+aZ
+bc
+ax
+aE
+aZ
 br
-aC
-aK
-aA
-bJ
-aC
-aJ
-aA
-aW
-aW
-aW
-aA
+ax
+aD
+aZ
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -22453,32 +22419,32 @@ aa
 aa
 aa
 aa
-aA
+aZ
 ab
 ab
 ab
 ab
-aA
-aq
-aD
+aZ
+ao
+ay
+aE
+aZ
 aK
-aA
-aQ
+ay
+aE
+aZ
+bd
+ay
 aD
-aK
-aA
+aZ
 bs
-aD
-aJ
-aA
-bK
-aD
-aK
-aA
-aW
-aW
-aW
-aA
+ay
+aE
+aZ
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -22710,32 +22676,32 @@ aa
 aa
 aa
 aa
+aZ
+ab
+ab
+ab
+ab
+aZ
+ap
 aA
-ab
-ab
-ab
-ab
-aA
-ar
-aE
+aF
+aZ
 aL
-aA
-aR
-bc
-aJ
-aA
+aQ
+aD
+aZ
+be
+bj
+aG
+aZ
 bt
 bz
-aM
-aA
-bL
-bQ
-aM
-aA
-aW
-aW
-aW
-aA
+aG
+aZ
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -22967,32 +22933,32 @@ aa
 aa
 aa
 aa
-aA
-aA
-aA
-aA
-aA
-aA
-as
-aA
-aA
-aA
-aX
-aA
-aA
-aA
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aq
+aZ
+aZ
+aZ
+aM
+aZ
+aZ
+aZ
+bf
+aZ
+aZ
+aZ
 bu
-aA
-aA
-aA
-bM
-aA
-aA
-aA
-aW
-aW
-aW
-aA
+aZ
+aZ
+aZ
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -23224,32 +23190,32 @@ aa
 aa
 aa
 aa
-aA
+aZ
 ac
+af
 ae
-ai
-ae
-aA
-av
-aw
-aw
-aw
-aY
-aw
-bi
-aw
+af
+aZ
+ar
+as
+as
+as
+aN
+as
+ba
+as
+bg
+as
+as
+as
 bv
-aw
-aw
-aw
-bN
-aw
-aw
-bX
-aW
-aW
-aW
-aA
+as
+as
+bK
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -23481,32 +23447,32 @@ aa
 aa
 aa
 aa
-aA
-ae
-ae
-ae
-ae
-ao
-aw
-aw
-aw
-aw
-aw
-bd
-aw
-aw
-aw
-aw
-aw
-aw
-aw
-aw
-aw
-bY
-aW
-aW
-aW
-aA
+aZ
+af
+af
+af
+af
+al
+as
+as
+as
+as
+as
+aR
+as
+as
+as
+as
+as
+as
+as
+as
+as
+bL
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -23738,32 +23704,32 @@ aa
 aa
 aa
 aa
-aA
+aZ
 ac
+af
 ae
-ai
-ae
-aA
-aA
-aF
-aA
-aA
-aA
-be
-aA
-bj
-aA
-aA
-aA
-aA
-aA
-aA
-aA
-aA
+af
+aZ
+aZ
+aC
+aZ
+aZ
+aZ
 aW
-aW
-aW
-aA
+aZ
+bP
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+aZ
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -23995,32 +23961,32 @@ aa
 aa
 aa
 aa
-aA
-ae
-ae
-ae
-al
-aA
-ax
-aH
-aA
-aM
-ba
-bf
-aA
+aZ
+af
+af
+af
+ak
+aZ
+av
+aI
+aZ
+aG
+aP
+aX
+aZ
+by
+bi
+bk
+bl
 bk
 bw
 bA
-bF
-bA
-bO
-bR
-bU
-aA
-aW
-aW
-aW
-aA
+bJ
+aZ
+au
+au
+au
+aZ
 aa
 aa
 aa
@@ -24252,32 +24218,32 @@ aa
 aa
 aa
 aa
-aA
-ae
-ae
+aZ
+af
+af
+ai
 aj
-am
-aA
-ay
+aZ
+aw
+aI
+aZ
 aH
-aA
-aN
-aD
-bg
-aA
-bl
-bk
-bk
-bk
-bk
-bk
-bk
-bk
-aA
-aW
-aW
-aW
-aA
+ay
+aY
+aZ
+bT
+by
+by
+by
+by
+by
+by
+by
+aZ
+au
+au
+au
+aZ
 aa
 aa
 aa
