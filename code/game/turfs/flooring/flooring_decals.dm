@@ -369,8 +369,28 @@
 	name = "spline - plain"
 	icon_state = "spline_plain"
 
+/obj/effect/floor_decal/spline/plain/cee
+	icon_state = "spline_plain_cee"
+
+/obj/effect/floor_decal/spline/plain/full
+	icon_state = "spline_plain_full"
+
 /obj/effect/floor_decal/spline/plain/corner
 	icon_state = "spline_plain_corner"
+
+/obj/effect/floor_decal/spline/alt
+	name = "spline - plain alt"
+	icon_state = "spline_alt"
+	alpha = 175
+
+/obj/effect/floor_decal/spline/alt/cee
+	icon_state = "spline_alt_cee"
+
+/obj/effect/floor_decal/spline/alt/full
+	icon_state = "spline_alt_full"
+
+/obj/effect/floor_decal/spline/alt/corner
+	icon_state = "spline_alt_corner"
 
 /obj/effect/floor_decal/spline/fancy
 	name = "spline - fancy"
