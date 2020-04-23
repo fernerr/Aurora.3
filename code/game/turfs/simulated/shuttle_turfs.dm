@@ -183,18 +183,33 @@
 /turf/simulated/wall/shuttle/unique/ncv_intrepid
 	name = "NCV Intrepid"
 	icon = 'icons/turf/shuttles_unique/NCV_Intrepid.dmi'
-	icon_state = "4,0"
+	icon_state = "5,4"
 
 /obj/structure/shuttle_part/ncv_intrepid
 	name = "NCV Intrepid"
 	icon = 'icons/turf/shuttles_unique/NCV_Intrepid.dmi'
-	icon_state = "4,0"
+	icon_state = "4,1"
 
 /obj/structure/window/shuttle/unique/ncv_intrepid
 	name = "NCV Intrepid Cockpit"
 	icon = 'icons/turf/shuttles_unique/NCV_Intrepid.dmi'
-	icon_state = "6,19"
+	icon_state = "6,2"
 
+// HTS Canary
+/turf/simulated/wall/shuttle/unique/hts_canary
+	name = "HTS Canary"
+	icon = 'icons/turf/shuttles_unique/HTS_Canary.dmi'
+	icon_state = "1,6"
+
+/obj/structure/shuttle_part/hts_canary
+	name = "HTS Canary"
+	icon = 'icons/turf/shuttles_unique/HTS_Canary.dmi'
+	icon_state = "0,9"
+
+/obj/structure/window/shuttle/unique/hts_canary
+	name = "HTS Canary Cockpit"
+	icon = 'icons/turf/shuttles_unique/HTS_Canary.dmi'
+	icon_state = "1,0"
 
 //--Floors--//
 
