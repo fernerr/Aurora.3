@@ -147,10 +147,69 @@
 /turf/simulated/wall/shuttle/skrell/corner
 	icon = 'icons/turf/shuttle.dmi'
 	icon_state = "skrell_diagonal"
-	use_set_icon_state = 1
+	use_set_icon_state = TRUE
 	smooth = null
 	canSmoothWith = null
 
+//--Unique Shuttles--//
+
+/turf/simulated/wall/shuttle/unique
+	name = "Unique Shuttle"
+	icon = 'icons/turf/shuttle.dmi'
+	icon_state = "floor5"
+	use_set_icon_state = TRUE
+	smooth = null
+	canSmoothWith = null
+
+/obj/structure/shuttle_part //For placing them over space, if sprite covers not whole tile.
+	name = "shuttle part"
+	icon = 'icons/turf/shuttle.dmi'
+	icon_state = "door0"
+	anchored = TRUE
+	density = TRUE
+
+/obj/structure/window/shuttle/unique
+	name = "unique shuttle window"
+	desc = "It looks extremely strong. Might take many good hits to crack it."
+	icon = 'icons/turf/shuttle.dmi'
+	icon_state = "wall2"
+	health = 500
+	maxhealth = 500
+	smooth = null
+	canSmoothWith = null
+	can_be_unanchored = FALSE
+
+// NCV Intrepid
+/turf/simulated/wall/shuttle/unique/ncv_intrepid
+	name = "NCV Intrepid"
+	icon = 'icons/turf/shuttles_unique/NCV_Intrepid.dmi'
+	icon_state = "5,4"
+
+/obj/structure/shuttle_part/ncv_intrepid
+	name = "NCV Intrepid"
+	icon = 'icons/turf/shuttles_unique/NCV_Intrepid.dmi'
+	icon_state = "4,1"
+
+/obj/structure/window/shuttle/unique/ncv_intrepid
+	name = "NCV Intrepid Cockpit"
+	icon = 'icons/turf/shuttles_unique/NCV_Intrepid.dmi'
+	icon_state = "6,2"
+
+// HTS Canary
+/turf/simulated/wall/shuttle/unique/hts_canary
+	name = "HTS Canary"
+	icon = 'icons/turf/shuttles_unique/HTS_Canary.dmi'
+	icon_state = "1,6"
+
+/obj/structure/shuttle_part/hts_canary
+	name = "HTS Canary"
+	icon = 'icons/turf/shuttles_unique/HTS_Canary.dmi'
+	icon_state = "0,9"
+
+/obj/structure/window/shuttle/unique/hts_canary
+	name = "HTS Canary Cockpit"
+	icon = 'icons/turf/shuttles_unique/HTS_Canary.dmi'
+	icon_state = "1,0"
 
 //--Floors--//
 
