@@ -35,51 +35,59 @@
 /turf/simulated/floor/tiled,
 /area/janitor)
 "ak" = (
-/obj/structure/lattice,
-/obj/machinery/light{
-	dir = 1
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 8
 	},
-/turf/simulated/open/airless,
+/turf/simulated/open,
 /area/janitor)
 "al" = (
-/obj/structure/lattice,
-/turf/simulated/open/airless,
+/turf/simulated/open,
 /area/janitor)
 "am" = (
 /turf/simulated/floor,
 /area/janitor)
 "an" = (
-/obj/structure/railing/mapped,
-/turf/simulated/open/airless,
+/obj/structure/lattice,
+/turf/simulated/open,
 /area/janitor)
 "ao" = (
-/obj/structure/lattice,
-/obj/machinery/light,
-/turf/simulated/open/airless,
-/area/janitor)
-"ap" = (
 /obj/structure/railing/mapped{
 	icon_state = "railing0-1";
 	dir = 8
 	},
-/turf/simulated/open/airless,
+/obj/structure/lattice,
+/turf/simulated/open,
+/area/janitor)
+"ap" = (
+/obj/structure/railing/mapped,
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 8
+	},
+/turf/simulated/open,
 /area/janitor)
 "aq" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 5
+	},
+/obj/item/modular_computer/console/preset/medical/cmo,
+/obj/machinery/newscaster{
+	pixel_y = 30
+	},
 /turf/simulated/floor/tiled/white,
 /area/janitor)
 "ar" = (
-/obj/machinery/light{
-	dir = 1
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/janitor)
 "as" = (
 /obj/structure/railing/mapped,
-/obj/structure/railing/mapped{
-	icon_state = "railing0-1";
-	dir = 8
-	},
-/turf/simulated/open/airless,
+/turf/simulated/open,
 /area/janitor)
 "at" = (
 /turf/simulated/floor/reinforced,
@@ -119,12 +127,16 @@
 /turf/simulated/floor,
 /area/janitor)
 "ax" = (
-/obj/structure/railing/mapped{
-	icon_state = "railing0-1";
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
 	dir = 8
 	},
-/obj/structure/lattice,
-/turf/simulated/open/airless,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor,
 /area/janitor)
 "ay" = (
 /obj/structure/railing/mapped,
@@ -132,19 +144,30 @@
 	icon_state = "railing0-1";
 	dir = 4
 	},
-/turf/simulated/open/airless,
+/turf/simulated/open,
 /area/janitor)
 "az" = (
-/obj/machinery/light{
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor,
 /area/janitor)
 "aA" = (
-/obj/machinery/light,
-/obj/structure/railing/mapped,
 /obj/structure/lattice,
-/turf/simulated/open/airless,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/open,
 /area/janitor)
 "aB" = (
 /obj/machinery/door/firedoor,
@@ -163,14 +186,19 @@
 /turf/simulated/floor/plating,
 /area/janitor)
 "aC" = (
-/obj/machinery/light,
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 5
+	},
+/obj/machinery/photocopier/faxmachine{
+	department = "Chief Medical Officer's Office"
+	},
+/obj/structure/table/glass,
 /turf/simulated/floor/tiled/white,
 /area/janitor)
 "aD" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor,
+/obj/machinery/door/airlock/command,
+/turf/simulated/floor/tiled/white,
 /area/janitor)
 "aE" = (
 /turf/simulated/wall,
@@ -203,6 +231,13 @@
 	},
 /obj/structure/window/reinforced,
 /turf/simulated/floor/plating,
+/area/janitor)
+"aI" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
 /area/janitor)
 "aJ" = (
 /obj/machinery/door/airlock/command{
@@ -1079,6 +1114,1000 @@
 	dir = 1
 	},
 /turf/simulated/floor,
+/area/janitor)
+"cu" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 5
+	},
+/obj/item/device/flashlight/lamp,
+/obj/structure/table/glass,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cv" = (
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cw" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cx" = (
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cy" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/janitor)
+"cz" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/janitor)
+"cA" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 10
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cB" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 10
+	},
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cC" = (
+/obj/structure/lattice,
+/obj/machinery/light,
+/turf/simulated/open,
+/area/janitor)
+"cD" = (
+/obj/effect/floor_decal/corner_wide/paleblue/full{
+	icon_state = "wide_corner_full";
+	dir = 4
+	},
+/obj/structure/flora/pottedplant/random,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cE" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cF" = (
+/obj/structure/railing/mapped,
+/obj/structure/lattice,
+/turf/simulated/open,
+/area/janitor)
+"cG" = (
+/obj/machinery/light,
+/obj/structure/railing/mapped,
+/turf/simulated/open,
+/area/janitor)
+"cH" = (
+/obj/effect/floor_decal/corner_wide/paleblue/full{
+	icon_state = "wide_corner_full";
+	dir = 8
+	},
+/obj/structure/filingcabinet/medical{
+	pixel_x = -7
+	},
+/obj/structure/filingcabinet/chestdrawer{
+	pixel_x = 10
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cI" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 5
+	},
+/obj/structure/table/rack,
+/obj/machinery/requests_console{
+	pixel_y = 30
+	},
+/obj/item/storage/belt/medical,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/accessory/stethoscope,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cJ" = (
+/obj/structure/bed/chair/plastic{
+	icon_state = "chair_preview";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner_wide/paleblue/full{
+	icon_state = "wide_corner_full";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cK" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cL" = (
+/obj/effect/floor_decal/corner_wide/paleblue/full{
+	icon_state = "wide_corner_full";
+	dir = 8
+	},
+/obj/item/device/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_y = 22
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cM" = (
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/medical3,
+/obj/item/clothing/gloves/latex/nitrile/unathi,
+/obj/item/clothing/gloves/latex/nitrile/tajara,
+/obj/item/clothing/gloves/latex/unathi,
+/obj/item/clothing/gloves/latex/tajara,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cN" = (
+/obj/structure/bed/chair/plastic{
+	icon_state = "chair_preview";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cO" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 5
+	},
+/obj/item/modular_computer/console/preset/medical,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cP" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 9
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -28
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cQ" = (
+/obj/structure/table/glass{
+	table_reinf = "glass"
+	},
+/obj/item/device/flashlight/lamp,
+/obj/effect/floor_decal/corner_wide/paleblue/full{
+	icon_state = "wide_corner_full";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cR" = (
+/obj/effect/floor_decal/corner_wide/paleblue,
+/obj/effect/floor_decal/corner/paleblue{
+	icon_state = "corner_white";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cT" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"cU" = (
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/medical3,
+/obj/item/clothing/gloves/latex/nitrile/unathi,
+/obj/item/clothing/gloves/latex/nitrile/tajara,
+/obj/item/clothing/gloves/latex/unathi,
+/obj/item/clothing/gloves/latex/tajara,
+/obj/item/device/radio/intercom{
+	dir = 8;
+	name = "Station Intercom (General)";
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cV" = (
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cW" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor/plating,
+/area/janitor)
+"cX" = (
+/obj/machinery/door/airlock/medical,
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cY" = (
+/obj/structure/bed/chair/office/bridge,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"cZ" = (
+/obj/structure/filingcabinet/chestdrawer,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"da" = (
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"db" = (
+/obj/structure/toilet{
+	icon_state = "toilet00";
+	dir = 4
+	},
+/obj/machinery/alarm{
+	pixel_y = 28
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/janitor)
+"dc" = (
+/obj/structure/table/glass{
+	table_reinf = "glass"
+	},
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dd" = (
+/turf/simulated/floor/tiled/freezer,
+/area/janitor)
+"de" = (
+/obj/structure/sink{
+	dir = 4;
+	icon_state = "sink";
+	pixel_x = 12
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/janitor)
+"df" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"dg" = (
+/obj/machinery/alarm{
+	pixel_y = 28
+	},
+/obj/effect/floor_decal/corner_wide/paleblue/full{
+	icon_state = "wide_corner_full";
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/CMO,
+/obj/item/clothing/suit/storage/toggle/labcoat/cmoalt2,
+/obj/item/clothing/gloves/latex/nitrile/tajara,
+/obj/item/clothing/gloves/latex/nitrile/unathi,
+/obj/item/device/megaphone,
+/obj/item/device/eftpos{
+	eftpos_name = "Medbay EFTPOS scanner"
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dh" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor/plating,
+/area/janitor)
+"di" = (
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dj" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/structure/bed/chair/plastic{
+	icon_state = "chair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dk" = (
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dl" = (
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/structure/table/standard,
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = -14
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = -14
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = -14
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = -14
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = -14
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = -14
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = -14
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = -14
+	},
+/obj/item/device/flashlight/pen{
+	pixel_x = -4;
+	pixel_y = -2
+	},
+/obj/item/device/flashlight/pen{
+	pixel_x = -4;
+	pixel_y = -2
+	},
+/obj/item/device/flashlight/pen{
+	pixel_x = -4;
+	pixel_y = -2
+	},
+/obj/item/device/flashlight/pen{
+	pixel_x = -4;
+	pixel_y = -2
+	},
+/obj/item/device/flashlight/pen{
+	pixel_x = -4;
+	pixel_y = -2
+	},
+/obj/item/device/flashlight/pen{
+	pixel_x = -4;
+	pixel_y = -2
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dm" = (
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dn" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 9
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"do" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"dp" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dq" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dr" = (
+/obj/structure/bed/chair/office/light,
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/button/remote/airlock{
+	id = "CMOdoor";
+	name = "Office Door Control";
+	pixel_x = -16;
+	pixel_y = -26;
+	req_access = list(40)
+	},
+/obj/machinery/button/remote/blast_door{
+	id = "LCKDshutters";
+	name = "MedBay Lockdown Control";
+	pixel_x = -16;
+	pixel_y = -38;
+	req_access = list(40)
+	},
+/obj/machinery/button/windowtint{
+	id = "CMO";
+	pixel_x = 16;
+	pixel_y = -28;
+	req_access = list(40)
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"ds" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 6
+	},
+/obj/machinery/keycard_auth{
+	pixel_x = 24;
+	pixel_y = 24
+	},
+/obj/item/device/radio/intercom{
+	dir = 0;
+	name = "Station Intercom (General)";
+	pixel_x = 27
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dt" = (
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 9
+	},
+/obj/machinery/papershredder,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"du" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dv" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/hologram/holopad,
+/mob/living/simple_animal/cat/fluff/Runtime{
+	name = "Bones"
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dw" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/item/paper_bin{
+	pixel_y = 6
+	},
+/obj/item/pen,
+/obj/structure/table/glass,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dx" = (
+/obj/item/folder/white,
+/obj/item/stamp/cmo,
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/structure/table/glass,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dy" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 6
+	},
+/obj/item/modular_computer/laptop/preset/medical/cmo{
+	pixel_y = 2
+	},
+/obj/structure/table/glass,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dz" = (
+/obj/effect/floor_decal/corner_wide/paleblue/full,
+/obj/machinery/photocopier,
+/obj/machinery/firealarm/west,
+/obj/machinery/light_switch{
+	pixel_x = 12;
+	pixel_y = -22
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dA" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dB" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 10
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dC" = (
+/obj/effect/floor_decal/corner_wide/paleblue/full{
+	icon_state = "wide_corner_full";
+	dir = 4
+	},
+/obj/structure/flora/pottedplant/random,
+/obj/machinery/light{
+	dir = 4;
+	status = 0
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dD" = (
+/obj/machinery/door/airlock/glass_medical,
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dE" = (
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_y = -28
+	},
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/structure/table/standard,
+/obj/item/storage/box/syringegun{
+	pixel_y = 8
+	},
+/obj/item/gun/launcher/syringe,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dF" = (
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/item/storage/belt/medical/emt{
+	pixel_y = 4
+	},
+/obj/item/storage/belt/medical/emt{
+	pixel_y = 4
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = -4
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = -4
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = -4
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = -4
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = -4
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = -4
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = -4
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = -4
+	},
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/accessory/stethoscope,
+/obj/structure/table/rack,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dG" = (
+/obj/effect/floor_decal/corner/green/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_y = -4
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_y = -4
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_y = -4
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_y = -4
+	},
+/obj/machinery/firealarm/south,
+/obj/structure/table/rack,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dH" = (
+/obj/structure/curtain/open/shower,
+/obj/random/soap,
+/turf/simulated/floor/tiled/freezer,
+/area/janitor)
+"dI" = (
+/obj/structure/curtain/open/shower,
+/turf/simulated/floor/tiled/freezer,
+/area/janitor)
+"dJ" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor/tiled/freezer,
+/area/janitor)
+"dK" = (
+/obj/machinery/door/window/southleft,
+/turf/simulated/floor/tiled/freezer,
+/area/janitor)
+"dL" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/personal,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dM" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 28;
+	req_one_access = list(24,11,55)
+	},
+/obj/structure/bed/chair/plastic{
+	icon_state = "chair_preview";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dN" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/personal,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dO" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dP" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/structure/table/rack,
+/obj/item/towel,
+/obj/item/towel,
+/obj/item/towel{
+	pixel_y = 6
+	},
+/obj/item/towel{
+	pixel_y = 6
+	},
+/obj/structure/mirror{
+	pixel_x = 28;
+	pixel_y = -3
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dQ" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/structure/closet/wardrobe/medic_white,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dR" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/machinery/power/apc{
+	dir = 2;
+	is_critical = 1;
+	name = "south bump";
+	pixel_y = -24
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dS" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/machinery/washing_machine,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dT" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/button/remote/airlock{
+	dir = 8;
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/janitor)
+"dU" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dV" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dW" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dX" = (
+/obj/structure/table/glass{
+	table_reinf = "glass"
+	},
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 6
+	},
+/obj/item/folder,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "intact-scrubbers";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"dZ" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 9
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"ea" = (
+/obj/effect/floor_decal/sign/cmo,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"eb" = (
+/obj/structure/sign/nosmoking_1,
+/turf/simulated/wall,
+/area/janitor)
+"ec" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"ed" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "intact-scrubbers";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"ee" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"ef" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"eg" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 10
+	},
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/white,
+/area/janitor)
+"eh" = (
+/obj/machinery/light,
+/obj/effect/floor_decal/corner_wide/paleblue{
+	icon_state = "wide_corner";
+	dir = 10
+	},
+/turf/simulated/floor/tiled/white,
 /area/janitor)
 
 (1,1,1) = {"
@@ -22547,12 +23576,12 @@ aB
 aF
 aF
 aF
+aF
 aH
 ac
-at
-at
-at
-at
+cT
+aF
+cW
 at
 at
 at
@@ -22794,22 +23823,22 @@ at
 at
 at
 ac
-aq
-aq
-az
-aq
-aq
+cM
+di
+dj
+dl
+dE
 aE
-aq
-aq
-az
-aq
-aq
-ac
-at
-at
-at
-at
+dH
+dJ
+dL
+dN
+dQ
+dS
+aE
+db
+dd
+av
 at
 at
 at
@@ -23051,22 +24080,22 @@ at
 at
 at
 ac
-aq
-aq
-aq
-aq
-aq
+cM
+cV
+dk
+di
+dF
 aE
-aq
-aq
-aq
-aq
-aq
-ac
-at
-at
-at
-at
+dI
+dK
+cK
+dO
+dU
+cK
+cX
+dT
+de
+cz
 at
 at
 at
@@ -23308,21 +24337,21 @@ at
 at
 at
 ac
-aq
-aq
-aq
-aq
-aq
+cU
+da
+di
+dm
+dG
 aE
-aq
-aq
-aq
-aq
-aq
-ac
-ac
-ac
-ac
+dI
+dJ
+dM
+dP
+dR
+aE
+aE
+aE
+do
 ac
 ac
 ac
@@ -23559,29 +24588,29 @@ at
 at
 at
 at
+ax
+df
+dh
 ac
 ac
 ac
-ac
-ac
-ac
 aE
 aE
-aE
-aq
-aE
+az
+dD
+az
 aE
 aE
 aE
 aE
-aq
 aE
-ac
-af
-af
+cX
+aE
 al
-af
-af
+al
+an
+al
+al
 ac
 at
 at
@@ -23816,29 +24845,29 @@ at
 at
 at
 at
+cy
+cH
+dn
+dt
+dz
 ac
-aq
-aq
-aq
-aq
-ac
-aq
-aq
-az
-aq
-aq
-aq
-aq
-aq
-az
-aq
-aq
+cL
+dZ
+ed
+cv
+aI
+aI
+cP
+cx
+cE
+aI
+cv
 au
-af
-af
 al
-af
-af
+al
+an
+al
+al
 ac
 at
 at
@@ -24073,29 +25102,29 @@ at
 at
 at
 at
-ac
-aq
-aq
-aq
-aq
-aq
-aq
-aq
-aq
-aq
-aq
-aq
-aq
-aq
-aq
-aq
-aq
 av
-af
-af
+aC
+dp
+du
+cR
+aD
+ea
+cw
+cw
+cw
+cw
+cw
+cS
+dW
+cv
+ec
+cA
+av
 al
-af
-af
+al
+an
+al
+al
 ac
 at
 at
@@ -24321,38 +25350,38 @@ at
 at
 at
 at
+bW
+bW
+bW
+bW
+bW
+bW
+bW
 at
 at
-at
-at
-at
-at
-at
-at
-at
-ac
-ar
-aq
-aq
-aq
+cz
+cu
+dq
+dv
+dA
 au
-ap
-ap
-ax
+ak
+ak
+ao
+ak
 ap
 as
-an
-aq
-aq
-aq
-aq
-aq
+cO
+cY
+cZ
+ar
+eg
 aw
-af
-af
 al
-af
-af
+al
+an
+al
+al
 ac
 at
 at
@@ -24578,38 +25607,38 @@ at
 at
 at
 at
-at
-at
-at
-at
-at
-at
-at
+bW
+bW
+bW
+bW
+bW
+bW
+bW
 at
 at
 ac
-aq
-aq
-aq
-aq
+cI
+dq
+dw
+dB
 av
-af
-af
 al
-af
+al
 an
+al
+as
 ay
-aq
-aq
-aq
-aq
-aC
-ac
-ak
-al
-al
-al
-ao
+cQ
+dX
+dc
+ee
+eh
+aE
+aA
+an
+an
+an
+cC
 ac
 at
 at
@@ -24835,38 +25864,38 @@ at
 at
 at
 at
-at
-at
-at
-at
-at
-at
-at
+bW
+bW
+bW
+bW
+bW
+bW
+bW
 at
 at
 ac
 aq
-aq
-aq
-aq
+dr
+dx
+cB
 av
-af
-af
 al
-af
+al
 an
-aq
-aq
-aq
-aq
-aq
-aq
-au
-af
-af
 al
-af
-af
+as
+ar
+cv
+cv
+cv
+ef
+cA
+au
+al
+al
+an
+al
+al
 ac
 at
 at
@@ -25092,38 +26121,38 @@ at
 at
 at
 at
-at
-at
-at
-at
-at
-at
-at
+bW
+bW
+bW
+bW
+bW
+bW
+bW
 at
 at
 ac
-aq
-aq
-aq
-aq
+dg
+ds
+dy
+dC
 aw
-af
-af
-al
-af
 an
-aq
-aq
-aq
-aq
-aq
-aq
+an
+an
+an
+cF
+cJ
+cN
+cN
+cN
+cN
+cA
 av
-af
-af
 al
-af
-af
+al
+an
+al
+al
 ac
 at
 at
@@ -25349,13 +26378,13 @@ at
 at
 at
 at
-at
-at
-at
-at
-at
-at
-at
+bW
+bW
+bW
+bW
+bW
+bW
+bW
 at
 at
 ac
@@ -25364,23 +26393,23 @@ ac
 ac
 ac
 ac
-af
-af
 al
-af
+al
 an
-aq
-aq
-aq
-aq
-aq
-aq
-av
-af
-af
 al
-af
-af
+as
+ar
+dV
+dY
+cv
+cv
+cA
+av
+al
+al
+an
+al
+al
 ac
 at
 at
@@ -25606,13 +26635,13 @@ at
 at
 at
 at
-at
-at
-at
-at
-at
-at
-at
+bW
+bW
+bW
+bW
+bW
+bW
+bW
 at
 at
 at
@@ -25621,23 +26650,23 @@ at
 at
 at
 ac
-af
-af
 al
-af
+al
 an
-aq
-aq
-aq
-aq
-aq
-aq
-aw
-af
-af
 al
-af
-af
+as
+cJ
+cN
+cN
+cN
+cN
+cD
+aw
+al
+al
+an
+al
+al
 ac
 at
 at
@@ -25863,13 +26892,13 @@ at
 at
 at
 at
-at
-at
-at
-at
-at
-at
-at
+bW
+bW
+bW
+bW
+bW
+bW
+bW
 at
 at
 at
@@ -25880,21 +26909,21 @@ at
 ac
 al
 al
+an
 al
-al
+cG
+aE
+eb
+aE
+aE
+aE
+aE
+aE
 aA
-aE
-aE
-aE
-aE
-aE
-aE
-aE
-ak
-al
-al
-al
-ao
+an
+an
+an
+cC
 ac
 at
 at
@@ -26120,13 +27149,13 @@ at
 at
 at
 at
-at
-at
-at
-at
-at
-at
-at
+bW
+bW
+bW
+bW
+bW
+bW
+bW
 at
 at
 at
@@ -26135,23 +27164,23 @@ at
 at
 at
 ac
-af
-af
-al
-af
-af
+an
+an
+an
+an
+an
 aE
 am
 am
-aD
+am
 am
 am
 au
-af
-af
 al
-af
-af
+al
+an
+al
+al
 ac
 at
 at
@@ -26392,11 +27421,11 @@ at
 at
 at
 ac
-af
-af
 al
-af
-af
+al
+an
+al
+al
 aE
 am
 am
@@ -26404,11 +27433,11 @@ am
 am
 am
 av
-af
-af
 al
-af
-af
+al
+an
+al
+al
 ac
 at
 at
@@ -26649,11 +27678,11 @@ at
 at
 at
 ac
-af
-af
 al
-af
-af
+al
+an
+al
+al
 aE
 am
 am
@@ -26661,11 +27690,11 @@ am
 am
 am
 av
-af
-af
 al
-af
-af
+al
+an
+al
+al
 ac
 at
 at
@@ -26906,11 +27935,11 @@ at
 at
 at
 ac
-af
-af
 al
-af
-af
+al
+an
+al
+al
 aE
 am
 am
@@ -26918,11 +27947,11 @@ am
 am
 am
 aw
-af
-af
 al
-af
-af
+al
+an
+al
+al
 ac
 at
 at

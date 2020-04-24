@@ -665,12 +665,39 @@
 /obj/structure/window/reinforced,
 /turf/simulated/floor,
 /area/chapel/main)
+"bM" = (
+/obj/machinery/door/blast/regular{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"bN" = (
+/turf/simulated/floor/reinforced,
+/area/chapel/main)
+"bO" = (
+/obj/structure/table/steel,
+/obj/item/device/flashlight/lamp,
+/turf/simulated/floor/reinforced,
+/area/chapel/main)
 "bP" = (
 /obj/machinery/door/airlock{
 	name = "Showers"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/freezer,
+/area/chapel/main)
+"bQ" = (
+/obj/structure/bed,
+/turf/simulated/floor/reinforced,
+/area/chapel/main)
+"bR" = (
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -28;
+	pixel_y = 0
+	},
+/turf/simulated/floor/reinforced,
 /area/chapel/main)
 "bS" = (
 /obj/structure/curtain/open/shower,
@@ -694,6 +721,10 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/chapel/main)
+"bU" = (
+/obj/machinery/radiocarbon_spectrometer,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
 "bV" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced{
@@ -707,12 +738,913 @@
 /obj/machinery/firealarm/south,
 /turf/simulated/floor/tiled/freezer,
 /area/chapel/main)
+"bX" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"bY" = (
+/obj/structure/table/standard,
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste{
+	pixel_y = 9
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
 "bZ" = (
 /obj/machinery/door/airlock{
 	name = "Unisex Restrooms"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/freezer,
+/area/chapel/main)
+"ca" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cb" = (
+/obj/structure/reagent_dispensers/coolanttank,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cc" = (
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/chapel/main)
+"cd" = (
+/obj/machinery/door/airlock/external,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"ce" = (
+/obj/item/reagent_containers/glass/bucket{
+	pixel_x = -4;
+	pixel_y = -5
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cf" = (
+/obj/machinery/door/airlock/research{
+	name = "Spectrometry";
+	req_access = list(65)
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cg" = (
+/obj/structure/sign/securearea{
+	desc = "A warning sign which reads 'RADIOACTIVE AREA'";
+	icon_state = "radiation";
+	name = "RADIOACTIVE DURING OPERATION";
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"ch" = (
+/obj/effect/floor_decal/corner/mauve/full{
+	icon_state = "corner_white_full";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"ci" = (
+/obj/effect/floor_decal/corner/mauve{
+	icon_state = "corner_white";
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cj" = (
+/obj/effect/floor_decal/corner/mauve/full{
+	icon_state = "corner_white_full";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"ck" = (
+/obj/effect/floor_decal/corner/mauve{
+	icon_state = "corner_white";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cl" = (
+/obj/effect/floor_decal/corner/mauve{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cm" = (
+/obj/machinery/door/airlock/research{
+	name = "Xenoarcheology Atrium";
+	req_access = list(7)
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cn" = (
+/obj/effect/floor_decal/corner/white{
+	icon_state = "corner_white";
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"co" = (
+/obj/effect/floor_decal/corner/mauve{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cp" = (
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/chapel/main)
+"cq" = (
+/obj/effect/floor_decal/corner/mauve{
+	icon_state = "corner_white";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cr" = (
+/obj/structure/bed/chair/office/dark,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cs" = (
+/obj/structure/table/steel,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"ct" = (
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/chapel/main)
+"cu" = (
+/obj/machinery/button/remote/blast_door{
+	id = "research_eva";
+	name = "Research EVA Prep Door Control";
+	pixel_y = -25
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cv" = (
+/obj/effect/floor_decal/industrial/loading,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cw" = (
+/obj/machinery/door/firedoor/multi_tile{
+	icon_state = "door_open";
+	dir = 2
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cx" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cy" = (
+/obj/effect/floor_decal/corner/mauve,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cz" = (
+/obj/effect/floor_decal/corner/mauve{
+	icon_state = "corner_white";
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cA" = (
+/obj/machinery/door/blast/shutters{
+	id = "research_eva";
+	name = "Research EVA Preparation"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cB" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters{
+	id = "research_eva";
+	name = "Research EVA Preparation"
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cC" = (
+/obj/machinery/suit_cycler/science,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cD" = (
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/chapel/main)
+"cE" = (
+/obj/structure/closet/excavation,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/storage/box/samplebags,
+/obj/item/clothing/gloves/latex/nitrile/tajara,
+/obj/item/clothing/gloves/latex/nitrile/unathi,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cF" = (
+/obj/machinery/button/remote/blast_door{
+	id = "research_eva";
+	name = "Research EVA Prep Door Control";
+	pixel_x = 25;
+	pixel_y = 25
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cG" = (
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/window{
+	base_state = "left";
+	dir = 8;
+	icon_state = "right";
+	name = "Suit Storage";
+	req_access = list(7)
+	},
+/obj/structure/table/rack,
+/obj/item/clothing/mask/breath,
+/obj/item/storage/belt/archaeology,
+/obj/item/clothing/shoes/magboots,
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/item/clothing/suit/space/void/sci,
+/obj/item/clothing/head/helmet/space/void/sci,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"cH" = (
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/structure/grille,
+/turf/simulated/floor/plating,
+/area/chapel/main)
+"cI" = (
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/structure/grille,
+/turf/simulated/floor/plating,
+/area/chapel/main)
+"cJ" = (
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/chapel/main)
+"cK" = (
+/obj/effect/floor_decal/corner/mauve/full,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cL" = (
+/obj/effect/floor_decal/corner/mauve/full{
+	icon_state = "corner_white_full";
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/white{
+	dir = 6;
+	icon_state = "corner_white"
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cM" = (
+/obj/machinery/door/airlock/glass_research{
+	name = "Robotics Lab";
+	req_access = list(29)
+	},
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/warning/corner,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cN" = (
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/carpet/rubber,
+/area/chapel/main)
+"cO" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/ringer{
+	department = "Robotics";
+	id = "robo_ringer";
+	pixel_x = 6;
+	pixel_y = 28;
+	req_access = list(29)
+	},
+/turf/simulated/floor/carpet/rubber,
+/area/chapel/main)
+"cP" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/alarm{
+	pixel_y = 28
+	},
+/turf/simulated/floor/carpet/rubber,
+/area/chapel/main)
+"cQ" = (
+/obj/effect/floor_decal/industrial/warning/corner{
+	icon_state = "warningcorner";
+	dir = 8
+	},
+/obj/machinery/firealarm/north,
+/turf/simulated/floor/carpet/rubber,
+/area/chapel/main)
+"cR" = (
+/obj/machinery/autolathe,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/carpet/rubber,
+/area/chapel/main)
+"cS" = (
+/obj/machinery/door/window{
+	base_state = "left";
+	dir = 8;
+	icon_state = "right";
+	name = "Suit Storage";
+	req_access = list(7)
+	},
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/obj/structure/table/rack,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/clothing/mask/breath,
+/obj/item/storage/belt/archaeology,
+/obj/item/clothing/shoes/magboots,
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/item/clothing/suit/space/void/sci,
+/obj/item/clothing/head/helmet/space/void/sci,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"cT" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor/multi_tile,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cU" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"cV" = (
+/obj/structure/table/reinforced,
+/obj/effect/floor_decal/corner_wide/mauve/diagonal,
+/obj/item/storage/toolbox/electrical{
+	pixel_y = -8
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_y = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/chapel/main)
+"cW" = (
+/obj/structure/table/reinforced,
+/obj/effect/floor_decal/corner_wide/mauve/diagonal,
+/obj/item/storage/toolbox/mechanical{
+	desc = "A blue toolbox containing mechanic-related tools.";
+	pixel_y = 8
+	},
+/obj/item/device/robotanalyzer,
+/turf/simulated/floor/tiled/white,
+/area/chapel/main)
+"cX" = (
+/obj/effect/floor_decal/corner_wide/mauve/diagonal,
+/obj/machinery/r_n_d/circuit_imprinter,
+/turf/simulated/floor/tiled/white,
+/area/chapel/main)
+"cY" = (
+/obj/machinery/hologram/holopad,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/rubber,
+/area/chapel/main)
+"cZ" = (
+/turf/simulated/floor/carpet/rubber,
+/area/chapel/main)
+"da" = (
+/obj/structure/railing,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"db" = (
+/obj/structure/table/steel,
+/obj/item/stack/flag/green,
+/obj/item/stack/flag/green,
+/obj/item/storage/box/excavation,
+/obj/item/wrench,
+/obj/item/device/measuring_tape,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dc" = (
+/obj/structure/table/steel,
+/obj/item/pickaxe/drill,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dd" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window{
+	base_state = "right";
+	dir = 4;
+	icon_state = "right";
+	name = "Robotics Desk";
+	req_access = list(29)
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/ringer_button{
+	id = "robo_ringer";
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"de" = (
+/obj/effect/floor_decal/corner_wide/mauve/diagonal,
+/obj/structure/reagent_dispensers/acid{
+	pixel_x = -30;
+	pixel_y = 30
+	},
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/chapel/main)
+"df" = (
+/obj/effect/floor_decal/corner_wide/mauve/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/chapel/main)
+"dg" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/rubber,
+/area/chapel/main)
+"dh" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/machinery/door/airlock/lift,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"di" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dj" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dk" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 5
+	},
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dl" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dm" = (
+/obj/effect/floor_decal/industrial/warning/corner,
+/obj/structure/flora/pottedplant/random,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dn" = (
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"do" = (
+/obj/effect/floor_decal/corner_wide/mauve/diagonal,
+/obj/item/device/radio/intercom{
+	dir = 4;
+	name = "Station Intercom (General)";
+	pixel_x = -25
+	},
+/turf/simulated/floor/tiled/white,
+/area/chapel/main)
+"dp" = (
+/obj/structure/railing,
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 10
+	},
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dq" = (
+/obj/structure/railing,
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dr" = (
+/obj/structure/railing,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"ds" = (
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/window{
+	base_state = "left";
+	dir = 8;
+	icon_state = "right";
+	name = "Suit Storage";
+	req_access = list(7)
+	},
+/obj/structure/table/rack,
+/obj/item/clothing/mask/breath,
+/obj/item/storage/belt/archaeology,
+/obj/item/clothing/shoes/magboots,
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/item/clothing/suit/space/void/sci,
+/obj/item/clothing/head/helmet/space/void/sci,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dt" = (
+/obj/machinery/door/blast/shutters{
+	id = "planetary_bay2";
+	name = "Vehicle Garage"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor/multi_tile,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"du" = (
+/obj/machinery/door/blast/shutters{
+	id = "planetary_bay2";
+	name = "Vehicle Garage"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dv" = (
+/obj/machinery/mecha_part_fabricator,
+/obj/effect/floor_decal/industrial/warning,
+/obj/structure/window/reinforced,
+/obj/effect/floor_decal/corner_wide/mauve/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/chapel/main)
+"dw" = (
+/obj/structure/window/reinforced,
+/obj/effect/floor_decal/corner_wide/mauve/diagonal,
+/obj/machinery/computer/rdconsole/robotics,
+/turf/simulated/floor/tiled/white,
+/area/chapel/main)
+"dx" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32
+	},
+/turf/simulated/floor/carpet/rubber,
+/area/chapel/main)
+"dy" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 5;
+	icon_state = "intact"
+	},
+/obj/structure/table/steel,
+/obj/item/stack/flag/purple,
+/obj/item/stack/flag/purple,
+/obj/item/storage/box/excavation,
+/obj/item/wrench,
+/obj/item/device/measuring_tape,
+/obj/item/device/suit_cooling_unit,
+/obj/item/device/suit_cooling_unit,
+/obj/item/pickaxe/drill,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dz" = (
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 4
+	},
+/obj/machinery/vending/robotics{
+	products = list(/obj/item/clothing/suit/storage/toggle/labcoat = 4, /obj/item/clothing/under/rank/roboticist = 4, /obj/item/stack/cable_coil = 4, /obj/item/cell/high = 12, /obj/item/device/assembly/prox_sensor = 8, /obj/item/device/assembly/signaler = 3, /obj/item/device/healthanalyzer = 8, /obj/item/surgery/scalpel = 2, /obj/item/surgery/circular_saw = 2, /obj/item/tank/anesthetic = 2, /obj/item/clothing/mask/breath/medical = 5, /obj/item/screwdriver = 5, /obj/item/crowbar = 5)
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dA" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dB" = (
+/obj/machinery/button/remote/blast_door{
+	id = "planetary_bay2";
+	name = "Vehicle Garage Doors";
+	pixel_y = 32
+	},
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/structure/table/rack,
+/obj/item/storage/belt/utility,
+/obj/item/stack/cable_coil,
+/obj/item/stack/cable_coil,
+/obj/item/stack/cable_coil,
+/obj/item/stack/cable_coil,
+/obj/item/clothing/glasses/welding,
+/obj/item/clothing/head/welding,
+/obj/item/device/multitool,
+/obj/item/device/floor_painter,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dC" = (
+/obj/machinery/mech_recharger,
+/turf/simulated/floor/reinforced,
+/area/chapel/main)
+"dD" = (
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/obj/structure/reagent_dispensers/fueltank,
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dE" = (
+/obj/machinery/door/window/westright{
+	dir = 2;
+	name = "Vehicle Garage";
+	req_access = list(29)
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/ramp/bottom,
+/area/chapel/main)
+"dF" = (
+/obj/machinery/door/airlock/external,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dG" = (
+/obj/machinery/door/airlock/glass_research{
+	name = "Robotics Lab";
+	req_access = list(29)
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dH" = (
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dI" = (
+/obj/effect/floor_decal/industrial/warning/corner{
+	icon_state = "warningcorner";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dJ" = (
+/obj/machinery/power/apc/high{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dK" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dL" = (
+/obj/machinery/button/remote/blast_door{
+	id = "planetary_bay1";
+	name = "Planetary Vehicle Hangar Doors";
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dM" = (
+/obj/effect/floor_decal/industrial/warning/corner,
+/obj/machinery/firealarm/south,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dN" = (
+/obj/effect/floor_decal/industrial/warning/corner{
+	icon_state = "warningcorner";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dO" = (
+/obj/item/stool/padded,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dP" = (
+/obj/machinery/door/airlock/multi_tile/glass{
+	name = "Planetary Vehicle Hangar";
+	req_access = list(29)
+	},
+/obj/machinery/door/firedoor/multi_tile,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dQ" = (
+/obj/machinery/recharge_station,
+/turf/simulated/floor/reinforced,
+/area/chapel/main)
+"dR" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/structure/table/rack,
+/obj/item/stack/material/glass{
+	amount = 50;
+	pixel_x = -1;
+	pixel_y = 2;
+	randpixel = 0
+	},
+/obj/item/stack/material/steel{
+	amount = 50;
+	pixel_x = 1;
+	pixel_y = -2;
+	randpixel = 0
+	},
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_y = -28
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dS" = (
+/obj/structure/table/rack,
+/obj/item/stack/material/glass{
+	amount = 50;
+	pixel_x = -1;
+	pixel_y = 2;
+	randpixel = 0
+	},
+/obj/item/stack/material/steel{
+	amount = 50;
+	pixel_x = 1;
+	pixel_y = -2;
+	randpixel = 0
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dT" = (
+/obj/effect/floor_decal/industrial/loading{
+	icon_state = "loadingarea";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dU" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dV" = (
+/obj/machinery/door/blast/shutters{
+	dir = 4;
+	id = "planetary_bay1";
+	name = "Planetary Vehicle Hangar"
+	},
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/dark,
+/area/chapel/main)
+"dW" = (
+/obj/machinery/mech_recharger,
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dX" = (
+/obj/machinery/mech_recharger,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dY" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"dZ" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/machinery/mech_recharger,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"ea" = (
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 28
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"eb" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled,
+/area/chapel/main)
+"ec" = (
+/obj/machinery/firealarm/south,
+/turf/simulated/floor/tiled,
 /area/chapel/main)
 
 (1,1,1) = {"
@@ -31665,7 +32597,7 @@ aT
 aT
 aS
 aS
-au
+cn
 au
 au
 au
@@ -31922,7 +32854,7 @@ aT
 aT
 aS
 aS
-au
+cn
 au
 au
 au
@@ -32179,7 +33111,7 @@ aT
 aT
 aS
 aS
-au
+cn
 au
 au
 au
@@ -32436,7 +33368,7 @@ aT
 aT
 aS
 aS
-au
+cn
 au
 au
 au
@@ -32693,8 +33625,8 @@ aU
 aU
 aU
 aV
-au
-au
+cj
+cq
 au
 au
 au
@@ -32951,7 +33883,7 @@ aV
 aV
 aV
 aZ
-au
+ci
 au
 au
 aZ
@@ -33208,7 +34140,7 @@ aB
 aB
 aB
 aZ
-au
+ci
 au
 au
 aZ
@@ -33465,7 +34397,7 @@ aB
 aB
 aB
 aZ
-au
+ci
 au
 au
 aZ
@@ -33719,19 +34651,10 @@ aB
 aB
 aB
 aB
-aB
-aB
 aZ
-au
-au
-au
 aZ
-au
-au
-au
-au
-au
-au
+aZ
+ci
 au
 au
 aZ
@@ -33740,6 +34663,15 @@ au
 au
 au
 au
+au
+au
+au
+aZ
+dT
+au
+dT
+au
+dT
 au
 au
 au
@@ -33976,19 +34908,10 @@ aB
 aB
 aB
 aB
-aB
-aB
 aZ
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
-au
+ch
+co
+ck
 au
 au
 aZ
@@ -33998,6 +34921,15 @@ au
 au
 au
 au
+au
+au
+aZ
+dU
+dU
+dU
+dU
+dU
+dH
 au
 au
 au
@@ -34233,27 +35165,27 @@ aB
 aB
 aB
 aB
-aB
-aB
 aZ
+ci
 au
 au
 au
+au
 aZ
 aZ
 aZ
 aZ
 aZ
 aZ
+cc
+dG
+cc
 aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
+dV
+dV
+dV
+dV
+dV
 aZ
 aZ
 aZ
@@ -34484,33 +35416,33 @@ aa
 aa
 ad
 aZ
+aB
+aV
+aV
+aV
+aV
+aV
+ch
+ck
+au
+au
+au
+au
+au
+cK
+cc
+au
+dm
+cc
+dz
+au
+dK
 aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aZ
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
+dW
+dY
+dZ
+dY
+dW
 aZ
 aB
 aB
@@ -34742,32 +35674,32 @@ aa
 ad
 ad
 aZ
-aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aZ
-au
-au
-au
-aZ
+aV
+bU
+bU
+bU
+aV
+ci
 au
 au
 au
 au
 au
 au
+cz
+cT
+cv
+dn
+dt
+dA
 au
 au
-aZ
+dP
 au
 au
 au
 au
-au
+eb
 aZ
 aB
 aB
@@ -34998,33 +35930,33 @@ aa
 aa
 ad
 ad
-ad
 aZ
-aZ
-aB
-aB
-aB
-aB
-aB
-aZ
+aV
+bX
 au
-au
-au
-aZ
+ce
+aV
+ci
 au
 au
 au
 au
+cy
+cl
+cL
+cU
+cv
+dn
+du
+dA
+au
+au
+cU
 au
 au
 au
 au
-aZ
-au
-au
-au
-au
-au
+ec
 aZ
 aB
 aB
@@ -35256,32 +36188,32 @@ aa
 ad
 ad
 ad
-ad
+aV
+bY
+cb
+au
+aV
+cj
+cl
+cl
+cq
+au
+cz
+aZ
+cM
+aZ
+dd
 aZ
 aZ
-aB
-aB
-aB
-aB
+dB
+dH
+dL
 aZ
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
+dX
+dJ
+dX
+ea
+dX
 aZ
 aB
 aB
@@ -35511,34 +36443,34 @@ aa
 aa
 aa
 ad
-ad
-ad
-ad
-ad
+aV
+aV
+aV
+aV
+aV
+cf
+aV
+cc
+cm
+aZ
+ci
+au
+cz
+aZ
+cN
+cV
+de
+do
+dv
+cU
+dA
+dM
 aZ
 aZ
 aZ
 aZ
 aZ
 aZ
-aZ
-aZ
-aZ
-aZ
-au
-au
-au
-au
-au
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
 aZ
 aB
 aB
@@ -35768,35 +36700,35 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+bM
+bN
+bR
+ca
+cc
+au
+cg
+au
+au
+aZ
+ci
+au
+cz
+aZ
+cO
+cW
+df
+df
+dv
+cU
+dA
+dn
+dQ
 aZ
 aB
 aB
 aB
-aZ
-au
-au
-au
-au
-au
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
-aZ
+aB
+aB
 aB
 aB
 aB
@@ -36025,35 +36957,35 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aT
+bN
+bN
+ca
+cd
+au
+au
+au
+au
+aZ
+ci
+au
+cz
+aZ
+cP
+cX
+df
+df
+dw
+dC
+dA
+dn
+dQ
 aZ
 aB
 aB
 aB
-aZ
-au
-au
-au
-au
-au
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
-aZ
+aB
+aB
 aB
 aB
 aB
@@ -36282,35 +37214,35 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aT
+bN
+bN
+ca
+cc
+au
+au
+au
+au
+aZ
+au
+au
+au
+aZ
+cQ
+cY
+dg
+dg
+cc
+dD
+dI
+dN
+dR
 aZ
 aB
 aB
 aB
-aZ
-au
-au
-au
-au
-au
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
-aZ
+aB
+aB
 aB
 aB
 aB
@@ -36539,35 +37471,35 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+aV
+aV
+aV
+aV
+au
+au
+au
+au
+aZ
+au
+au
+au
+aZ
+cR
+cZ
+cZ
+cZ
+dx
+dE
+dJ
+dO
+dS
 aZ
 aB
 aB
 aB
-aZ
-au
-au
-au
-au
-au
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
-aZ
+aB
+aB
 aB
 aB
 aB
@@ -36799,32 +37731,32 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+au
+au
+au
+au
+au
+aZ
+au
+au
+au
+aZ
+aV
+aV
+dh
+dh
+aV
+aV
+aZ
+aZ
+aZ
 aZ
 aB
 aB
 aB
-aZ
-au
-au
-au
-au
-au
-au
-au
-au
-aZ
-au
-au
-au
-au
-au
-aZ
+aB
+aB
 aB
 aB
 aB
@@ -37053,35 +37985,35 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+aV
+aV
+aV
+aV
+au
+au
+au
+au
 aZ
+au
+au
+au
+au
+aV
+da
+di
+dp
+aT
+aV
 aB
 aB
 aB
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
+aB
+aB
+aB
+aB
+aB
+aB
 aB
 aB
 aB
@@ -37310,26 +38242,26 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+bM
+bN
+bR
+ca
+cc
+au
+au
+au
+au
 aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+au
+au
+au
+au
+aV
+da
+dj
+dq
+aT
+aV
 aB
 aB
 aB
@@ -37567,26 +38499,26 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aT
+bN
+bN
+ca
+cd
+au
+au
+au
+au
 aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+au
+au
+au
+au
+aV
+da
+dk
+dr
+aT
+aV
 aB
 aB
 aB
@@ -37824,26 +38756,26 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aT
+bN
+bN
+ca
+cc
+au
+au
+au
+au
 aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+au
+au
+au
+au
+aV
+aT
+dl
+dl
+aT
+aV
 aB
 aB
 aB
@@ -38081,26 +39013,26 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+aV
+aV
+aV
+aV
+au
+au
+au
+au
 aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+au
+au
+aZ
+aZ
+aV
+aV
+aV
+aV
+aV
+aV
 aB
 aB
 aB
@@ -38341,23 +39273,23 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+au
+au
+au
+au
+au
 aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+au
+cu
+aZ
+cE
+cE
+db
+cE
+cE
+cE
+aV
 aB
 aB
 aB
@@ -38595,30 +39527,30 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+aV
+aV
+aV
+aV
+au
+au
+au
+au
 aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+au
+cv
+cA
+au
+au
+dc
+au
+au
+au
+aZ
+aZ
+aZ
+aZ
+aZ
 aB
 aB
 aB
@@ -38852,30 +39784,30 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+bM
+bO
+bR
+ca
+cc
+au
+au
+au
+au
 aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+au
+cv
+cB
+au
+au
+au
+au
+au
+au
+dF
+au
+au
+au
+aZ
 aB
 aB
 aB
@@ -39109,30 +40041,30 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aT
+bN
+bN
+ca
+cd
+au
+au
+au
+au
 aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+au
+cv
+cB
+au
+au
+au
+au
+au
+au
+dF
+au
+au
+au
+aZ
 aB
 aB
 aB
@@ -39366,30 +40298,30 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aT
+bQ
+bN
+ca
+cc
+au
+au
+au
+au
 aZ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+au
+cv
+cB
+cF
+au
+au
+au
+au
+au
+cc
+au
+au
+au
+aZ
 aB
 aB
 aB
@@ -39623,29 +40555,29 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+aV
+aV
+aV
+aV
+aV
+aV
+aV
+aV
 aZ
+au
+cw
 aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
-aZ
+cG
+cS
+cS
+cS
+ds
+dy
+aV
+au
+au
+au
 aZ
 aZ
 aZ
@@ -39883,27 +40815,27 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+aU
+aU
+aU
+aU
+aV
+au
+au
+au
+aZ
+aZ
+cp
+ct
+ct
+cD
+aV
+aV
+dF
+dF
+aV
+aV
 aa
 aa
 aa
@@ -40140,26 +41072,26 @@ aa
 aa
 aa
 aa
+aV
+aU
+aT
+aT
+aS
+aS
+au
+au
+au
+cC
+cH
 aa
 aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+aT
+aT
+aV
 aa
 aa
 aa
@@ -40397,17 +41329,17 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+aU
+aT
+aT
+aS
+aS
+au
+cr
+cx
+cs
+cI
 aa
 aa
 aa
@@ -40654,17 +41586,17 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+aU
+aU
+aU
+aU
+aV
+au
+cs
+cs
+cs
+cJ
 aa
 aa
 aa
@@ -40911,17 +41843,17 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aV
+aV
+aV
+aV
+aV
+aV
+cp
+ct
+ct
+cD
+aZ
 aa
 aa
 aa
