@@ -215,9 +215,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/janitor)
-"aG" = (
-/turf/simulated/floor/reinforced,
-/area/janitor)
 "aH" = (
 /obj/machinery/door/firedoor,
 /obj/structure/grille,
@@ -477,11 +474,11 @@
 /turf/simulated/floor/tiled,
 /area/janitor)
 "bj" = (
-/obj/structure/computerframe,
 /obj/effect/floor_decal/corner/paleblue{
 	icon_state = "corner_white";
 	dir = 5
 	},
+/obj/structure/computerframe,
 /turf/simulated/floor/tiled,
 /area/janitor)
 "bk" = (
@@ -806,11 +803,11 @@
 /turf/simulated/floor/tiled,
 /area/janitor)
 "bP" = (
-/obj/structure/computerframe,
 /obj/effect/floor_decal/corner/paleblue{
 	icon_state = "corner_white";
 	dir = 4
 	},
+/obj/structure/computerframe,
 /turf/simulated/floor/tiled,
 /area/janitor)
 "bQ" = (
@@ -2108,6 +2105,582 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
+/area/janitor)
+"fD" = (
+/obj/machinery/hologram/holopad,
+/obj/effect/floor_decal/corner/blue{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"gl" = (
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
+	},
+/obj/structure/table/wood,
+/turf/simulated/floor/carpet,
+/area/janitor)
+"gO" = (
+/obj/machinery/light,
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	icon_state = "spline_fancy_corner";
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 6
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"ik" = (
+/obj/structure/bed/chair/office/bridge{
+	icon_state = "bridge";
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/blue{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"iJ" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 1;
+	id = "conference"
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"kV" = (
+/obj/machinery/lapvend,
+/turf/simulated/floor/wood,
+/area/janitor)
+"lS" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 1;
+	id = "conference"
+	},
+/obj/machinery/door/blast/regular{
+	id = "conference_room_screen";
+	name = "Conference Room Defense Screen"
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"mj" = (
+/obj/effect/floor_decal/corner/blue/full{
+	icon_state = "corner_white_full";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"ml" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced/polarized{
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 1;
+	id = "conference"
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"mD" = (
+/obj/structure/table/wood,
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 4
+	},
+/obj/item/folder/blue,
+/turf/simulated/floor/carpet,
+/area/janitor)
+"mI" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"pF" = (
+/turf/simulated/floor/tiled/ramp/bottom,
+/area/janitor)
+"pV" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner,
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"qX" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 9
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"rq" = (
+/obj/effect/floor_decal/spline/fancy/wood,
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"rs" = (
+/obj/effect/floor_decal/corner/blue/full{
+	icon_state = "corner_white_full";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"rN" = (
+/obj/structure/bed/chair/office/bridge,
+/obj/effect/floor_decal/corner/blue{
+	icon_state = "corner_white";
+	dir = 5
+	},
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"sK" = (
+/obj/effect/floor_decal/spline/fancy/wood,
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
+	},
+/obj/machinery/firealarm/north,
+/turf/simulated/floor/wood,
+/area/janitor)
+"uK" = (
+/obj/structure/bed/chair/office/bridge{
+	icon_state = "bridge";
+	dir = 4
+	},
+/obj/machinery/button/windowtint{
+	id = "conference";
+	pixel_x = 28;
+	pixel_y = -16
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/button/remote/blast_door{
+	id = "conference_room_screen";
+	name = "External Defense Screen";
+	pixel_y = 36
+	},
+/obj/machinery/button/remote/airlock{
+	id = "conference_room";
+	name = "Conference Room Bolts";
+	pixel_y = 26;
+	specialfunctions = 4
+	},
+/turf/simulated/floor/carpet,
+/area/janitor)
+"wp" = (
+/obj/structure/table/wood,
+/obj/effect/floor_decal/industrial/outline/blue,
+/obj/item/folder/blue,
+/obj/item/pen,
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"xp" = (
+/obj/structure/table/wood,
+/obj/effect/floor_decal/industrial/outline/blue,
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"xB" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/pen,
+/obj/machinery/light_switch{
+	pixel_x = 8;
+	pixel_y = 7
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 5
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"yF" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"yO" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"yU" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 10
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"Af" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	icon_state = "spline_fancy_corner";
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"AE" = (
+/obj/machinery/power/apc{
+	dir = 2;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/machinery/light,
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 10
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"AM" = (
+/obj/structure/bed/chair/office/bridge{
+	icon_state = "bridge";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/blue{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"AN" = (
+/obj/machinery/vending/coffee,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 9
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"Bi" = (
+/obj/effect/floor_decal/corner/blue{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"Bs" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "conference"
+	},
+/obj/machinery/door/blast/regular{
+	id = "conference_room_screen";
+	name = "Conference Room Defense Screen"
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"BW" = (
+/obj/effect/floor_decal/corner/blue/full{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"Cx" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 1;
+	id = "conference"
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"Db" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"Fv" = (
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/carpet,
+/area/janitor)
+"Gw" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "conference"
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"He" = (
+/obj/effect/floor_decal/corner/blue/full,
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"HP" = (
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/wood,
+/area/janitor)
+"HY" = (
+/obj/structure/bed/chair/office/bridge{
+	icon_state = "bridge";
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/dark,
+/area/janitor)
+"HZ" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "conference"
+	},
+/obj/machinery/door/blast/regular{
+	id = "conference_room_screen";
+	name = "Conference Room Defense Screen"
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"Ix" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/table/wood,
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 6
+	},
+/obj/item/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/pen,
+/turf/simulated/floor/carpet,
+/area/janitor)
+"Lr" = (
+/obj/machinery/door/airlock/command{
+	id_tag = "conference_room";
+	name = "Conference Room";
+	req_access = list(19)
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/janitor)
+"Op" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	icon_state = "spline_fancy_corner";
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/wood,
+/area/janitor)
+"Pz" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced/polarized{
+	dir = 1;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "conference"
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"Qk" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"QI" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	icon_state = "spline_fancy_corner";
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"Sq" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 1
+	},
+/obj/structure/table/wood,
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 5
+	},
+/obj/item/book/manual/wiki/security_space_law,
+/turf/simulated/floor/carpet,
+/area/janitor)
+"TP" = (
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Bridge";
+	departmentType = 5;
+	name = "Bridge RC";
+	pixel_y = -30
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/wood,
+/area/janitor)
+"TS" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/wood,
+/area/janitor)
+"Vr" = (
+/obj/machinery/door/firedoor,
+/obj/structure/grille,
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	id = "conference"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "conference"
+	},
+/turf/simulated/floor/plating,
+/area/janitor)
+"XR" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 28;
+	pixel_y = 0
+	},
+/obj/machinery/light{
+	dir = 4;
+	status = 0
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/janitor)
+"YY" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 9
+	},
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/machinery/disposal,
+/turf/simulated/floor/wood,
 /area/janitor)
 
 (1,1,1) = {"
@@ -32072,8 +32645,8 @@ br
 ac
 bF
 bp
-ah
-ah
+cr
+cr
 bt
 cc
 cj
@@ -34128,8 +34701,8 @@ bt
 aU
 bK
 bR
-ah
-ah
+bw
+bw
 bw
 ca
 cp
@@ -35645,15 +36218,15 @@ ah
 ah
 ah
 ac
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
+iJ
+Gw
+Gw
+Vr
+ac
+iJ
+Gw
+Gw
+Vr
 ac
 ah
 ah
@@ -35902,15 +36475,15 @@ ah
 ah
 ah
 ac
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
+AN
+kV
+yU
+gl
+uK
+Fv
+pF
+qX
+AE
 ac
 ah
 ah
@@ -36158,17 +36731,17 @@ ac
 ah
 ah
 ah
-ac
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ac
+Lr
+mI
+aQ
+HP
+Sq
+mD
+Ix
+YY
+QI
+HP
+Lr
 ah
 ah
 ah
@@ -36415,17 +36988,17 @@ ac
 ah
 ah
 ah
-ac
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ac
+ml
+pV
+yO
+yF
+Qk
+Qk
+Qk
+Af
+yO
+Op
+Pz
 ah
 ah
 ah
@@ -36672,16 +37245,16 @@ ac
 ah
 ah
 ah
-ac
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
+Cx
+rq
+rs
+ik
+Bi
+fD
+Bi
+ik
+He
+TP
 ac
 ac
 ac
@@ -36930,29 +37503,29 @@ ac
 ac
 ac
 ac
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
+sK
+rN
+wp
+xp
+wp
+xp
+wp
+HY
+TS
 ac
-aG
-aG
-aG
-aG
-aG
-aG
-aG
-aG
-aG
-aG
-aG
-aG
-aG
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
 at
 at
 bW
@@ -37187,15 +37760,15 @@ at
 at
 at
 ac
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
+rq
+BW
+AM
+AM
+AM
+AM
+AM
+mj
+TS
 ac
 at
 at
@@ -37444,15 +38017,15 @@ at
 at
 at
 ac
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
-ah
+xB
+Db
+Db
+Db
+XR
+Db
+Db
+Db
+gO
 ac
 at
 at
@@ -37701,15 +38274,15 @@ at
 at
 at
 ac
+lS
+Bs
+Bs
+HZ
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+lS
+Bs
+Bs
+HZ
 ac
 at
 at
